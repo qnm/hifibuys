@@ -1,1 +1,1 @@
-server "lachlan.sharp.id.au", :app, :web, :db, :primary => true
+server "www.hifibuys.com.au", :app, :web, :db, :primary => true
