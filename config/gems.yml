@@ -3,5 +3,6 @@
   :source: http://gems.github.com
 - :name: rubaidh-google_analytics
   :source: http://gems.github.com
+- :name: mysql
 - :version: 2.3.4
   :name: rails
