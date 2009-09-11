@@ -1,7 +1,9 @@
 <div class="hreview <%= cycle("even", "odd") %>">
   <div class="item">
     <div class="fnsummary">
-      <a class="url" href="<%=h item.url %>"><h3><%=h item.name %></h3></a>
+      <h3>
+        <%= link_to_tracked(item.name, item.url, options = {}, html_options = {:class => "url", :href => item.url}) %>
+      </h3>
     </div>
   </div>
   <div class="description">

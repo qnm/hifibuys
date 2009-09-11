@@ -1,6 +1,6 @@
-- Google Analytics
-   - Outgoing Links
+x Google Analytics
+   x Outgoing Links
 - Multiple ingestions overwrite
 - cron the rake tasks
 - bring in the YQL ingestors
-- add to github
+x add to github
