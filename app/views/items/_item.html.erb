@@ -1,0 +1,19 @@
+<div class="hreview <%= cycle("even", "odd") %>">
+  <div class="item">
+    <div class="fnsummary">
+      <a class="url" href="<%=h item.url %>"><h3><%=h item.name %></h3></a>
+    </div>
+  </div>
+  <div class="description">
+    <p><%=h item.description %></p>
+    <ul>
+      <li class="price">
+        <%= 
+    #number_to_currency(item.price, :unit => "$", :separator => ".", :delimiter => "", :format => "%u%n") 
+      %> 
+        <%= item.price %> 
+      </li>
+    </ul>
+  </div>
+</div>
+<br style="clear: both; line-height: 0px;" />

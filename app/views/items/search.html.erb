@@ -1,0 +1,10 @@
+<%= render :partial => 'item',
+  :collection => @items, 
+  :as => :item
+  %>
+
+<%= will_paginate @items %>
+
+<% if @items.empty? %>
+  Sorry! We don't have anything matching "<%= params[:term] %>".
+<% end %>

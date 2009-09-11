@@ -1,0 +1,12 @@
+development:
+  caxton:
+    url: http://www.hifibuys.com.au/opendatatables/caxton-audio-yql.xml
+    ingestor: yql_opendatatable
+  hifijunction:
+    url: http://www.hifibuys.com.au/opendatatables/hifijunction-yql.xml
+    ingestor: yql_opendatatable
+  audio_connection:
+    ingestor: audio_connection
+    params:
+      url: /home/robsharp/Dropbox/workspace/hifibuys/test/siteref/audioconnection.html
+      container: Item

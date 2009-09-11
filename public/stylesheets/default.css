@@ -1,0 +1,167 @@
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1, h2, h3, h4 {
+  margin: 2px;
+}
+
+body { 
+  background: url("/images/topbluefade.gif") repeat-x #fff;
+  color: #333; 
+  padding: 5px;
+}
+
+div {
+  margin: 0px;
+  padding: 0px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { 
+  color: #000; 
+}
+
+a:visited { 
+  color: #666; 
+}
+
+a:hover {
+  color: #4fa8ff;
+  background-color:#000;
+}
+
+#content {
+  padding: 50px 50px 0px 50px;
+  min-height: 300px;
+  text-align: center;
+}
+
+#content form {
+  text-align: center;
+  padding: 75px;
+  background: #ddd;
+  -moz-border-radius: 4pt;
+  margin: 50px 0px;
+}
+
+
+#footer {
+  text-align: center;
+  padding: 10px;
+}
+
+.odd {
+  background-color: #ccc;
+}
+
+.even {
+  background-color: #eee;
+}
+
+.hreview {
+  text-align: left;
+  margin: 2px 0px;
+  padding: 5px;
+  min-height: 30px;
+}
+
+
+.hreview .item {
+  float: left;
+  width: 500px;
+}
+
+.hreview .description {
+  float: left;
+}
+
+.description .price {
+  font-size: 160%;
+  text-color: #666;
+  font-weight: bold;
+  float: left;
+}
+
+.description ul {
+  display: inline;
+}
+
+.description li {
+  list-style-type: none;
+  display: inline;
+  padding: 0em 5px 0em 5px;
+}
+
+.description li:last-child { 
+}
+
+
+.pagination {
+  padding: 10px;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.pagination .disabled {
+  color: #bbb;
+}
+
+.pagination .current {
+  color: #4fa8ff;
+}
+
+
+#header {
+  padding: 5px;
+}
+
+form {
+  font-size: 150%;
+}
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+

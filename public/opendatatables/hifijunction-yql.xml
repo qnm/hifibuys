@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table xmlns="http://query.yahooapis.com/v1/schema/table.xsd">
+  <meta>
+    <sampleQuery>select * from {table};</sampleQuery>
+  </meta>
+  <bindings>
+    <select itemPath="" produces="XML">
+      <urls>
+        <url>http://www.hifijunction.com.au/ex-demo-and-trade-ins/</url>
+      </urls>
+      <execute><![CDATA[
+
+      	query = y.query("select * from html where url={url} and xpath = \"//div[@class='journal-entry']\"");
+
+	models = y.xpath(query.results, "/results/div/h2/a")
+	images = y.xpath(query.results, "/results/div/div/p/span/span")
+
+	var data;
+	data = "<products>";
+	for (var i = 0; i < models.length(); i++) {
+		data += "<product>";
+		data += "<model><!\[CDATA\[" + models[i].toString() + "\]\]></model>";
+		data += "<price><!\[CDATA\[" + models[i].toString().match(/\$[0-9.]+/) + "\]\]></price>";
+		//data += "<image><url><!\[CDATA\[" + images[i].@src.toString() + "\]\]></url></image>";
+		y.log(images[i]);
+		data += "</product>";
+	}
+	data += "</products>";
+
+	response.object = new XML(data);
+
+      ]]></execute>
+    </select>
+  </bindings>
+</table>

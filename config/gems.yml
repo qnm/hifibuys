@@ -1,0 +1,7 @@
+--- 
+- :name: mislav-will_paginate
+  :source: http://gems.github.com
+- :name: rubaidh-google_analytics
+  :source: http://gems.github.com
+- :version: 2.3.4
+  :name: rails
