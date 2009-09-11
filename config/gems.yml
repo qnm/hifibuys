@@ -1,4 +1,5 @@
 --- 
+- :name: hpricot
 - :name: mislav-will_paginate
   :source: http://gems.github.com
 - :name: rubaidh-google_analytics
