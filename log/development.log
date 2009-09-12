@@ -11851,3 +11851,471 @@ Migrating to CreateItems (20090906214953)
   [4;36;1mSQL (14.9ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
   [4;35;1mSQL (4.1ms)[0m   [0mdescribe `items`[0m
   [4;36;1mSQL (30.1ms)[0m   [0;1mSHOW KEYS FROM `items`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mItem Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (52.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (1.0ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Tact SDA2175 Digital Amplifier', '2009-09-12 00:52:22', '$1999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=91&product_id=2550&product_category_id=3&product_subcategory_id=41', '', '2009-09-12 00:52:22')[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Audio Note Soro Class A Integrated Valve Amplifier', '2009-09-12 00:52:22', '$2499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2708&product_category_id=3&product_subcategory_id=43', '', '2009-09-12 00:52:22')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.9ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Audio Note OTO Integrated Amplifier', '2009-09-12 00:52:22', '$1,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=1952&product_category_id=3&product_subcategory_id=43', '', '2009-09-12 00:52:22')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Copland CSA 8', '2009-09-12 00:52:22', '$1,200.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2148&product_category_id=3&product_subcategory_id=43', '', '2009-09-12 00:52:22')[0m
+  [4;36;1mSQL (8.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Marantz PM17MkII Integrated Amplifier', '2009-09-12 00:52:22', '$1,199.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2709&product_category_id=3&product_subcategory_id=43', '', '2009-09-12 00:52:22')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (2.1ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Myryad Mi120 Integrated Amplifier', '2009-09-12 00:52:22', '$1,499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=113&product_id=2331&product_category_id=3&product_subcategory_id=43', '', '2009-09-12 00:52:22')[0m
+  [4;36;1mSQL (19.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Myryad Mi240 Integrated Amplifier', '2009-09-12 00:52:22', '$2,299.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=113&product_id=2330&product_category_id=3&product_subcategory_id=43', '', '2009-09-12 00:52:22')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (10.7ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Myryad MXi2150 Integrated Amplifier', '2009-09-12 00:52:22', '$2,499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=113&product_id=2318&product_category_id=3&product_subcategory_id=43', '', '2009-09-12 00:52:22')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (33.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Audiolab 8000 P', '2009-09-12 00:52:22', '$899.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=75&product_id=2067&product_category_id=3&product_subcategory_id=46', '', '2009-09-12 00:52:22')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.7ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Classe Audio CAM 350 Mono Block Amplifiers', '2009-09-12 00:52:22', '$7,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=76&product_id=2696&product_category_id=3&product_subcategory_id=46', '', '2009-09-12 00:52:22')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Mark Levinson 434 Mono Blocks', '2009-09-12 00:52:22', '$9,999.00 (pair)', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2072&product_category_id=3&product_subcategory_id=46', '', '2009-09-12 00:52:22')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.7ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Mark Levinson 332 - Stereo Power Amplifier', '2009-09-12 00:52:22', '$6,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2026&product_category_id=3&product_subcategory_id=46', '', '2009-09-12 00:52:22')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Mark Levinson No. 335 Power Amplifier', '2009-09-12 00:52:22', '$10,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2591&product_category_id=3&product_subcategory_id=46', '', '2009-09-12 00:52:22')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (1.0ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('MBL 8011 Stereo Power Amplifier', '2009-09-12 00:52:22', '$9,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=16&product_id=2031&product_category_id=3&product_subcategory_id=46', '', '2009-09-12 00:52:22')[0m
+  [4;36;1mSQL (9.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('MBL8006A', '2009-09-12 00:52:22', '$7,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=16&product_id=392&product_category_id=3&product_subcategory_id=46', '', '2009-09-12 00:52:22')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.7ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Musical Fidelity A308 Pre-Amp & Power Amp', '2009-09-12 00:52:22', '$6499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2664&product_category_id=3&product_subcategory_id=46', '', '2009-09-12 00:52:22')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Musical Fidelity KW system', '2009-09-12 00:52:22', '$32,000.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2542&product_category_id=3&product_subcategory_id=46', '', '2009-09-12 00:52:22')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Myryad MA360 Power Amplifier', '2009-09-12 00:52:22', '$899.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=113&product_id=2329&product_category_id=3&product_subcategory_id=46', '', '2009-09-12 00:52:22')[0m
+  [4;36;1mSQL (7.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (5.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Myryad MXA2080 Power Apmlifier', '2009-09-12 00:52:22', '$999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=113&product_id=2320&product_category_id=3&product_subcategory_id=46', '', '2009-09-12 00:52:22')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Myryad MXA2150 Power Amplifier', '2009-09-12 00:52:22', '$1749.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=113&product_id=2315&product_category_id=3&product_subcategory_id=46', '', '2009-09-12 00:52:22')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Myryad Z160 Power Amplifier', '2009-09-12 00:52:22', '$599.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=113&product_id=2319&product_category_id=3&product_subcategory_id=46', '', '2009-09-12 00:52:22')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Naim NAC 42.5 Pre & NAP 140 Power', '2009-09-12 00:52:22', '$1,199.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2692&product_category_id=3&product_subcategory_id=46', '', '2009-09-12 00:52:22')[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Power Amp 036', '2009-09-12 00:52:22', '$9,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=5&product_id=85&product_category_id=3&product_subcategory_id=46', '', '2009-09-12 00:52:22')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Audio Note M2 Line - Tube Linel level Preamp', '2009-09-12 00:52:22', '$2,499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=57&product_id=1992&product_category_id=3&product_subcategory_id=48', '', '2009-09-12 00:52:22')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Audiolab 8000 Q', '2009-09-12 00:52:22', '$1,099.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=75&product_id=2065&product_category_id=3&product_subcategory_id=48', '', '2009-09-12 00:52:22')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Classe Audio CP35', '2009-09-12 00:52:22', '$1,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2189&product_category_id=3&product_subcategory_id=48', '', '2009-09-12 00:52:22')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Classe Audio CP47.5 Pre- Amplifier', '2009-09-12 00:52:22', '$2699.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2654&product_category_id=3&product_subcategory_id=48', '', '2009-09-12 00:52:22')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Classe Audio DR-4 Preamplifier', '2009-09-12 00:52:22', '$1,199.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2728&product_category_id=3&product_subcategory_id=48', '', '2009-09-12 00:52:22')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Classse Audio SIX Preamplifier', '2009-09-12 00:52:22', '$4,499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=1959&product_category_id=3&product_subcategory_id=48', '', '2009-09-12 00:52:22')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Goldmund MIMESIS 2+ PREAMP', '2009-09-12 00:52:22', '$6,500.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2054&product_category_id=3&product_subcategory_id=48', '', '2009-09-12 00:52:22')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Gryphon Line Preamp', '2009-09-12 00:52:22', '$2,500.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2141&product_category_id=3&product_subcategory_id=48', '', '2009-09-12 00:52:22')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Kebschull Pre-Amplifier', '2009-09-12 00:52:22', '$1999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2593&product_category_id=3&product_subcategory_id=48', '', '2009-09-12 00:52:22')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Krell KAV-280P Stereo PreAmp', '2009-09-12 00:52:22', '$2,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2352&product_category_id=3&product_subcategory_id=48', '', '2009-09-12 00:52:22')[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Musical Fidelity A308 Pre-Amp & Power Amplifier', '2009-09-12 00:52:23', '$6499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2678&product_category_id=3&product_subcategory_id=48', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Myryad MXP2000 Stereo Pre-Aplifier', '2009-09-12 00:52:23', '$1199.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=113&product_id=2313&product_category_id=3&product_subcategory_id=48', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.7ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Paragon Pre-Amplifier', '2009-09-12 00:52:23', '$4999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2594&product_category_id=3&product_subcategory_id=48', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Sonic Frontiers Line 1 Pre Amplifier', '2009-09-12 00:52:23', '$2,499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2710&product_category_id=3&product_subcategory_id=48', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('TAG McLAREN X5R Power Amplifier', '2009-09-12 00:52:23', '$2,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2534&product_category_id=3&product_subcategory_id=93', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.9ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Audio Note MEISHU Phono Amplifier', '2009-09-12 00:52:23', '$4,499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2447&product_category_id=3&product_subcategory_id=94', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (22.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Audio Research VS55 Valve Power Amplifier', '2009-09-12 00:52:23', '$3,799.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2717&product_category_id=3&product_subcategory_id=94', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Audio Research VSi55 Integrated Valve Amplifier', '2009-09-12 00:52:23', '$4,499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2721&product_category_id=3&product_subcategory_id=94', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Audio Research VT100', '2009-09-12 00:52:23', '$4,499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2727&product_category_id=3&product_subcategory_id=94', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Copland CTA504 Valve power Amplifier', '2009-09-12 00:52:23', '$2999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2592&product_category_id=3&product_subcategory_id=94', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Jadis Defy 7 Valve Power Amplifier', '2009-09-12 00:52:23', '$8,499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2345&product_category_id=3&product_subcategory_id=94', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Denon AVC-A11XVA AV Amplifier', '2009-09-12 00:52:23', '$4499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=37&product_id=1598&product_category_id=3&product_subcategory_id=125', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Denon AVR-3806 receiver', '2009-09-12 00:52:23', '$2,099.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=37&product_id=1597&product_category_id=3&product_subcategory_id=125', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Marantz PS17SA AV Processor', '2009-09-12 00:52:23', '$1999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2666&product_category_id=3&product_subcategory_id=125', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Pioneer VSX815', '2009-09-12 00:52:23', '$349.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=28&product_id=2276&product_category_id=3&product_subcategory_id=125', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (4.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Myryad Cameo System', '2009-09-12 00:52:23', '$1,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=113&product_id=2305&product_category_id=3&product_subcategory_id=143', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (1.9ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Sonic Frontiers SFD-1mK2 DAC', '2009-09-12 00:52:23', '$1499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2595&product_category_id=5&product_subcategory_id=54', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Denon DVD-3910', '2009-09-12 00:52:23', '$1299.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=37&product_id=1601&product_category_id=5&product_subcategory_id=56', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Denon DVD-1730', '2009-09-12 00:52:23', '$249.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=37&product_id=1604&product_category_id=5&product_subcategory_id=56', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Denon DVD-1920', '2009-09-12 00:52:23', '$399.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=37&product_id=1603&product_category_id=5&product_subcategory_id=56', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('DV 88 PLUS', '2009-09-12 00:52:23', '$1999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=30&product_id=2070&product_category_id=5&product_subcategory_id=56', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Integra DPC 7.5', '2009-09-12 00:52:23', '$599.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=62&product_id=2038&product_category_id=5&product_subcategory_id=56', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (3.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Marantz DV12s2 DVD / SACD player', '2009-09-12 00:52:23', '$1,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2529&product_category_id=5&product_subcategory_id=56', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.8ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Meridian 596 DVD player', '2009-09-12 00:52:23', '$1,499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2530&product_category_id=5&product_subcategory_id=56', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (8.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (4.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('DCD2000AE SACD/CD player', '2009-09-12 00:52:23', '$2,599.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=37&product_id=2515&product_category_id=5&product_subcategory_id=98', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Classe Audio CDP.3 CD Player', '2009-09-12 00:52:23', '$1,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=76&product_id=2699&product_category_id=5&product_subcategory_id=144', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.8ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Copland CDA266 CD player', '2009-09-12 00:52:23', '$1,499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2284&product_category_id=5&product_subcategory_id=144', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Krell KPS20E CD player', '2009-09-12 00:52:23', '$3,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2597&product_category_id=5&product_subcategory_id=144', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Musical Fidelity Nu.Vista 3D CD-player', '2009-09-12 00:52:23', '$4,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=1964&product_category_id=5&product_subcategory_id=144', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Myryad MXC6000 CD Player', '2009-09-12 00:52:23', '$1,899.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=113&product_id=2306&product_category_id=5&product_subcategory_id=144', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Myryad Z110 CD Player', '2009-09-12 00:52:23', '$699.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=113&product_id=2325&product_category_id=5&product_subcategory_id=144', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Sony SVRHD900 HD recorder', '2009-09-12 00:52:23', '$799.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=39&product_id=2661&product_category_id=5&product_subcategory_id=167', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.8ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Musical Fidelity CD Pre24 CD/Preamplifier', '2009-09-12 00:52:23', '$2,750.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2729&product_category_id=5&product_subcategory_id=185', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (8.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (2.9ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Lambda TV mini stand', '2009-09-12 00:52:23', '$760.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=48&product_id=2201&product_category_id=7&product_subcategory_id=105', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Schreors & Schroers Lambda TV3 stand', '2009-09-12 00:52:23', '$1,045.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=48&product_id=2197&product_category_id=7&product_subcategory_id=105', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Schroers & Schroers Alphastatic', '2009-09-12 00:52:23', '$1,395.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=48&product_id=2193&product_category_id=7&product_subcategory_id=105', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Schroers & Schroers Deltastatic', '2009-09-12 00:52:23', '$945.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=48&product_id=2195&product_category_id=7&product_subcategory_id=105', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (9.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Schroers & Schroers CD 44', '2009-09-12 00:52:23', '$3,250.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=48&product_id=2192&product_category_id=7&product_subcategory_id=106', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (17.8ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Schroers & Schroers CD10 / DVD 7', '2009-09-12 00:52:23', '$2,595.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=48&product_id=2196&product_category_id=7&product_subcategory_id=106', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (3.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Myryad MDP500 Digital Proccessor', '2009-09-12 00:52:23', '$1,699.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=113&product_id=2326&product_category_id=10&product_subcategory_id=96', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('TAG McLAREN VR30R Processor', '2009-09-12 00:52:23', '$2999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2533&product_category_id=10&product_subcategory_id=96', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Wi-fi Radio $299.00 AUD', '2009-09-12 00:52:23', '$299.00 AUD', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=1&product_id=21&product_category_id=11&product_subcategory_id=65', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Marantz ST17', '2009-09-12 00:52:23', '$799.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2099&product_category_id=11&product_subcategory_id=66', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('AAD S1 Bookshelf Speaker', '2009-09-12 00:52:23', '$399.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2605&product_category_id=13&product_subcategory_id=70', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.7ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('AAD S3-2.5way Bookshelf Speaker', '2009-09-12 00:52:23', '$795.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2606&product_category_id=13&product_subcategory_id=70', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (7.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Acoustic Energy EVO 1', '2009-09-12 00:52:23', '$349.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=1&product_id=2102&product_category_id=13&product_subcategory_id=70', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('AE A1 Classic (stands included)', '2009-09-12 00:52:23', '$1999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2667&product_category_id=13&product_subcategory_id=70', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Aelite One', '2009-09-12 00:52:23', '$549.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=1&product_id=667&product_category_id=13&product_subcategory_id=70', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Aelite Two', '2009-09-12 00:52:23', '$799.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=1&product_id=668&product_category_id=13&product_subcategory_id=70', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.8ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('ATC SCM10.2 Active Speakers', '2009-09-12 00:52:23', '$3,899.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2609&product_category_id=13&product_subcategory_id=70', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.7ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('ATC SCM11 Bookshelf speakers', '2009-09-12 00:52:23', '$1999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2607&product_category_id=13&product_subcategory_id=70', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('ATC SCM12', '2009-09-12 00:52:23', '$1,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=4&product_id=74&product_category_id=13&product_subcategory_id=70', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('ATC SCM19', '2009-09-12 00:52:23', '$2,799.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=4&product_id=1405&product_category_id=13&product_subcategory_id=70', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('ATC SCM7 Bookshelf Speakers', '2009-09-12 00:52:23', '$989.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2608&product_category_id=13&product_subcategory_id=70', '', '2009-09-12 00:52:23')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Chario Academy Millennium l w/Stands', '2009-09-12 00:52:23', '$2,299.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2730&product_category_id=13&product_subcategory_id=70', '', '2009-09-12 00:52:23')[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Dali ROYAL MENUET', '2009-09-12 00:52:24', '$999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=25&product_id=2039&product_category_id=13&product_subcategory_id=70', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Mission E80 Surround/Bookshelf speaker', '2009-09-12 00:52:24', '$749.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=77&product_id=1988&product_category_id=13&product_subcategory_id=70', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (1.0ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Sonus Faber Electa w/ Stands', '2009-09-12 00:52:24', '$2,499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2694&product_category_id=13&product_subcategory_id=70', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Triangle Comete Es', '2009-09-12 00:52:24', '$995.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=49&product_id=1231&product_category_id=13&product_subcategory_id=70', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Triumph Signature Extreme (black)', '2009-09-12 00:52:24', '$3,799.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=90&product_id=2207&product_category_id=13&product_subcategory_id=70', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Vienna Acoustic Haydn Bookshelf (Rosewood)', '2009-09-12 00:52:24', '$1199.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2528&product_category_id=13&product_subcategory_id=70', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Aegis Evo Centre', '2009-09-12 00:52:24', '$349.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=1&product_id=7&product_category_id=13&product_subcategory_id=72', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (3.0ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Aelite Centre', '2009-09-12 00:52:24', '$549.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=1&product_id=5&product_category_id=13&product_subcategory_id=72', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (8.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Aerial CC3 Centre speaker', '2009-09-12 00:52:24', '$1999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2671&product_category_id=13&product_subcategory_id=72', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('ATC C1 Centre Speaker', '2009-09-12 00:52:24', '$950.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=4&product_id=2118&product_category_id=13&product_subcategory_id=72', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('ATC C3 Centre Speaker', '2009-09-12 00:52:24', '$2,000.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=4&product_id=2117&product_category_id=13&product_subcategory_id=72', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('ATC C4CA Active Centre', '2009-09-12 00:52:24', '$2,500.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=4&product_id=2116&product_category_id=13&product_subcategory_id=72', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Leo Minor', '2009-09-12 00:52:24', '$1549.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=49&product_id=1245&product_category_id=13&product_subcategory_id=72', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Martin Logan Theatre', '2009-09-12 00:52:24', '$2,800.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2002&product_category_id=13&product_subcategory_id=72', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Meridian DSP 5000C', '2009-09-12 00:52:24', '$4,599.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=87&product_id=2152&product_category_id=13&product_subcategory_id=72', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.7ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Mission E8c centre speaker', '2009-09-12 00:52:24', '$899.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=77&product_id=2617&product_category_id=13&product_subcategory_id=72', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Revel C30 Performa Centre', '2009-09-12 00:52:24', '$3,500.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2537&product_category_id=13&product_subcategory_id=72', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.8ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('S-3C', '2009-09-12 00:52:24', '$499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=42&product_id=976&product_category_id=13&product_subcategory_id=72', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Total Eclipse C (black)', '2009-09-12 00:52:24', '$1,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=90&product_id=2210&product_category_id=13&product_subcategory_id=72', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Acoustic Energy AE109 Floor Speakers', '2009-09-12 00:52:24', '$999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2539&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (1.1ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Aelite Three', '2009-09-12 00:52:24', '$1,549.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=1&product_id=2&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Aerial Model 7 Floor speakers', '2009-09-12 00:52:24', '$2499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2670&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Apoge Centour Minor Speakers', '2009-09-12 00:52:24', '$1699.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2495&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('ArciTec Acoustic Athena Speakers (polished aluminium)', '2009-09-12 00:52:24', '$1699.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2493&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('ATC SCM40', '2009-09-12 00:52:24', '$4999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=4&product_id=1406&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Avalon Ascent 3-way floorstanding speakers', '2009-09-12 00:52:24', '$19,499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2005&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Avantgarde Acoustic Duo Speakers', '2009-09-12 00:52:24', '$15,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2713&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Dali Suite 1.7 Floor speakers', '2009-09-12 00:52:24', '$999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2656&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Dali Evidence 470 Floor speakers', '2009-09-12 00:52:24', '$2499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2526&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Genesis 350 Floor Speakers', '2009-09-12 00:52:24', '$15,000.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2093&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('KEF Reference 104/2', '2009-09-12 00:52:24', '$1,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2219&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Martin Logan Prodigy', '2009-09-12 00:52:24', '$14,990.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2190&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Martin Logan Quest', '2009-09-12 00:52:24', '$4,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2220&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Martin Logan Sequel II', '2009-09-12 00:52:24', '$2,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=1994&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Martin Logan Aerius-I', '2009-09-12 00:52:24', '$3,300.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2206&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Martin Logan SL3', '2009-09-12 00:52:24', '$3,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=1985&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Meridian DSP5200', '2009-09-12 00:52:24', '$10,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=87&product_id=2151&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Mission E83 Floor Speakers', '2009-09-12 00:52:24', '$5,599.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=77&product_id=2017&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Naia', '2009-09-12 00:52:24', '$4,299.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=49&product_id=1242&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Thiel CS 2.4', '2009-09-12 00:52:24', '$5,000.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2134&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.8ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Total Victory III (cherry)', '2009-09-12 00:52:24', '$15,999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=90&product_id=2199&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (15.3ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Triangle Altea Floor Speaker', '2009-09-12 00:52:24', '$1999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2615&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Triangle Australe', '2009-09-12 00:52:24', '$6,500.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=49&product_id=2047&product_category_id=13&product_subcategory_id=74', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Niles PD6R in wall / ceiling speakers', '2009-09-12 00:52:24', '$449.00 pair', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2650&product_category_id=13&product_subcategory_id=75', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Aegis Compact', '2009-09-12 00:52:24', '$349.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=1&product_id=17&product_category_id=13&product_subcategory_id=76', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Aelite On wall', '2009-09-12 00:52:24', '$669.00 (each)', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=1&product_id=16&product_category_id=13&product_subcategory_id=76', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Martin Logan Stylos on-wall speakers', '2009-09-12 00:52:24', '$2,499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2543&product_category_id=13&product_subcategory_id=76', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Mission FS2 Speaker System', '2009-09-12 00:52:24', '$999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=77&product_id=2080&product_category_id=13&product_subcategory_id=77', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Mission M7s Speaker System', '2009-09-12 00:52:24', '$699.00 (stands not included)', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=77&product_id=1996&product_category_id=13&product_subcategory_id=77', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('AAD S160 Subwoofer', '2009-09-12 00:52:24', '$799.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2614&product_category_id=13&product_subcategory_id=79', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Aelite Sub', '2009-09-12 00:52:24', '$999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=1&product_id=14&product_category_id=13&product_subcategory_id=79', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Dali AW8 Active Sub-Woofer', '2009-09-12 00:52:24', '$449.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2659&product_category_id=13&product_subcategory_id=79', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Dali Suite 1.2 Active Sub-Woofer', '2009-09-12 00:52:24', '$999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2657&product_category_id=13&product_subcategory_id=79', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Dali SWA15 Active Sub-Woofer', '2009-09-12 00:52:24', '$1499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2658&product_category_id=13&product_subcategory_id=79', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Mission E8AS1 Acive Subwoofer', '2009-09-12 00:52:24', '$999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=77&product_id=2014&product_category_id=13&product_subcategory_id=79', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Mission E8AS2 Active Subwoofer', '2009-09-12 00:52:24', '$1999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=77&product_id=2015&product_category_id=13&product_subcategory_id=79', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('PowerField 1800 Sub woofer', '2009-09-12 00:52:24', '$1999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2527&product_category_id=13&product_subcategory_id=79', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (1.1ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('REL Q 201', '2009-09-12 00:52:24', '$1499.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=19&product_id=2086&product_category_id=13&product_subcategory_id=79', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Rel Stadium Active Subwoofer', '2009-09-12 00:52:24', '$2999.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2672&product_category_id=13&product_subcategory_id=79', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('REL Stampede', '2009-09-12 00:52:24', '$1,399.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=19&product_id=447&product_category_id=13&product_subcategory_id=79', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('REL Strata 5', '2009-09-12 00:52:24', '$1,799.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=19&product_id=448&product_category_id=13&product_subcategory_id=79', '', '2009-09-12 00:52:24')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Project Debut-3 Turntable', '2009-09-12 00:52:24', '$349.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=2673&product_category_id=15&product_subcategory_id=112', '', '2009-09-12 00:52:24')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Sota Sapphire Turntable', '2009-09-12 00:52:25', '$1,399.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=65&product_id=1968&product_category_id=15&product_subcategory_id=112', '', '2009-09-12 00:52:25')[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Graham Robin Tonearm', '2009-09-12 00:52:25', '$1,100.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=78&product_id=2088&product_category_id=15&product_subcategory_id=113', '', '2009-09-12 00:52:25')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('HC5000 LCD Home Cinema Projector', '2009-09-12 00:52:25', '$3699.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=86&product_id=2115&product_category_id=20&product_subcategory_id=121', '', '2009-09-12 00:52:25')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('Copland CVA 306', '2009-09-12 00:52:25', '$2,500.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=8&product_id=2027&product_category_id=24&product_subcategory_id=148', '', '2009-09-12 00:52:25')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `updated_at`, `price`, `url`, `description`, `created_at`) VALUES('AKG K530 Headphones', '2009-09-12 00:52:25', '$159.00', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=73&product_id=2579&product_category_id=37&product_subcategory_id=172', '', '2009-09-12 00:52:25')[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCOMMIT[0m

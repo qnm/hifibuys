@@ -1,5 +1,9 @@
 require 'yaml'
 
+namespace :db do
+  task :migrate => 'ingest:provider name=audio_connection'
+end
+
 namespace :ingest do
   desc "Ingest a provider"
   task :provider => :environment do  |t, args|

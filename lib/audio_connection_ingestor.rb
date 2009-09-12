@@ -1,6 +1,7 @@
 class AudioConnectionIngestor
 
   require 'hpricot'
+  require 'open-uri'
 
   attr_accessor :data
   attr_accessor :current_item
