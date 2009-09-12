@@ -10,3 +10,9 @@ development:
     params:
       url: /home/robsharp/Dropbox/workspace/hifibuys/test/siteref/audioconnection.html
       container: Item
+production:
+  audio_connection:
+    ingestor: audio_connection
+    params:
+      container: Item
+      url: http://audioconnection.com.au/trade-ins-clearance-audio-equipment
