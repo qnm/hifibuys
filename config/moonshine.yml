@@ -4,7 +4,7 @@
 #:time_zone: UTC
 :deploy_to: /opt/apps/hifibuys
 :domain: www.hifibuys.com.au
-#:domain_aliases:
+:domain_aliases: hifibuys.com.au
 #  - assets1.yourapp.com
 #  - assets2.yourapp.com
 :scm: git
