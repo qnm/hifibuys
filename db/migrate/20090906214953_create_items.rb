@@ -1,4 +1,4 @@
-class CreateItemsDrop < ActiveRecord::Migration
+class CreateItems < ActiveRecord::Migration
   def self.up
     drop_table :items
   end
