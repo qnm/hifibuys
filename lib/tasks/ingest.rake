@@ -11,8 +11,11 @@ namespace :ingest do
     require ingestor + "_ingestor.rb"
     strategy = eval ingestor.camelize + "Ingestor.new(params)"
 
+    strategy.wipe
+
     strategy.ingest.each { |item|
-      puts item.save
+      item.save
+      puts "Added!"
     }
   end
 end

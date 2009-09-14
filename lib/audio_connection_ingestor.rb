@@ -2,6 +2,7 @@ class AudioConnectionIngestor
 
   require 'hpricot'
   require 'open-uri'
+  require 'digest/md5'
 
   attr_accessor :data
   attr_accessor :current_item
@@ -11,7 +12,20 @@ class AudioConnectionIngestor
   def initialize(params)
     @data = open(params['url']) { |f| Hpricot(f) }
     @container = eval params['container']['object']
-    @container_defaults = params['container']['defaults']
+
+    @container_defaults = params['container']['defaults'].merge(
+      :shop_hash => hash)
+  end
+
+  def hash
+    Digest::MD5.hexdigest("#{self.class} #{@url}").hex
+  end
+
+  def wipe
+    @container.find_all_by_shop_hash(hash).each { |item|
+      item.delete
+      puts "Deleted!"
+    }
   end
 
   def ingest
