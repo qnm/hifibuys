@@ -2224,3 +2224,92 @@ Rendering template within layouts/application
 Rendering pages/about
 Completed in 16ms (View: 10, DB: 0) | 200 OK [http://www.example.com/about]
   [4;35;1mSQL (3.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Columns (79.4ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (15.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Columns (3.7ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Columns (6.1ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mItem Create (28.0ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `description`, `shop_suburb`, `shop_name`, `created_at`) VALUES('name 1', '1_state', '2009-09-13 22:03:53', '1', '1_country', '/about', '1_address', 'description 1', '1_suburb', '1_shopname', '2009-09-13 22:03:53')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mItem Create (13.0ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `description`, `shop_suburb`, `shop_name`, `created_at`) VALUES('name 2', '2_state', '2009-09-13 22:03:53', '2', '2_country', 'url_2', '2_address', 'description 2', '2_suburb', '2_shopname', '2009-09-13 22:03:53')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `description`, `shop_suburb`, `shop_name`, `created_at`) VALUES('name 3', '3_state', '2009-09-13 22:03:53', '3', '3_country', 'url_3', '3_address', 'description 3', '3_suburb', '3_shopname', '2009-09-13 22:03:53')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `description`, `shop_suburb`, `shop_name`, `created_at`) VALUES('name 4', '4_state', '2009-09-13 22:03:53', '4', '4_country', 'url_4', '4_address', 'description 4', '4_suburb', '4_shopname', '2009-09-13 22:03:53')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-14 08:03:53) [GET]
+Rendering template within layouts/application
+Rendering items/index
+Completed in 311ms (View: 304, DB: 52) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /items/search/ with {"commit"=>"Search", "term"=>"description 1"} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing ItemsController#search (for 127.0.0.1 at 2009-09-14 08:03:53) [GET]
+  Parameters: {"commit"=>"Search", "term"=>"description 1"}
+  [4;36;1mItem Load (18.9ms)[0m   [0;1mSELECT * FROM `items` WHERE (MATCH (name, description) AGAINST ('+description 1' IN BOOLEAN MODE)) ORDER BY created_at DESC LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering items/search
+Rendered items/_item (7.0ms)
+Rendered items/_item (3.0ms)
+Rendered items/_item (2.8ms)
+Rendered items/_item (2.8ms)
+Completed in 69ms (View: 42, DB: 19) | 200 OK [http://www.example.com/items/search/]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Columns (5.2ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mItem Create (1.6ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `description`, `shop_suburb`, `shop_name`, `created_at`) VALUES('name 1', '1_state', '2009-09-14 07:13:42', '1', '1_country', '/about', '1_address', 'description 1', '1_suburb', '1_shopname', '2009-09-14 07:13:42')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `description`, `shop_suburb`, `shop_name`, `created_at`) VALUES('name 2', '2_state', '2009-09-14 07:13:42', '2', '2_country', 'url_2', '2_address', 'description 2', '2_suburb', '2_shopname', '2009-09-14 07:13:42')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `description`, `shop_suburb`, `shop_name`, `created_at`) VALUES('name 3', '3_state', '2009-09-14 07:13:42', '3', '3_country', 'url_3', '3_address', 'description 3', '3_suburb', '3_shopname', '2009-09-14 07:13:42')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `description`, `shop_suburb`, `shop_name`, `created_at`) VALUES('name 4', '4_state', '2009-09-14 07:13:42', '4', '4_country', 'url_4', '4_address', 'description 4', '4_suburb', '4_shopname', '2009-09-14 07:13:42')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-14 17:13:42) [GET]
+Rendering template within layouts/application
+Rendering items/index
+Completed in 189ms (View: 179, DB: 11) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /items/search/ with {"commit"=>"Search", "term"=>"description 1"} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing ItemsController#search (for 127.0.0.1 at 2009-09-14 17:13:42) [GET]
+  Parameters: {"commit"=>"Search", "term"=>"description 1"}
+  [4;36;1mItem Load (1.3ms)[0m   [0;1mSELECT * FROM `items` WHERE (MATCH (name, description) AGAINST ('+description 1' IN BOOLEAN MODE)) ORDER BY created_at DESC LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering items/search
+Rendered items/_item (8.4ms)
+Rendered items/_item (3.9ms)
+Rendered items/_item (4.2ms)
+Rendered items/_item (3.2ms)
+Completed in 60ms (View: 45, DB: 1) | 200 OK [http://www.example.com/items/search/]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m

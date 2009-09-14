@@ -78,7 +78,7 @@ a:hover {
 
 .hreview .item {
   float: left;
-  width: 500px;
+  width: 40em;
 }
 
 .hreview .description {
@@ -90,6 +90,13 @@ a:hover {
   text-color: #666;
   font-weight: bold;
   float: left;
+  width: 7em;
+}
+
+.description .shop {
+  font-size: 100%;
+  text-color: #666;
+  font-weight: bold;
 }
 
 .description ul {

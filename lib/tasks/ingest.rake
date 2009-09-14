@@ -1,14 +1,11 @@
 require 'yaml'
 
-namespace :db do
-  task :migrate => 'ingest:provider name=audio_connection'
-end
-
 namespace :ingest do
   desc "Ingest a provider"
   task :provider => :environment do  |t, args|
     config = YAML::load(File.open("#{RAILS_ROOT}/config/ingestors.yml"))
     params = config[RAILS_ENV][args.name]['params']
+    shop = config[RAILS_ENV][args.name]['shop']
     ingestor = config[RAILS_ENV][args.name]['ingestor']
 
     require ingestor + "_ingestor.rb"

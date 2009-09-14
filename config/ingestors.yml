@@ -9,10 +9,23 @@ development:
     ingestor: audio_connection
     params:
       url: /home/robsharp/Dropbox/workspace/hifibuys/test/siteref/audioconnection.html
-      container: Item
+      container:
+        object: Item
+        defaults:
+          shop_name: Audio Connection
+          shop_address: 
+          shop_suburb: Leichardt
+          shop_state: NSW
+          shop_country: Australia
 production:
   audio_connection:
     ingestor: audio_connection
     params:
       container: Item
       url: http://audioconnection.com.au/trade-ins-clearance-audio-equipment
+    shop:
+      name: Audio Connection
+      address:
+      suburb: Leichardt
+      state: NSW
+      country: Australia
