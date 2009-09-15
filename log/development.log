@@ -23308,3 +23308,142 @@ Migrating to AddShopHashToItems (20090914212915)
   [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
   [4;36;1mItem Create (1.0ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `created_at`) VALUES('AKG K530 Headphones', 'NSW', '2009-09-14 21:42:57', '$159.00', 'Australia', 'http://www.audioconnection.com.au/?page=product_detail&brand_id=73&product_id=2579&product_category_id=37&product_subcategory_id=172', NULL, 201371294355579393179742722188826777059, '', 'Leichardt', 'Audio Connection', '2009-09-14 21:42:57')[0m
   [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (94.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (19.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (284.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (69.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateItems (20090906214954)
+Migrating to AddShopHashToItems (20090914212915)
+Migrating to AddCityToItems (20090915073952)
+  [4;36;1mSQL (434.5ms)[0m   [0;1mALTER TABLE `items` ADD `shop_city` varchar(255)[0m
+  [4;35;1mSQL (111.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090915073952')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (92.1ms)[0m   [0;1mSHOW FULL TABLES WHERE Table_type = 'BASE TABLE'[0m
+  [4;35;1mSQL (23.9ms)[0m   [0mSHOW CREATE TABLE `items`[0m
+  [4;36;1mSQL (33.8ms)[0m   [0;1mSHOW CREATE TABLE `schema_migrations`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (304.5ms)[0m   [0;1mDROP DATABASE IF EXISTS `hifibuys_test`[0m
+  [4;35;1mSQL (7.5ms)[0m   [0mCREATE DATABASE `hifibuys_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET foreign_key_checks = 0[0m
+  [4;35;1mSQL (41.9ms)[0m   [0mCREATE TABLE `items` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `description` text COLLATE utf8_unicode_ci,
+ `price` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `shop_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `shop_address` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `shop_suburb` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `shop_state` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `shop_country` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `created_at` datetime DEFAULT NULL,
+ `updated_at` datetime DEFAULT NULL,
+ `shop_hash` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `shop_city` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ PRIMARY KEY (`id`),
+ FULLTEXT KEY `fulltext_search` (`name`,`description`,`shop_state`,`shop_suburb`)
+) ENGINE=MyISAM AUTO_INCREMENT=1086 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;[0m
+  [4;36;1mSQL (57.4ms)[0m   [0;1mCREATE TABLE `schema_migrations` (
+ `version` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+ UNIQUE KEY `unique_schema_migrations` (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;[0m
+  [4;35;1mSQL (17.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090906214954');[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090914212915');[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090915073952');[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FULL TABLES WHERE Table_type = 'BASE TABLE'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW CREATE TABLE `items`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW CREATE TABLE `schema_migrations`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (6.2ms)[0m   [0;1mDROP DATABASE IF EXISTS `hifibuys_test`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE DATABASE `hifibuys_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET foreign_key_checks = 0[0m
+  [4;35;1mSQL (20.1ms)[0m   [0mCREATE TABLE `items` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `description` text COLLATE utf8_unicode_ci,
+ `price` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `shop_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `shop_address` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `shop_suburb` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `shop_state` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `shop_country` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `created_at` datetime DEFAULT NULL,
+ `updated_at` datetime DEFAULT NULL,
+ `shop_hash` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `shop_city` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ PRIMARY KEY (`id`),
+ FULLTEXT KEY `fulltext_search` (`name`,`description`,`shop_state`,`shop_suburb`)
+) ENGINE=MyISAM AUTO_INCREMENT=1086 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;[0m
+  [4;36;1mSQL (36.6ms)[0m   [0;1mCREATE TABLE `schema_migrations` (
+ `version` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+ UNIQUE KEY `unique_schema_migrations` (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090906214954');[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090914212915');[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090915073952');[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FULL TABLES WHERE Table_type = 'BASE TABLE'[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mSHOW CREATE TABLE `items`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW CREATE TABLE `schema_migrations`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mDROP DATABASE IF EXISTS `hifibuys_test`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE DATABASE `hifibuys_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET foreign_key_checks = 0[0m
+  [4;35;1mSQL (6.9ms)[0m   [0mCREATE TABLE `items` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `description` text COLLATE utf8_unicode_ci,
+ `price` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `shop_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `shop_address` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `shop_suburb` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `shop_state` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `shop_country` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `created_at` datetime DEFAULT NULL,
+ `updated_at` datetime DEFAULT NULL,
+ `shop_hash` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `shop_city` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+ PRIMARY KEY (`id`),
+ FULLTEXT KEY `fulltext_search` (`name`,`description`,`shop_state`,`shop_suburb`)
+) ENGINE=MyISAM AUTO_INCREMENT=1086 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mCREATE TABLE `schema_migrations` (
+ `version` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+ UNIQUE KEY `unique_schema_migrations` (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090906214954');[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090914212915');[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090915073952');[0m

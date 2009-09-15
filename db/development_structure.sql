@@ -11,9 +11,11 @@ CREATE TABLE `items` (
   `shop_country` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
+  `shop_hash` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `shop_city` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
-  FULLTEXT KEY `fulltext_search` (`name`,`description`)
-) ENGINE=MyISAM AUTO_INCREMENT=156 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  FULLTEXT KEY `fulltext_search` (`name`,`description`,`shop_state`,`shop_suburb`)
+) ENGINE=MyISAM AUTO_INCREMENT=1086 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 CREATE TABLE `schema_migrations` (
   `version` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -21,3 +23,7 @@ CREATE TABLE `schema_migrations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO schema_migrations (version) VALUES ('20090906214954');
+
+INSERT INTO schema_migrations (version) VALUES ('20090914212915');
+
+INSERT INTO schema_migrations (version) VALUES ('20090915073952');
