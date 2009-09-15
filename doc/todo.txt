@@ -1,6 +1,6 @@
 x Google Analytics
    x Outgoing Links
 x Multiple ingestions overwrite
-- cron the rake tasks
+x cron the rake tasks
 - bring in the YQL ingestors
 x add to github
