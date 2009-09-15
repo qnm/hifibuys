@@ -9,13 +9,14 @@ namespace :ingest do
     ingestor = config[RAILS_ENV][args.name]['ingestor']
 
     require ingestor + "_ingestor.rb"
-    strategy = eval ingestor.camelize + "Ingestor.new(params)"
-
-    strategy.wipe
-
-    strategy.ingest.each { |item|
-      item.save
-      puts "Added!"
+    params['url'].each { |url|
+      puts url
+      strategy = eval ingestor.camelize + "Ingestor.new(params, url)"
+      strategy.wipe
+      strategy.ingest.each { |item|
+        item.save
+        puts "Added!"
+      }
     }
   end
 end

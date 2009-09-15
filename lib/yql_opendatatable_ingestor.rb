@@ -9,11 +9,9 @@ class YqlOpendatatableIngestor
     require 'uri'
     require 'yajl/http_stream'
     require 'yajl/json_gem'
-    require 'ostruct'
 
     data.each do |element|
       puts element.inspect
-      #OpenStruct.new(element)
     end
   end
 

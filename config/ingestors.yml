@@ -18,6 +18,20 @@ development:
           shop_city: Sydney
           shop_state: NSW
           shop_country: Australia
+  tivoli:
+    ingestor: tivoli
+    params:
+      url: /home/robsharp/Dropbox/workspace/hifibuys/test/siteref/tivoli.html
+      container:
+        object: Item
+        defaults:
+          shop_name: Tivoli
+          shop_address: 155-157 Camberwell Road
+          shop_suburb: Hawthorn East
+          shop_city: Melbourne
+          shop_state: VIC
+          shop_country: Australia
+   
 production:
   audio_connection:
     ingestor: audio_connection
@@ -32,4 +46,19 @@ production:
           shop_city: Sydney
           shop_state: NSW
           shop_country: Australia
-
+  tivoli:
+    ingestor: tivoli
+    params:
+      url:
+      - http://tivolihifi.com/second-hand-equipment
+      - http://tivolihifi.com/second-hand-equipment?&sort=20a&page=2
+      container:
+        object: Item
+        defaults:
+          shop_name: Tivoli
+          shop_address: 155-157 Camberwell Road
+          shop_suburb: Hawthorn East
+          shop_city: Melbourne
+          shop_state: VIC
+          shop_country: Australia
+ 

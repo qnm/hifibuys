@@ -1,4 +1,4 @@
-class AudioConnectionIngestor
+class TivoliIngestor
 
   require 'hpricot'
   require 'open-uri'
@@ -14,9 +14,8 @@ class AudioConnectionIngestor
     @data = open(url) { |f| Hpricot(f) }
     @hash = Digest::MD5.hexdigest("#{self.class} #{url}").hex
     @container = eval params['container']['object']
-
     @container_defaults = params['container']['defaults'].merge(
-      :shop_hash => hash)
+      :shop_hash => @hash)
   end
 
   def wipe
@@ -27,19 +26,20 @@ class AudioConnectionIngestor
   end
 
   def ingest
-    @data.search("tr/td/div/table/tr/td/table/tr").collect {|@current_item| 
+    @data.search("div[2]/div[2]/table/tr").collect {|@current_item| 
       itemise
     }.reject { |item| item.nil? }
   end
 
   def itemise
     @container.new(
-      { :name         => (@current_item/"/td[2]/a[1]").first.inner_html.strip.gsub(/[",]/,""),
-        :description  => '',
-        :url          => "http://www.audioconnection.com.au" + (@current_item/"/td[2]/a[1]").first.attributes['href'].strip,
-        :price        => (@current_item/"/td[5]").first.inner_html.strip
+      { :name         => (@current_item/"/td[2]/h3/a").first.inner_html.gsub(/- Second hand/,""),
+        # :manufacturer => (@current_item/"/td[1]").first.inner_html.strip.gsub(/[",]/,""),
+        :description  => (@current_item/"/td[2]/div").first.inner_html,
+        :url          => (@current_item/"/td[2]/h3/a").first.attributes['href'],
+        :price        => "$" + (@current_item/"/td[3]").inner_html.scan(/\$([0-9\.,.]{1,})/).first.first
       }.merge(@container_defaults)
-    ) unless (@current_item/"/td[2]/a[1]").first.nil?
+    ) unless (@current_item/"/td[2]").first.nil?
   end
 
 end
