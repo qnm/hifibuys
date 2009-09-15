@@ -29,7 +29,7 @@ class ApplicationManifest < Moonshine::Manifest::Rails
     # package 'some_native_package', :ensure => :installed
     
     ingest_provider = "/usr/bin/rake -f #{configuration[:deploy_to]}/current/Rakefile ingest:provider name=audio_connection RAILS_ENV=#{ENV['RAILS_ENV']}"
-    cron 'ingest:provider', :command => ingest_provider, :user => configuration[:user], :day => "0"
+    cron 'ingest:provider', :command => ingest_provider, :user => configuration[:user], :hour => 10
     
     # %w( root rails ).each do |user|
     #   mailalias user, :recipient => 'you@domain.com'
