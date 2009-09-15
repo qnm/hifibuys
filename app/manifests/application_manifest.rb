@@ -28,8 +28,8 @@ class ApplicationManifest < Moonshine::Manifest::Rails
     # :apt_gems in <tt>moonshine.yml</tt> you do not need to include it here.
     # package 'some_native_package', :ensure => :installed
     
-    #ingest_provider = "/usr/bin/rake -f #{configuration[:deploy_to]}/current/Rakefile ingest:provider name=audio_connection RAILS_ENV=#{ENV['RAILS_ENV']}"
-    #cron 'ingest:provider', :command => ingest_provider, :user => configuration[:user], :day => *
+    ingest_provider = "/usr/bin/rake -f #{configuration[:deploy_to]}/current/Rakefile ingest:provider name=audio_connection RAILS_ENV=#{ENV['RAILS_ENV']}"
+    cron 'ingest:provider', :command => ingest_provider, :user => configuration[:user], :day => "0"
     
     # %w( root rails ).each do |user|
     #   mailalias user, :recipient => 'you@domain.com'
