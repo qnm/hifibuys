@@ -27199,3 +27199,103 @@ Rendered items/_item (3.7ms)
 Rendered items/_item (5.5ms)
 Rendered items/_item (12.5ms)
 Completed in 138ms (View: 96, DB: 28) | 200 OK [http://localhost/items/search/?term=amplifier&commit=Search]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mItem Columns (4.7ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mItem Load (1.1ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.`shop_hash` = 246565770852287864676420106020824690130) [0m
+  [4;36;1mItem Delete all (2.6ms)[0m   [0;1mDELETE FROM `items` WHERE (`id` IN (744)) [0m
+  [4;35;1mItem Delete all (6.0ms)[0m   [0mDELETE FROM `items` WHERE (`id` IN (745)) [0m
+  [4;36;1mItem Delete all (1.8ms)[0m   [0;1mDELETE FROM `items` WHERE (`id` IN (743)) [0m
+  [4;35;1mItem Delete all (2.6ms)[0m   [0mDELETE FROM `items` WHERE (`id` IN (741)) [0m
+  [4;36;1mItem Delete all (5.7ms)[0m   [0;1mDELETE FROM `items` WHERE (`id` IN (742)) [0m
+  [4;35;1mItem Delete all (4.8ms)[0m   [0mDELETE FROM `items` WHERE (`id` IN (740)) [0m
+  [4;36;1mItem Delete all (6.1ms)[0m   [0;1mDELETE FROM `items` WHERE (`id` IN (739)) [0m
+  [4;35;1mItem Delete all (4.2ms)[0m   [0mDELETE FROM `items` WHERE (`id` IN (736)) [0m
+  [4;36;1mItem Delete all (4.3ms)[0m   [0;1mDELETE FROM `items` WHERE (`id` IN (737)) [0m
+  [4;35;1mItem Delete all (2.9ms)[0m   [0mDELETE FROM `items` WHERE (`id` IN (738)) [0m
+  [4;36;1mItem Delete all (2.8ms)[0m   [0;1mDELETE FROM `items` WHERE (`id` IN (730)) [0m
+  [4;35;1mItem Delete all (2.2ms)[0m   [0mDELETE FROM `items` WHERE (`id` IN (731)) [0m
+  [4;36;1mItem Delete all (1.7ms)[0m   [0;1mDELETE FROM `items` WHERE (`id` IN (732)) [0m
+  [4;35;1mItem Delete all (2.5ms)[0m   [0mDELETE FROM `items` WHERE (`id` IN (733)) [0m
+  [4;36;1mItem Delete all (3.1ms)[0m   [0;1mDELETE FROM `items` WHERE (`id` IN (734)) [0m
+  [4;35;1mItem Delete all (2.2ms)[0m   [0mDELETE FROM `items` WHERE (`id` IN (735)) [0m
+  [4;36;1mItem Delete all (2.3ms)[0m   [0;1mDELETE FROM `items` WHERE (`id` IN (723)) [0m
+  [4;35;1mItem Delete all (1.7ms)[0m   [0mDELETE FROM `items` WHERE (`id` IN (724)) [0m
+  [4;36;1mItem Delete all (3.2ms)[0m   [0;1mDELETE FROM `items` WHERE (`id` IN (725)) [0m
+  [4;35;1mItem Delete all (1.8ms)[0m   [0mDELETE FROM `items` WHERE (`id` IN (729)) [0m
+  [4;36;1mItem Delete all (3.8ms)[0m   [0;1mDELETE FROM `items` WHERE (`id` IN (728)) [0m
+  [4;35;1mItem Delete all (2.2ms)[0m   [0mDELETE FROM `items` WHERE (`id` IN (727)) [0m
+  [4;36;1mItem Delete all (2.0ms)[0m   [0;1mDELETE FROM `items` WHERE (`id` IN (726)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mItem Columns (4.3ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.`shop_hash` = 246565770852287864676420106020824690130) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mItem Columns (3.9ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.`shop_hash` = 246565770852287864676420106020824690130) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mItem Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.`shop_hash` = 246565770852287864676420106020824690130) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mItem Columns (3.9ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.`shop_hash` = 246565770852287864676420106020824690130) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mItem Columns (3.9ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.`shop_hash` = 246565770852287864676420106020824690130) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (1.9ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES('Strong SRT 5490 HD PVR ', 'State', '2009-09-18 12:35:23', '$1400', 'Australia', '?q=node/view/1087', NULL, 246565770852287864676420106020824690130, ' \r Here\'s a great bargin on a very capable HDTV recorder. A 250GB hard drive gives one approximately 125 hours of SD TV recording or 30 hours of HD content. The unit also sports USB and network connectivity for file transfer.', 'Suburb', 'Carlton HiFi', 'City', '2009-09-18 12:35:23')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (2.2ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES('Vincent SV', 'State', '2009-09-18 12:35:23', '$2599', 'Australia', '?q=node/view/1137', NULL, 246565770852287864676420106020824690130, 'The SV-123 is an ideal entry-level unit for customers who do not want to forego output and good sound even in the compact range. Thanks to the built-in tuner there are many individual possible applications. For example, in combination with the CD-S1.1 or CD-S2. This lets you use the SV-123 with a high-quality system.', 'Suburb', 'Carlton HiFi', 'City', '2009-09-18 12:35:23')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (2.4ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES('Arcam AVR300 AV receiver ', 'State', '2009-09-18 12:35:23', '$2800', 'Australia', '?q=node/view/1115', NULL, 246565770852287864676420106020824690130, '7 x 100w/channel, 2 x 120w/channel, Dolby Digital EX, DTS ES, DTS 24/96, Dolby Pro logic IIx 2-7 channel, video up-conversion to component or RGB, HDTV compatible component/RGB switching, second zone output with audio and video, 2-way RS232 control port, RDS tuner, backlit remote control.', 'Suburb', 'Carlton HiFi', 'City', '2009-09-18 12:35:23')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mItem Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.`shop_hash` = 246565770852287864676420106020824690130) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (1.5ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES('Strong SRT 5490 HD PVR ', 'State', '2009-09-18 12:36:13', '$1400', 'Australia', '?q=node/view/1087', NULL, 246565770852287864676420106020824690130, ' \r Here\'s a great bargin on a very capable HDTV recorder. A 250GB hard drive gives one approximately 125 hours of SD TV recording or 30 hours of HD content. The unit also sports USB and network connectivity for file transfer.', 'Suburb', 'Carlton HiFi', 'City', '2009-09-18 12:36:13')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (5.2ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES('Vincent SV', 'State', '2009-09-18 12:36:13', '$2599', 'Australia', '?q=node/view/1137', NULL, 246565770852287864676420106020824690130, 'The SV-123 is an ideal entry-level unit for customers who do not want to forego output and good sound even in the compact range. Thanks to the built-in tuner there are many individual possible applications. For example, in combination with the CD-S1.1 or CD-S2. This lets you use the SV-123 with a high-quality system.', 'Suburb', 'Carlton HiFi', 'City', '2009-09-18 12:36:13')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (2.7ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES('Arcam AVR300 AV receiver ', 'State', '2009-09-18 12:36:13', '$2800', 'Australia', '?q=node/view/1115', NULL, 246565770852287864676420106020824690130, '7 x 100w/channel, 2 x 120w/channel, Dolby Digital EX, DTS ES, DTS 24/96, Dolby Pro logic IIx 2-7 channel, video up-conversion to component or RGB, HDTV compatible component/RGB switching, second zone output with audio and video, 2-way RS232 control port, RDS tuner, backlit remote control.', 'Suburb', 'Carlton HiFi', 'City', '2009-09-18 12:36:13')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mItem Columns (3.9ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.`shop_hash` = 246565770852287864676420106020824690130) [0m
+  [4;36;1mItem Delete all (1.5ms)[0m   [0;1mDELETE FROM `items` WHERE (`id` IN (749)) [0m
+  [4;35;1mItem Delete all (1.9ms)[0m   [0mDELETE FROM `items` WHERE (`id` IN (750)) [0m
+  [4;36;1mItem Delete all (2.0ms)[0m   [0;1mDELETE FROM `items` WHERE (`id` IN (751)) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (1.1ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES('Audiolab special pricing', 'State', '2009-09-18 12:41:34', '$', 'Australia', '?q=node/view/1128', NULL, 246565770852287864676420106020824690130, ' \r While stocks last, Audiolabs 8000 series is going out at more than 25% off. Match them up with some of our rega speaker specials to make yourself a great hifi system. Some truly excellent specials, including the beastly AV pre-power at 40% off!. Click on read more for models and pricing.', 'Suburb', 'Carlton HiFi', 'City', '2009-09-18 12:41:34')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (1.0ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES('Rega speaker specials', 'State', '2009-09-18 12:41:34', '$', 'Australia', '?q=node/view/1129', NULL, 246565770852287864676420106020824690130, ' ', 'Suburb', 'Carlton HiFi', 'City', '2009-09-18 12:41:34')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (1.2ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES('AMC Preamp 1100', 'State', '2009-09-18 12:41:34', '$', 'Australia', '?q=node/view/1085', NULL, 246565770852287864676420106020824690130, 'Ex-demo AMC Preamp, an absolute bargain!', 'Suburb', 'Carlton HiFi', 'City', '2009-09-18 12:41:34')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (2.0ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES('Strong SRT 5490 HD PVR ', 'State', '2009-09-18 12:41:34', '$1400', 'Australia', '?q=node/view/1087', NULL, 246565770852287864676420106020824690130, ' \r Here\'s a great bargin on a very capable HDTV recorder. A 250GB hard drive gives one approximately 125 hours of SD TV recording or 30 hours of HD content. The unit also sports USB and network connectivity for file transfer.', 'Suburb', 'Carlton HiFi', 'City', '2009-09-18 12:41:34')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (1.4ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES('Marantz SR', 'State', '2009-09-18 12:41:34', '$', 'Australia', '?q=node/view/1112', NULL, 246565770852287864676420106020824690130, '7.1 AV receiver w/HDMI, 80W x 7 channels. HDMI 1.1, 192khz/24 bit DACs on all channels. IR Flasher in, Dolby Headphone, 3 assignable Component Video inputs, HDCD, S-Video - Component conv, B-speakers output', 'Suburb', 'Carlton HiFi', 'City', '2009-09-18 12:41:34')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (1.5ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES('Vincent SV', 'State', '2009-09-18 12:41:34', '$2599', 'Australia', '?q=node/view/1137', NULL, 246565770852287864676420106020824690130, 'The SV-123 is an ideal entry-level unit for customers who do not want to forego output and good sound even in the compact range. Thanks to the built-in tuner there are many individual possible applications. For example, in combination with the CD-S1.1 or CD-S2. This lets you use the SV-123 with a high-quality system.', 'Suburb', 'Carlton HiFi', 'City', '2009-09-18 12:41:34')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (2.6ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES('Arcam AVR300 AV receiver ', 'State', '2009-09-18 12:41:34', '$2800', 'Australia', '?q=node/view/1115', NULL, 246565770852287864676420106020824690130, '7 x 100w/channel, 2 x 120w/channel, Dolby Digital EX, DTS ES, DTS 24/96, Dolby Pro logic IIx 2-7 channel, video up-conversion to component or RGB, HDTV compatible component/RGB switching, second zone output with audio and video, 2-way RS232 control port, RDS tuner, backlit remote control.', 'Suburb', 'Carlton HiFi', 'City', '2009-09-18 12:41:34')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (1.5ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES('Denon AVCA11XVA', 'State', '2009-09-18 12:41:34', '$', 'Australia', '?q=node/view/341', NULL, 246565770852287864676420106020824690130, ' Although we still have the old model in stock it is the upgraded XVA version of this device available with 1080 P capability and webcontrol, audio streaming and internet radio. Contrary to the old image we are showing it comes with the new style remote control with part touchscreen and part hardkey.', 'Suburb', 'Carlton HiFi', 'City', '2009-09-18 12:41:34')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m

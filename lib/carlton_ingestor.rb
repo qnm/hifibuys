@@ -26,23 +26,22 @@ class CarltonIngestor
   end
 
   def ingest
-    # table/tr/td/div/table/tr/td/div
-    #                                 table/tbody/tr/td/table/tbody/tr/td/font/span
-    @data.search("/html/body/table/tbody/tr[2]/td[2]/table/tbody/tr[2]/td/table/tbody").collect {|@current_item| 
+    #             /html/body/table/tbody/tr[2]/td[2]/table/tbody/tr[2]/td/table[3]/tbody
+    @data.search("/html/body/table/tr[2]/td[2]/table/tr[2]/td/table").collect {|@current_item| 
       itemise
     }.reject { |item| item.nil? }
   end
 
   def itemise
     @container.new(
-      { :name         => (@current_item/"tbody/tr/td/div/a")[0].inner_html.split("-").first.split(",").first.split("WAS").first,
+      { :name         => (@current_item/"tr/td/div/a")[0].inner_html.split("-").first.split(",").first.split("WAS").first,
         :description  => (@current_item/"tr/td/p").map {|element| element.inner_html}.join(" ").gsub("\n"," ").gsub("\""," "),
-        :url          => (@current_item/"tbody/tr/td/div/a").first.attributes['href'],
+        :url          => (@current_item/"tr/td/div/a").first.attributes['href'],
         # we gotta grab out the minimum price from the array
-        :price        => "$" + (@current_item/"tbody/tr/td/div/a")[0].inner_html.gsub(",","").scan(/\$([0-9\.,.]{1,})/).map { |x| x.first.to_i }.min.to_s
+        :price        => "$" + (@current_item/"tr/td/div/a")[0].inner_html.gsub(",","").scan(/\$([0-9\.,.]{1,})/).map { |x| x.first.to_i }.min.to_s
 
       }.merge(@container_defaults)
-    ) unless (@current_item/"tbody/tr/td/div/a").inner_html.scan(/\$([0-9\.,.]{1,})/).min.nil?
+    ) unless (@current_item/"tr/td/div/a").inner_html.scan(/\$([0-9\.,.]{1,})/).nil?
   end
 
 end
