@@ -10,10 +10,10 @@ namespace :ingest do
 
     require ingestor + "_ingestor.rb"
     params['url'].each { |url|
-      puts url
       strategy = eval ingestor.camelize + "Ingestor.new(params, url)"
       strategy.wipe
       strategy.ingest.each { |item|
+        puts item
         item.save
         puts "Added!"
       }

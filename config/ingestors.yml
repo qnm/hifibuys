@@ -31,7 +31,33 @@ development:
           shop_city: Melbourne
           shop_state: VIC
           shop_country: Australia
-   
+  pymble:
+    ingestor: pymble
+    params:
+      url: /home/robsharp/Dropbox/workspace/hifibuys/test/siteref/pymble.html
+      container:
+        object: Item
+        defaults:
+          shop_name: Pymble HiFi
+          shop_address: 
+          shop_suburb: Suburb
+          shop_city: City
+          shop_state: State
+          shop_country: Australia  
+  carlton:
+    ingestor: carlton
+    params:
+      url: /home/robsharp/Dropbox/workspace/hifibuys/test/siteref/carlton.html
+      container:
+        object: Item
+        defaults:
+          shop_name: Carlton HiFi
+          shop_address: 
+          shop_suburb: Suburb
+          shop_city: City
+          shop_state: State
+          shop_country: Australia  
+
 production:
   audio_connection:
     ingestor: audio_connection
@@ -61,4 +87,16 @@ production:
           shop_city: Melbourne
           shop_state: VIC
           shop_country: Australia
- 
+  carlton:
+    ingestor: carlton
+    params:
+      url: http://www.carltonaudiovisual.com.au/?q=node/view/7
+      container:
+        object: Item
+        defaults:
+          shop_name: Carlton HiFi
+          shop_address: 164-172 Lygon St
+          shop_suburb: Carlton
+          shop_city: Melbourne
+          shop_state: Victoria
+          shop_country: Australia  
