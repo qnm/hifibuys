@@ -15,7 +15,7 @@ class YqlOpendatatableIngestor
 
   def initialize(params, url)
     resource = Yajl::HttpStream.get(build_url(url))
-    @data = resource['query']['results']['products']
+    @data = resource['query']['results']['products']['product']
     @hash = Digest::MD5.hexdigest("#{self.class} #{url}").hex
     @container = eval params['container']['object']
     @container_defaults = params['container']['defaults'].merge(
@@ -32,7 +32,7 @@ class YqlOpendatatableIngestor
   def ingest
     @data.collect {|@current_item| 
       itemise
-    }.reject { |item| item.nil? }
+    }
   end
 
   def itemise

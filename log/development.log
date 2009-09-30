@@ -27551,3 +27551,155 @@ Rendering rescues/layout (internal_server_error)
   [4;35;1mSQL (1.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090906214954');[0m
   [4;36;1mSQL (1.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090914212915');[0m
   [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090915073952');[0m
+  [4;36;1mSQL (37.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mItem Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mItem Load (55.0ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.`shop_hash` = 310740902120091627570859900179242383387) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mItem Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.`shop_hash` = 310740902120091627570859900179242383387) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mItem Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.`shop_hash` = 310740902120091627570859900179242383387) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mItem Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.`shop_hash` = 310740902120091627570859900179242383387) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mItem Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.`shop_hash` = 310740902120091627570859900179242383387) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mItem Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.`shop_hash` = 310740902120091627570859900179242383387) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mItem Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.`shop_hash` = 310740902120091627570859900179242383387) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mItem Columns (3.9ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.`shop_hash` = 310740902120091627570859900179242383387) [0m
+  [4;36;1mSQL (16.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (107.0ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$999', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$4500', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.9ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$4500', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.8ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$998', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.7ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$998', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$2290', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.9ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$4998', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.8ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$1998', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.8ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$2990', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$790', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.7ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$1490', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (1.2ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$2590', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.7ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$998', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$1290', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.7ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$499', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (1.0ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$6999', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.7ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$6999', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$1590', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.8ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$1400', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (1.0ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$3990', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (1.7ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$399', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.8ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$2200', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.8ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$399', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$998', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.8ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$499', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.8ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$1999', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (1.0ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$990', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.8ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$1099', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (1.1ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$499', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.8ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$998', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.9ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', 'SOLD', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (1.1ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', 'SOLD', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.9ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$4400', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:39', '$1998', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:39')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.8ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:40', '$1490', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:40')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.9ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:40', '$ 990', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:40')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (1.4ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:40', '$ 299', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:40')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (0.8ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:40', '$1490', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:40')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Create (0.8ms)[0m   [0mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:40', 'SOLD', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:40')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mItem Create (1.0ms)[0m   [0;1mINSERT INTO `items` (`name`, `shop_state`, `updated_at`, `price`, `shop_country`, `url`, `shop_address`, `shop_hash`, `description`, `shop_suburb`, `shop_name`, `shop_city`, `created_at`) VALUES(NULL, 'QLD', '2009-09-30 11:30:40', '$99', 'Australia', NULL, NULL, 310740902120091627570859900179242383387, NULL, 'Paddington', 'Caxton Audio', 'Brisbane', '2009-09-30 11:30:40')[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCOMMIT[0m
