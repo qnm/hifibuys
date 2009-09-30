@@ -29,9 +29,24 @@ class ApplicationManifest < Moonshine::Manifest::Rails
     # package 'some_native_package', :ensure => :installed
     
     cron 'ingest:provider',
-        :command => "cd #{rails_root} && RAILS_ENV=production rake ingest:provider",
+        :command => "cd #{rails_root} && RAILS_ENV=production rake ingest:provider name=audio_connection",
         :user => configuration[:user],
         :minute => 15
+
+    cron 'ingest:provider',
+        :command => "cd #{rails_root} && RAILS_ENV=production rake ingest:provider name=tivoli",
+        :user => configuration[:user],
+        :minute => 16
+
+    cron 'ingest:provider',
+        :command => "cd #{rails_root} && RAILS_ENV=production rake ingest:provider name=carlton",
+        :user => configuration[:user],
+        :minute => 18
+
+    cron 'ingest:provider',
+        :command => "cd #{rails_root} && RAILS_ENV=production rake ingest:provider name=caxton",
+        :user => configuration[:user],
+        :minute => 19
 
     # %w( root rails ).each do |user|
     #   mailalias user, :recipient => 'you@domain.com'
