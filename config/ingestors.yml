@@ -108,3 +108,18 @@ production:
           shop_city: Melbourne
           shop_state: Victoria
           shop_country: Australia  
+  caxton:
+    ingestor: yql_opendatatable
+    params:
+      url: http://www.hifibuys.com.au/opendatatables/caxton-audio-yql.xml
+      container:
+        object: Item
+        defaults:
+          shop_name: Caxton Audio
+          shop_address: 18 Latrobe Tce
+          shop_suburb: Paddington
+          shop_city: Brisbane
+          shop_state: QLD
+          shop_country: Australia
+
+
