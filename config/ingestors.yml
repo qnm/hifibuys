@@ -1,10 +1,4 @@
 development:
-  caxton:
-    url: http://www.hifibuys.com.au/opendatatables/caxton-audio-yql.xml
-    ingestor: yql_opendatatable
-  hifijunction:
-    url: http://www.hifibuys.com.au/opendatatables/hifijunction-yql.xml
-    ingestor: yql_opendatatable
   audio_connection:
     ingestor: audio_connection
     params:
@@ -57,6 +51,20 @@ development:
           shop_city: City
           shop_state: State
           shop_country: Australia  
+
+  hifijunction:
+    ingestor: yql_opendatatable
+    params:
+      url: http://www.hifibuys.com.au/opendatatables/hifijunction-yql.xml
+      container:
+        object: Item
+        defaults:
+          shop_name: Audio Connection
+          shop_address: 
+          shop_suburb: Leichhardt
+          shop_city: Sydney
+          shop_state: NSW
+          shop_country: Australia
 
 production:
   audio_connection:

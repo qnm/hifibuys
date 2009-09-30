@@ -1,6 +1,7 @@
 --- 
-- :name: hpricot
 - :name: mislav-will_paginate
+  :source: http://gems.github.com
+- :name: brianmario-yajl-ruby
   :source: http://gems.github.com
 - :name: rubaidh-google_analytics
   :source: http://gems.github.com
