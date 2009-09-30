@@ -15,7 +15,7 @@ CREATE TABLE `items` (
   `shop_city` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   FULLTEXT KEY `fulltext_search` (`name`,`description`,`shop_state`,`shop_suburb`)
-) ENGINE=MyISAM AUTO_INCREMENT=1086 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=784 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 CREATE TABLE `schema_migrations` (
   `version` varchar(255) COLLATE utf8_unicode_ci NOT NULL,

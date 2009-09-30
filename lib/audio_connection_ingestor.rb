@@ -14,7 +14,6 @@ class AudioConnectionIngestor
     @data = open(url) { |f| Hpricot(f) }
     @hash = Digest::MD5.hexdigest("#{self.class} #{url}").hex
     @container = eval params['container']['object']
-
     @container_defaults = params['container']['defaults'].merge(
       :shop_hash => hash)
   end

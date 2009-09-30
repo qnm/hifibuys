@@ -1,27 +1,57 @@
 class YqlOpendatatableIngestor
-  attr_accessor :yql
 
-  def initialize(data_table_url)
-    @yql = "use \"#{data_table_url}\"  as shop; select * from shop;"
+  require 'uri'
+  require 'yajl/http_stream'
+  require 'yajl/json_gem'
+  require 'digest/md5'
+
+  attr_accessor :yql
+  attr_accessor :data
+  attr_accessor :hash
+  attr_accessor :current_item
+  attr_accessor :container
+  attr_accessor :container_defaults
+
+
+  def initialize(params, url)
+    resource = Yajl::HttpStream.get(build_url(url))
+    @data = resource['query']['results']['products']
+    @hash = Digest::MD5.hexdigest("#{self.class} #{url}").hex
+    @container = eval params['container']['object']
+    @container_defaults = params['container']['defaults'].merge(
+      :shop_hash => hash)
+  end
+
+  def wipe
+    @container.find_all_by_shop_hash(@hash).each { |item|
+      item.delete
+      puts "Deleted!"
+    }
   end
 
   def ingest
-    require 'uri'
-    require 'yajl/http_stream'
-    require 'yajl/json_gem'
-
-    data.each do |element|
-      puts element.inspect
-    end
+    @data.collect {|@current_item| 
+      itemise
+    }.reject { |item| item.nil? }
   end
 
-  def build_url
+  def itemise
+    @container.new(
+      { :name         => @current_item['name'],
+        :description  => @current_item['description'],
+        :url          => @current_item['url'],
+        :price        => @current_item['price']
+      }.merge(@container_defaults)
+    )
+  end
+
+  private
+
+  def build_url(url)
+    yql = "use \"#{url}\"  as shop; select * from shop;"
+
     base = "http://query.yahooapis.com/v1/public/yql?format=json&q="
-    URI.parse(base + URI.escape(@yql))
+    URI.parse(base + URI.escape(yql))
   end
 
-  def data
-    resource = Yajl::HttpStream.get(build_url)
-    resource['query']['results']['products']
-  end
 end

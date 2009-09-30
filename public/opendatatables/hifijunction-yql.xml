@@ -19,10 +19,11 @@
 	data = "<products>";
 	for (var i = 0; i < models.length(); i++) {
 		data += "<product>";
-		data += "<model><!\[CDATA\[" + models[i].toString() + "\]\]></model>";
+		data += "<name><!\[CDATA\[" + models[i].toString() + "\]\]></name>";
+		data += "<description />";
+		data += "<url>http://example.com/</url>";
 		data += "<price><!\[CDATA\[" + models[i].toString().match(/\$[0-9.]+/) + "\]\]></price>";
 		//data += "<image><url><!\[CDATA\[" + images[i].@src.toString() + "\]\]></url></image>";
-		y.log(images[i]);
 		data += "</product>";
 	}
 	data += "</products>";
