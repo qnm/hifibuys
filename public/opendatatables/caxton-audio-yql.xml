@@ -24,7 +24,7 @@
 		data += "<product>" + products[i].toString() + "</product>";
 		data += "<name>" + manufacturers[i].toString() + " "  + products[i].toString() + "</name>"
 		data += "<description />";
-		data += "<url>http://example.com/</url>";
+		data += "<url>http://www.caxtonaudio.com.au/</url>";
 		data += "<price>" + prices[i].toString() + "</price>";
 		data += "</product>";
 	}
