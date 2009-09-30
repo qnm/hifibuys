@@ -21,7 +21,7 @@ Rails::Initializer.run do |config|
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem "hpricot"
   config.gem 'mislav-will_paginate', :lib => 'will_paginate', :source => 'http://gems.github.com'
-  config.gem 'brianmario-yajl-ruby', :lib => 'yajl-ruby', :source => 'http://gems.github.com'
+  config.gem 'brianmario-yajl-ruby', :lib => 'yajl', :source => 'http://gems.github.com'
   config.gem 'rubaidh-google_analytics', :lib => 'rubaidh/google_analytics', :source => 'http://gems.github.com'
   config.gem 'builder'
   config.gem 'mysql'
