@@ -1,4 +1,9 @@
 <% form_tag search_items_path, :method => :get do %>
   <p><%= text_field_tag :term %></p>
   <p><%= submit_tag 'Search' %></p>
+  <br />
+  Search for 
+  <%= link_to "CD Players", search_items_path(:term => "cd player") %>, 
+  <%= link_to "Amplifiers", search_items_path(:term => "amplifier") %>, 
+  <%= link_to "Speakers", search_items_path(:term => "speaker") %>
 <% end %>
