@@ -1,0 +1,8 @@
+Description:
+    Generate a migration for the synchroniser data table
+
+Example:
+    ./script/generate synchroniser
+
+    This will create:
+        db/migrations/xxx_create_sync_items.rb

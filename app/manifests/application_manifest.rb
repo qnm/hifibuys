@@ -28,23 +28,23 @@ class ApplicationManifest < Moonshine::Manifest::Rails
     # :apt_gems in <tt>moonshine.yml</tt> you do not need to include it here.
     # package 'some_native_package', :ensure => :installed
     
-    cron 'ingest:provider:audio_connection',
-        :command => "cd #{rails_root} && RAILS_ENV=production rake ingest:provider name=audio_connection",
+    cron 'synchroniser:provider:audio_connection',
+        :command => "cd #{rails_root} && RAILS_ENV=production rake synchroniser:provider name=audio_connection",
         :user => configuration[:user],
         :minute => 15
 
-    cron 'ingest:provider:tivoli',
-        :command => "cd #{rails_root} && RAILS_ENV=production rake ingest:provider name=tivoli",
+    cron 'synchroniser:provider:tivoli',
+        :command => "cd #{rails_root} && RAILS_ENV=production rake synchroniser:provider name=tivoli",
         :user => configuration[:user],
         :minute => 16
 
-    cron 'ingest:provider:carlton',
-        :command => "cd #{rails_root} && RAILS_ENV=production rake ingest:provider name=carlton",
+    cron 'synchroniser:provider:carlton',
+        :command => "cd #{rails_root} && RAILS_ENV=production rake synchroniser:provider name=carlton",
         :user => configuration[:user],
         :minute => 18
 
-    cron 'ingest:provider:caxton',
-        :command => "cd #{rails_root} && RAILS_ENV=production rake ingest:provider name=caxton",
+    cron 'synchroniser:provider:caxton',
+        :command => "cd #{rails_root} && RAILS_ENV=production rake synchroniser:provider name=caxton",
         :user => configuration[:user],
         :minute => 19
 

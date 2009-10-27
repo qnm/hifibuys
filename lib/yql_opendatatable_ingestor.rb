@@ -1,4 +1,5 @@
 class YqlOpendatatableIngestor
+  include Synchroniser::Ingestor
 
   require 'uri'
   require 'yajl/http_stream'
@@ -13,20 +14,14 @@ class YqlOpendatatableIngestor
   attr_accessor :container_defaults
 
 
-  def initialize(params, url)
+  def initialize(params, url, name)
     resource = Yajl::HttpStream.get(build_url(url))
     @data = resource['query']['results']['products']['product']
     @hash = Digest::MD5.hexdigest("#{self.class} #{url}").hex
     @container = eval params['container']['object']
-    @container_defaults = params['container']['defaults'].merge(
+    @container.set = name
+    @container.defaults = params['container']['defaults'].merge(
       :shop_hash => hash)
-  end
-
-  def wipe
-    @container.find_all_by_shop_hash(@hash).each { |item|
-      item.delete
-      puts "Deleted!"
-    }
   end
 
   def ingest
