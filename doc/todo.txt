@@ -7,3 +7,6 @@ x add to github
 - add in microformat outputs
 - add in microformat ingestor
 - add in rss ingestor
+x fix up carlton ingestor for null prices
+- migrate to sphinx
+- rss output with pubsubhubbub
