@@ -5,3 +5,17 @@
 #   
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
+
+# wipe the existing data
+
+puts "Deleting existing data"
+
+Item.delete_all
+SyncItem.delete_all
+
+feeds = ["audio_connection", "tivoli", "carlton"]
+
+feeds.each do |name|
+  synchroniser = Synchroniser::Config::Params.new("/config/ingestors.yml", name).get_sync
+  synchroniser.sync
+end
