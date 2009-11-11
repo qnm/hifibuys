@@ -18,7 +18,7 @@ class AudioConnectionIngestor
         self.name         = (item/"/td[2]/a[1]").first.inner_html.strip.gsub(/[",]/,"")
         self.description  = ''
         self.url          = "http://www.audioconnection.com.au" + (item/"/td[2]/a[1]").first.attributes['href'].strip
-        self.price        = (item/"/td[5]").first.inner_html.strip
+        self.price        = "$" + (item/"/td[5]").first.inner_html.strip.gsub(",","").scan(/\$([0-9\.,.]{1,})/).map { |x| x.first.to_i }.min.to_s + ".00"
         self
       }
     end
