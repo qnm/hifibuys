@@ -1,18 +1,26 @@
 class TivoliIngestor
-  include Synchroniser::Ingestor
+  include Synchroniser::Ingestor::Uri
 
-  def ingest
-    @data.search("div[2]/div[2]/table/tr").collect {|@current_item| itemise }.reject { |item| item.nil? }
+  require 'hpricot'
+
+  def ingest(container)
+    Hpricot(@data).search("div[2]/div[2]/table/tr").collect {|item|
+      itemise(item, container.clone) 
+    }.reject { |item| 
+      item.nil? 
+    }
   end
 
-  def itemise
-    @container.new(
-      { :name         => (@current_item/"/td[2]/h3/a").first.inner_html.gsub(/- Second hand/,""),
-        :description  => (@current_item/"/td[2]/div").first.inner_html,
-        :url          => (@current_item/"/td[2]/h3/a").first.attributes['href'],
-        :price        => "$" + (@current_item/"/td[3]").inner_html.scan(/\$([0-9\.,.]{1,})/).first.first
-      }.merge(@container.defaults)
-    ) unless (@current_item/"/td[2]").first.nil?
+  def itemise(item, container)
+    if (item/"/td[2]").first.nil? == false
+      container.instance_eval{
+        self.name =  ((item/"/td[2]/h3/a").first.inner_html.gsub(/- Second hand/,""))
+        self.description = ((item/"/td[2]/div").first.inner_html)
+        self.url = ((item/"/td[2]/h3/a").first.attributes['href'])
+        self.price = "$" + ((item/"/td[3]").inner_html.scan(/\$([0-9\.,.]{1,})/).first.first)
+        self
+      }
+    end
   end
 
 end

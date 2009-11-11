@@ -6,6 +6,7 @@ development:
       container:
         object: Item
         defaults:
+          group: audio_connection
           shop_name: Audio Connection
           shop_address: 
           shop_suburb: Leichhardt
@@ -19,6 +20,7 @@ development:
       container:
         object: Item
         defaults:
+          group: tivoli
           shop_name: Tivoli
           shop_address: 155-157 Camberwell Road
           shop_suburb: Hawthorn East
@@ -32,6 +34,7 @@ development:
       container:
         object: Item
         defaults:
+          group: pymble
           shop_name: Pymble HiFi
           shop_address: 
           shop_suburb: Suburb
@@ -45,6 +48,7 @@ development:
       container:
         object: Item
         defaults:
+          group: carlton
           shop_name: Carlton HiFi
           shop_address: 
           shop_suburb: Suburb
@@ -59,6 +63,7 @@ development:
       container:
         object: Item
         defaults:
+          group: caxton
           shop_name: Caxton Audio
           shop_address: 
           shop_suburb: Paddington
@@ -74,6 +79,7 @@ production:
       container:
         object: Item
         defaults:
+          group: audio_connection
           shop_name: Audio Connection
           shop_address: 
           shop_suburb: Leichhardt
@@ -89,6 +95,7 @@ production:
       container:
         object: Item
         defaults:
+          group: tivoli
           shop_name: Tivoli
           shop_address: 155-157 Camberwell Road
           shop_suburb: Hawthorn East
@@ -102,6 +109,7 @@ production:
       container:
         object: Item
         defaults:
+          group: carlton
           shop_name: Carlton HiFi
           shop_address: 164-172 Lygon St
           shop_suburb: Carlton
@@ -113,6 +121,7 @@ production:
     params:
       url: http://www.hifibuys.com.au/opendatatables/caxton-audio-yql.xml
       container:
+        group: caxton
         object: Item
         defaults:
           shop_name: Caxton Audio

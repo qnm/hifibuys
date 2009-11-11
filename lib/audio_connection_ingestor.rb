@@ -1,18 +1,27 @@
 class AudioConnectionIngestor
-  include Synchroniser::Ingestor
+  include Synchroniser::Ingestor::Uri
 
-  def ingest
-    @data.search("tr/td/div/table/tr/td/table/tr").collect {|@current_item| itemise }.reject { |item| item.nil? }
+  require 'hpricot'
+
+  def ingest(container)
+    Hpricot(@data).search("tr/td/div/table/tr/td/table/tr").collect {|item|
+      itemise(item, container.clone) 
+    }.reject { |item| 
+      item.nil? 
+    }
+
   end
 
-  def itemise
-    @container.new(
-      { :name         => (@current_item/"/td[2]/a[1]").first.inner_html.strip.gsub(/[",]/,""),
-        :description  => '',
-        :url          => "http://www.audioconnection.com.au" + (@current_item/"/td[2]/a[1]").first.attributes['href'].strip,
-        :price        => (@current_item/"/td[5]").first.inner_html.strip
-      }.merge(@container.defaults)
-    ) unless (@current_item/"/td[2]/a[1]").first.nil?
+  def itemise(item, container)
+    if (item/"/td[2]/a[1]").first.nil? == false
+      container.instance_eval{
+        self.name         = (item/"/td[2]/a[1]").first.inner_html.strip.gsub(/[",]/,"")
+        self.description  = ''
+        self.url          = "http://www.audioconnection.com.au" + (item/"/td[2]/a[1]").first.attributes['href'].strip
+        self.price        = (item/"/td[5]").first.inner_html.strip
+        self
+      }
+    end
   end
 
 end
