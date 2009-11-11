@@ -18,9 +18,18 @@ class CarltonIngestor
         self.description  = (item/"tr/td/p").map {|element| element.inner_html}.join(" ").gsub("\n"," ").gsub("\""," ")
         self.url          = "http://www.carltonaudiovisual.com.au/" + (item/"tr/td/div/a").first.attributes['href']
         # we gotta grab out the minimum price from the array
-        self.price        = "$" + (item/"tr/td/div").to_s.gsub(",","").scan(/\$([0-9\.,.]{1,})/).map { |x| x.first.to_i }.min.to_s
-      self
+        self.price        = CarltonIngestor.monetize(item)
+        self
       }
     end
+  end
+
+  def self.monetize(item)
+      price = (item/"tr/td/div").to_s.gsub(",","").scan(/\$([0-9\.,.]{1,})/).map { |x| x.first.to_i }.min.to_s
+      if (price.empty?) 
+        "$Call"
+      else
+        "$#{price}"
+      end
   end
 end
