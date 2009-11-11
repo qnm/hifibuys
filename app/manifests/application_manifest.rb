@@ -43,10 +43,11 @@ class ApplicationManifest < Moonshine::Manifest::Rails
         :user => configuration[:user],
         :minute => 18
 
-    cron 'synchroniser:provider:caxton',
-        :command => "cd #{rails_root} && RAILS_ENV=production rake synchroniser:provider name=caxton",
-        :user => configuration[:user],
-        :minute => 19
+# removing caxton until it's tested
+#    cron 'synchroniser:provider:caxton',
+#        :command => "cd #{rails_root} && RAILS_ENV=production rake synchroniser:provider name=caxton",
+#        :user => configuration[:user],
+#        :minute => 19
 
     # %w( root rails ).each do |user|
     #   mailalias user, :recipient => 'you@domain.com'
