@@ -10,3 +10,4 @@ x add to github
 x fix up carlton ingestor for null prices
 - migrate to sphinx
 - rss output with pubsubhubbub
+- move puts to logs
