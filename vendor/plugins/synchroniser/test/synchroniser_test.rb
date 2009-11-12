@@ -1,8 +1,2 @@
-require 'test_helper'
-
-class SynchroniserTest < ActiveSupport::TestCase
-  # Replace this with your real tests.
-  test "the truth" do
-    assert true
-  end
-end
+require 'test_helper.rb'
+require RAILS_ROOT + '/vendor/plugins/synchroniser/test/unit/test_ingestion.rb'

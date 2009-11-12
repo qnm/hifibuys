@@ -4,14 +4,11 @@ namespace :synchroniser do
 
   desc "Ingest a provider"
   task :provider => :environment do  |t, args|
-  config = YAML::load(File.open("#{RAILS_ROOT}/config/ingestors.yml"))
-  params = config[RAILS_ENV][args.name]['params']
-  ingestor = config[RAILS_ENV][args.name]['ingestor']
+    if args.name.nil?
+      raise ArgumentError, "name argument must be supplied to the rake task"
+    end
 
-  require ingestor + "_ingestor.rb"
-  params['url'].each { |url|
-    strategy = eval ingestor.camelize + "Ingestor.new(params, url, args.name)"
-    strategy.sync
-  }
+    synchroniser = Synchroniser::Config::Params.new("/config/ingestors.yml", args.name).get_sync
+    synchroniser.sync
   end
 end
