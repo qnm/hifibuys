@@ -1,4 +1,5 @@
 module Synchroniser::Model
+  require File.join(File.dirname(__FILE__), '..', 'sync_item.rb')
 
   def find_all_flags
     SyncItem.find_all_by_group(self.group)
@@ -11,11 +12,11 @@ module Synchroniser::Model
       begin
         eval "#{sync_item.class_name}.find(#{sync_item.id}).delete"
       rescue Exception
-        puts "Unable to remove #{sync_item.class_name}.find(#{sync_item.id})"
+        SyncItem.logger.warn("Unable to remove #{sync_item.class_name}.find(#{sync_item.id})")
       end
       sync_item.delete
     }
-    puts "Expired Items Deleted"
+    SyncItem.logger.info("Expired Items Deleted")
   end
 
   def before_validation
@@ -23,11 +24,12 @@ module Synchroniser::Model
       # we've already sync'd this object
       sync_item.status = 2 
       sync_item.save
-      puts "#{sync_item.class_name} with id #{sync_item.class_id} doesn't require an update"
+      SyncItem.logger.info("#{sync_item.class_name} with id #{sync_item.class_id} doesn't require an update")
       #stop further saving
       #TODO on innodb tables this will cause the transaction to rollback
       return false
     end
+    return true
   end
 
   def after_save
@@ -39,7 +41,7 @@ module Synchroniser::Model
         :class_id    => self.id,
         :status      => "1" })
     sync_item.save
-    puts "Created new #{sync_item.class_name}"
+    SyncItem.logger.info("Created new #{sync_item.class_name}")
   end
 
 end

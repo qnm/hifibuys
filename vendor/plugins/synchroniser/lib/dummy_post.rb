@@ -16,8 +16,8 @@ class DummyPost
     puts @url
   end
 
-  def get_sync_value
-    @url
+  def item
+    url
   end
 
 end

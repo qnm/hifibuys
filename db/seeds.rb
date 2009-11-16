@@ -19,3 +19,6 @@ feeds.each do |name|
   synchroniser = Synchroniser::Config::Params.new("/config/ingestors.yml", name).get_sync
   synchroniser.sync
 end
+
+puts "DB Synchronised"
+

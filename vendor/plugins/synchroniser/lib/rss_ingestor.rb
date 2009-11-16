@@ -13,8 +13,8 @@ class RssIngestor
 
   def itemise(item, container)
     container.instance_eval{
-      @url = ((item/"guid").inner_html)
-      @title =  ((item/"title").inner_html)
+      self.url = ((item/"guid").inner_html)
+      self.title =  ((item/"title").inner_html)
       self
     }
   end

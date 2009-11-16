@@ -8,7 +8,7 @@ module Synchroniser::Ingestor
       flag.save
     }
 
-    puts "Reset status for the set '#{@container.group}'"
+    SyncItem.logger.info("Reset status for the set '#{@container.group}'")
 
     ingest.each {|item|
       item.save
