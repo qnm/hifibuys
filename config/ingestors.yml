@@ -16,7 +16,9 @@ development:
   tivoli:
     ingestor: tivoli
     params:
-      url: /home/robsharp/Dropbox/workspace/hifibuys/test/siteref/tivoli.html
+      url: 
+      - /home/robsharp/Dropbox/workspace/hifibuys/test/siteref/tivoli.html
+      - /home/robsharp/Dropbox/workspace/hifibuys/test/siteref/tivoli2.html
       container:
         object: Item
         defaults:
