@@ -111,24 +111,8 @@ production:
         defaults:
           group: carlton
           shop_name: Carlton HiFi
-          shop_address: 164-172 Lygon St
-          shop_suburb: Carlton
-          shop_city: Melbourne
-          shop_state: Victoria
+          shop_address: 
+          shop_suburb: Suburb
+          shop_city: City
+          shop_state: State
           shop_country: Australia  
-  caxton:
-    ingestor: yql_opendatatable
-    params:
-      url: http://www.hifibuys.com.au/opendatatables/caxton-audio-yql.xml
-      container:
-        group: caxton
-        object: Item
-        defaults:
-          shop_name: Caxton Audio
-          shop_address: 18 Latrobe Tce
-          shop_suburb: Paddington
-          shop_city: Brisbane
-          shop_state: QLD
-          shop_country: Australia
-
-
