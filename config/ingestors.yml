@@ -77,7 +77,7 @@ production:
   audio_connection:
     ingestor: audio_connection
     params:
-      url: http://audioconnection.com.au/trade-ins-clearance-audio-equipment
+      url: http://audioconnection.com.au/trade-ins-clearance-audio-equipment.asp
       container:
         object: Item
         defaults:
