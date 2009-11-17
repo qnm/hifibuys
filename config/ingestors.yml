@@ -90,8 +90,8 @@ production:
     ingestor: tivoli
     params:
       url:
-      - http://tivolihifi.com/second-hand-equipment
-      - http://tivolihifi.com/second-hand-equipment?&sort=20a&page=2
+      - http://tivolihifi.com/store/second-hand-equipment
+      - http://tivolihifi.com/store/second-hand-equipment?q=second-hand-equipment&sort=20a&page=2
       container:
         object: Item
         defaults:
