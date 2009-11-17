@@ -7,9 +7,16 @@ describe ItemsController do
   end
 
   describe "GET index" do
+    it "shows the homepage" do
+      get :index
+      response.should render_template('index')
+    end
+  end
+
+  describe "GET search" do
     it "assigns all items as @items" do
       Item.stub!(:find).with(:all).and_return([mock_item])
-      get :index
+      get :search, :term => "CD Player"
       assigns[:items].should == [mock_item]
     end
   end
