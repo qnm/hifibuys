@@ -2,12 +2,12 @@ module Synchroniser::Model
   require File.join(File.dirname(__FILE__), '..', 'sync_item.rb')
 
   def find_all_flags
-    SyncItem.find_all_by_group(self.group)
+    SyncItem.find_all_by_group(group)
   end
 
   def delete_expired_items
     params = {:status => 0,
-              :group    => self.group}
+              :group    => group}
     SyncItem.find(:all, :conditions => params).each {|sync_item|
       begin
         eval "#{sync_item.class_name}.find(#{sync_item.id}).delete"
@@ -20,7 +20,7 @@ module Synchroniser::Model
   end
 
   def before_validation
-    if (sync_item = SyncItem.find_by_group_and_item(self.group, self.item)).nil? === false
+    if (sync_item = SyncItem.find_by_group_and_item(group, self.item)).nil? === false
       # we've already sync'd this object
       sync_item.status = 2 
       sync_item.save
@@ -35,13 +35,21 @@ module Synchroniser::Model
   def after_save
     # we must have a new object
     sync_item = SyncItem.new({ 
-        :group       => self.group,
+        :group       => group,
         :item        => self.item,
         :class_name  => self.class.to_s,
         :class_id    => self.id,
         :status      => "1" })
     sync_item.save
     SyncItem.logger.info("Created new #{sync_item.class_name}")
+  end
+
+  def group=(value)
+    @@group = value
+  end
+
+  def group
+    @@group
   end
 
 end

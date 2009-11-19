@@ -4,7 +4,7 @@ test:
     params:
       url: /home/robsharp/Dropbox/workspace/synchroniser_tests/vendor/plugins/synchroniser/test/docs/rss.xml
       container:
-        object: DummyPost
+        object: Post
         defaults:
           group: rss_test_feed
           test_default: random_default_name

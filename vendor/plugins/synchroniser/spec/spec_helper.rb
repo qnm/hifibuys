@@ -13,5 +13,5 @@ ActiveRecord::Base.establish_connection(databases[ENV["DB"] || "sqlite3"])
 load(File.join(plugin_spec_dir, "db", "schema.rb"))
 
 require File.join(File.dirname(__FILE__), '..', 'lib', 'synchroniser.rb')
-require File.join(File.dirname(__FILE__), '..', 'lib', 'dummy_post.rb')
+require File.join(File.dirname(__FILE__), '..', 'lib', 'post.rb')
 require File.join(File.dirname(__FILE__), '..', 'lib', 'dummy_ingestor.rb')

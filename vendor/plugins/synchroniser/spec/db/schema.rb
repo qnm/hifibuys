@@ -8,4 +8,12 @@ ActiveRecord::Schema.define(:version => 0) do
 
     t.timestamps
   end
+
+  create_table :posts, :force => true  do |t|
+    t.string :title
+    t.string :url
+
+    t.timestamps
+  end
+
 end

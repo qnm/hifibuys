@@ -36,15 +36,7 @@ module Synchroniser::Config
     end
 
     def build_container(container)
-      container_obj = eval "#{container['object']}.new({})"
-      container['defaults'].each { |key, value|
-        begin
-          eval "container_obj.#{key}='#{value}'"
-        rescue Exception
-          raise "Please ensure item #{container['object']} has an attribute accessor for 'group'"
-        end
-      }
-      container_obj
+      eval "#{container['object']}.new(container['defaults'])"
     end
 
   end
