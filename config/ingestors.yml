@@ -51,12 +51,12 @@ development:
         object: Item
         defaults:
           group: carlton
-          shop_name: Carlton HiFi
-          shop_address: 
-          shop_suburb: Suburb
-          shop_city: City
-          shop_state: State
-          shop_country: Australia  
+          shop_name: Carlton Audio Visual
+          shop_address:  164-172 Lygon Street
+          shop_suburb: Carlton
+          shop_city: Melbourne
+          shop_state: Victoria
+          shop_country: Australia
 
   caxton:
     ingestor: yql_opendatatable
@@ -112,9 +112,9 @@ production:
         object: Item
         defaults:
           group: carlton
-          shop_name: Carlton HiFi
-          shop_address: 
-          shop_suburb: Suburb
-          shop_city: City
-          shop_state: State
-          shop_country: Australia  
+          shop_name: Carlton Audio Visual
+          shop_address:  164-172 Lygon Street
+          shop_suburb: Carlton
+          shop_city: Melbourne
+          shop_state: Victoria
+          shop_country: Australia
