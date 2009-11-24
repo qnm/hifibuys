@@ -23,6 +23,11 @@ Rails::Initializer.run do |config|
   config.gem 'mislav-will_paginate', :lib => 'will_paginate', :source => 'http://gems.github.com'
   config.gem 'brianmario-yajl-ruby', :lib => 'yajl', :source => 'http://gems.github.com'
   config.gem 'rubaidh-google_analytics', :lib => 'rubaidh/google_analytics', :source => 'http://gems.github.com'
+  config.gem 'oauth'
+  config.gem 'hashie'
+  config.gem 'mash', :version => '0.0.3'
+  config.gem 'httparty', :version => '0.4.3'
+  config.gem 'jnunemaker-twitter', :lib => 'twitter', :source => 'http://gems.github.com'
   config.gem 'builder'
   config.gem 'mysql'
 

@@ -11,7 +11,7 @@ Feature: Search items
       |name 3|description 3|3|url_3|3_name|3_address|3_suburb|3_city|3_state|3_country|
       |name 4|description 4|4|url_4|4_name|4_address|4_suburb|4_city|4_state|4_country|
     Given I am on the homepage
-    When I fill in "term" with "description 1"
+    When I fill in "term" with "name 1"
     And I press "Search"
     Then I should see "name 1"
     And I should see "description 1"
