@@ -1,7 +1,7 @@
 class Item < ActiveRecord::Base
   include Synchroniser::Model
 
-  #require 'twitter'
+  require 'twitter'
 
   attr_accessor :group
 
@@ -10,10 +10,11 @@ class Item < ActiveRecord::Base
   end
 
   def after_save
-    #config = YAML::load(File.open(RAILS_ROOT + "/config/twitter.yml"))
-    #httpauth = Twitter::HTTPAuth.new(config["user"], config["password"])
-    #client = Twitter::Base.new(httpauth)
-    #client.update("#{name} for #{price} : #{url}")
+    config = YAML::load(File.open(RAILS_ROOT + "/config/twitter.yml"))
+    httpauth = Twitter::HTTPAuth.new(config["user"], config["password"])
+    client = Twitter::Base.new(httpauth)
+    client.update("#{name} for #{price} : #{url}")
+    super
   end
 
 end
