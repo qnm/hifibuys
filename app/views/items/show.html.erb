@@ -1,0 +1,48 @@
+<p>
+  <b>Name:</b>
+  <%=h @item.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @item.description %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%=h @item.price %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @item.url %>
+</p>
+
+<p>
+  <b>Shop name:</b>
+  <%=h @item.shop_name %>
+</p>
+
+<p>
+  <b>Shop address:</b>
+  <%=h @item.shop_address %>
+</p>
+
+<p>
+  <b>Shop suburb:</b>
+  <%=h @item.shop_suburb %>
+</p>
+
+<p>
+  <b>Shop state:</b>
+  <%=h @item.shop_state %>
+</p>
+
+<p>
+  <b>Shop country:</b>
+  <%=h @item.shop_country %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

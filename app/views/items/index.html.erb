@@ -1,11 +1,40 @@
-<h3>Follow us on twitter to <a href="http://twitter.com/twifibuys">get the best hifi deals</a></h3>
+<h1>Listing items</h1>
 
-<% form_tag search_items_path, :method => :get do %>
-  <p><%= text_field_tag :term %></p>
-  <p><%= submit_tag 'Search' %></p>
-  <br />
-  Search for 
-  <%= link_to "CD Players", search_items_path(:term => "cd player") %>, 
-  <%= link_to "Amplifiers", search_items_path(:term => "amplifier") %>, 
-  <%= link_to "Speakers", search_items_path(:term => "speaker") %>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Url</th>
+    <th>Shop name</th>
+    <th>Shop address</th>
+    <th>Shop suburb</th>
+    <th>Shop state</th>
+    <th>Shop country</th>
+  </tr>
+
+<% @items.each do |item| %>
+  <tr>
+    <td><%=h item.name %></td>
+    <td><%=h item.description %></td>
+    <td><%=h item.price %></td>
+    <td><%=h item.url %></td>
+    <td><%=h item.shop_name %></td>
+    <td><%=h item.shop_address %></td>
+    <td><%=h item.shop_suburb %></td>
+    <td><%=h item.shop_state %></td>
+    <td><%=h item.shop_country %></td>
+    <td><%= link_to 'Show', item %></td>
+    <td><%= link_to 'Edit', edit_item_path(item) %></td>
+    <td><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
 <% end %>
+</table>
+
+<div class="hlisting">
+  <%= will_paginate @items %>
+</div>
+
+<br />
+
+<%= link_to 'New item', new_item_path %>

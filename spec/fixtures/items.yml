@@ -3,11 +3,21 @@
 one:
   name: MyString
   description: MyText
-  price: 1
+  price: MyString
   url: MyString
+  shop_name: MyString
+  shop_address: MyString
+  shop_suburb: MyString
+  shop_state: MyString
+  shop_country: MyString
 
 two:
   name: MyString
   description: MyText
-  price: 1
+  price: MyString
   url: MyString
+  shop_name: MyString
+  shop_address: MyString
+  shop_suburb: MyString
+  shop_state: MyString
+  shop_country: MyString

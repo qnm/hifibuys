@@ -1,0 +1,48 @@
+<h1>Editing item</h1>
+
+<% form_for(@item) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </p>
+  <p>
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.label :shop_name %><br />
+    <%= f.text_field :shop_name %>
+  </p>
+  <p>
+    <%= f.label :shop_address %><br />
+    <%= f.text_field :shop_address %>
+  </p>
+  <p>
+    <%= f.label :shop_suburb %><br />
+    <%= f.text_field :shop_suburb %>
+  </p>
+  <p>
+    <%= f.label :shop_state %><br />
+    <%= f.text_field :shop_state %>
+  </p>
+  <p>
+    <%= f.label :shop_country %><br />
+    <%= f.text_field :shop_country %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @item %> |
+<%= link_to 'Back', items_path %>

@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources     :items
   map.search_items  'items/search/:term', :controller => 'items', :action => 'search', :term => nil
   map.about         'about', :controller => 'pages', :action => 'about'
-  #map.resources     :items
 
   # The priority is based upon order of creation: first created -> highest priority.
 
