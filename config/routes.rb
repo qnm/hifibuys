@@ -34,7 +34,7 @@ ActionController::Routing::Routes.draw do |map|
   #     admin.resources :products
   #   end
 
-  map.root :controller => "items", :action => "index"
+  map.root :controller => "items", :action => "home"
 
   # See how all your routes lay out with "rake routes"
 
