@@ -2,6 +2,8 @@ module Synchroniser::Config
 
   class Params
 
+    attr_accessor :config
+
     def initialize(file_name, ingestor_name)
       file_path = RAILS_ROOT
       config = YAML::load(File.open("#{file_path}#{file_name}"))
