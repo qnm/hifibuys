@@ -15,7 +15,7 @@
 
   <% if params[:action] != "index" %>
     <% form_tag search_items_path, :method => :get, :style => "float:right" do %>
-      <p><%= text_field_tag :term, params['term'] %>
+      <p><%= text_field_tag :term, params['term'].to_s.strip %>
       <%= submit_tag 'Search' %></p>
     <% end %>
   <% end %>

@@ -3,118 +3,79 @@ development:
     ingestor: audio_connection
     params:
       url: /home/robsharp/Dropbox/workspace/hifibuys/test/siteref/audioconnection.html
+      notify: none
       container:
         object: Item
         defaults:
           group: audio_connection
-          shop_name: Audio Connection
-          shop_address: 
-          shop_suburb: Leichhardt
-          shop_city: Sydney
-          shop_state: NSW
-          shop_country: Australia
   tivoli:
     ingestor: tivoli
     params:
       url: 
       - /home/robsharp/Dropbox/workspace/hifibuys/test/siteref/tivoli.html
       - /home/robsharp/Dropbox/workspace/hifibuys/test/siteref/tivoli2.html
+      notify: none
       container:
         object: Item
         defaults:
           group: tivoli
-          shop_name: Tivoli
-          shop_address: 155-157 Camberwell Road
-          shop_suburb: Hawthorn East
-          shop_city: Melbourne
-          shop_state: VIC
-          shop_country: Australia
   pymble:
     ingestor: pymble
     params:
       url: /home/robsharp/Dropbox/workspace/hifibuys/test/siteref/pymble.html
+      notify: none
       container:
         object: Item
+        notify: none
         defaults:
           group: pymble
-          shop_name: Pymble HiFi
-          shop_address: 
-          shop_suburb: Suburb
-          shop_city: City
-          shop_state: State
-          shop_country: Australia  
   carlton:
     ingestor: carlton
     params:
       url: /home/robsharp/Dropbox/workspace/hifibuys/test/siteref/carlton.html
+      notify: none
       container:
         object: Item
         defaults:
           group: carlton
-          shop_name: Carlton Audio Visual
-          shop_address:  164-172 Lygon Street
-          shop_suburb: Carlton
-          shop_city: Melbourne
-          shop_state: Victoria
-          shop_country: Australia
 
   caxton:
     ingestor: yql_opendatatable
     params:
       url: http://www.hifibuys.com.au/opendatatables/caxton-audio-yql.xml
+      notify: none
       container:
         object: Item
         defaults:
           group: caxton
-          shop_name: Caxton Audio
-          shop_address: 
-          shop_suburb: Paddington
-          shop_city: Brisbane
-          shop_state: QLD
-          shop_country: Australia
 
 production:
   audio_connection:
     ingestor: audio_connection
     params:
       url: http://audioconnection.com.au/trade-ins-clearance-audio-equipment.asp
+      notify: twitter
       container:
         object: Item
         defaults:
           group: audio_connection
-          shop_name: Audio Connection
-          shop_address: 
-          shop_suburb: Leichhardt
-          shop_city: Sydney
-          shop_state: NSW
-          shop_country: Australia
   tivoli:
     ingestor: tivoli
     params:
       url:
       - http://tivolihifi.com/store/second-hand-equipment
       - http://tivolihifi.com/store/second-hand-equipment?q=second-hand-equipment&sort=20a&page=2
+      notify: twitter
       container:
         object: Item
         defaults:
           group: tivoli
-          shop_name: Tivoli
-          shop_address: 155-157 Camberwell Road
-          shop_suburb: Hawthorn East
-          shop_city: Melbourne
-          shop_state: VIC
-          shop_country: Australia
   carlton:
     ingestor: carlton
     params:
       url: http://www.carltonaudiovisual.com.au/?q=node/view/7
+      notify: twitter
       container:
         object: Item
         defaults:
           group: carlton
-          shop_name: Carlton Audio Visual
-          shop_address:  164-172 Lygon Street
-          shop_suburb: Carlton
-          shop_city: Melbourne
-          shop_state: Victoria
-          shop_country: Australia

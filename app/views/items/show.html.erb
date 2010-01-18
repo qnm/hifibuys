@@ -1,21 +1,12 @@
-<p>
-  <b>Name:</b>
-  <%=h @item.name %>
-</p>
+ <h2><%= link_to(@item.name, @item) %></h2>
 
-<p>
-  <b>Description:</b>
-  <%=h @item.description %>
-</p>
+<% if @item.description.empty? == false %>
+ <p><%=h @item.description %></p>
+<% end %>
 
 <p>
   <b>Price:</b>
   <%=h @item.price %>
-</p>
-
-<p>
-  <b>Url:</b>
-  <%=h @item.url %>
 </p>
 
 <p>

@@ -12,8 +12,14 @@ module Synchroniser::Config
       if config[RAILS_ENV].nil?
         environment = "test"
       end
+      
+      begin 
+        @config = config[environment][ingestor_name]
+      rescue
+        @config = nil
+        raise ArgumentError, "Unable to find the #{environment} stanza for #{ingestor_name}' in the configuration file supplied"
+      end
 
-      @config = config[environment][ingestor_name]
       if @config.nil?
         raise ArgumentError, "Unable to find the stanza '#{ingestor_name}' in the configuration file supplied"
       end

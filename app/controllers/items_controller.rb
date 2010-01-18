@@ -11,7 +11,7 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.xml
   def index
-    @items = Item.paginate (:all,
+    @items = Item.paginate(:all,
                             :page => params[:page], 
                             :per_page => 10, 
                             :order => 'created_at DESC' )
@@ -25,7 +25,21 @@ class ItemsController < ApplicationController
   # GET /items/search/:term
   def search
     @items = Item.paginate( :all, 
-                            :conditions => ["MATCH (name, description, shop_state, shop_suburb) AGAINST (? IN BOOLEAN MODE)", '+' + params[:term] ],
+                            :conditions => ["MATCH (name, description, shop_state, shop_suburb) AGAINST (? IN BOOLEAN MODE)", '+' + params[:term].to_s.strip ],
+                            :page => params[:page], 
+                            :per_page => 10, 
+                            :order => 'created_at DESC' )
+
+    respond_to do |format|
+      format.html # search.html.erb
+      format.xml  { render :xml => @items }
+    end
+  end
+
+  # GET /items/search/:term
+  def unextracted
+    @items = Item.paginate( :all, 
+                            :conditions => ["manufacturer_id IS NULL"],
                             :page => params[:page], 
                             :per_page => 10, 
                             :order => 'created_at DESC' )
@@ -38,6 +52,8 @@ class ItemsController < ApplicationController
 
   # GET /items/1
   # GET /items/1.xml
+  # TODO  we might want to simple throw a 302 header at this point
+  # TODO  and not show the item info until we have something better to show
   def show
     @item = Item.find(params[:id])
 

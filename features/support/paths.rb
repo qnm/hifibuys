@@ -10,10 +10,12 @@ module NavigationHelpers
     
     when /the homepage/
       '/'
+    when /the item index page/
+      '/items/'
     when /the new item page/
       new_item_path
-    when /the about page/
-      about_path
+    when /the show item page/
+      item_path
 
     
     # Add more mappings here.

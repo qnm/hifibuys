@@ -1,7 +1,11 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources     :items
+  map.resources :manufacturers
+
+  map.resources :shops
+
   map.search_items  'items/search/:term', :controller => 'items', :action => 'search', :term => nil
-  map.about         'about', :controller => 'pages', :action => 'about'
+  map.unextracted_items  'items/unextracted', :controller => 'items', :action => 'unextracted'
+  map.resources     :items
 
   # The priority is based upon order of creation: first created -> highest priority.
 

@@ -21,7 +21,6 @@ describe "/items/show.html.erb" do
     response.should have_text(/value\ for\ name/)
     response.should have_text(/value\ for\ description/)
     response.should have_text(/value\ for\ price/)
-    response.should have_text(/value\ for\ url/)
     response.should have_text(/value\ for\ shop_name/)
     response.should have_text(/value\ for\ shop_address/)
     response.should have_text(/value\ for\ shop_suburb/)

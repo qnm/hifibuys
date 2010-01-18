@@ -4,6 +4,11 @@ describe "/items/new.html.erb" do
   include ItemsHelper
 
   before(:each) do
+    assigns[:manufacturer] = stub_model(Manufacturer,
+      :new_record? => true,
+      :name => "value for manufacturer name"
+    )
+
     assigns[:item] = stub_model(Item,
       :new_record? => true,
       :name => "value for name",

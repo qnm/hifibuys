@@ -14,7 +14,7 @@ class CreateItems < ActiveRecord::Migration
       t.timestamps
     end
     execute 'ALTER TABLE items ENGINE = MyISAM'
-    execute 'CREATE FULLTEXT INDEX fulltext_search ON items (name, description, shop_state, shop_suburb)'
+    execute 'CREATE FULLTEXT INDEX fulltext_search ON items (name)'
   end
 
   def self.down

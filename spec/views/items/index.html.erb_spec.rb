@@ -4,7 +4,7 @@ describe "/items/index.html.erb" do
   include ItemsHelper
 
   before(:each) do
-    assigns[:items] = [
+    @items = [
       stub_model(Item,
         :name => "value for name",
         :description => "value for description",
@@ -28,6 +28,7 @@ describe "/items/index.html.erb" do
         :shop_country => "value for shop_country"
       )
     ]
+    assigns[:items] = @items.paginate({:page => 1, :per_page => 30})
   end
 
   it "renders a list of items" do

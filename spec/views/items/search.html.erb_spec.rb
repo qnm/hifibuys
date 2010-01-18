@@ -26,6 +26,6 @@ describe "/items/search.html.erb" do
     response.should have_tag("h3>a", "value for name".to_s, 2)
     #response.should have_tag("tr>td", "value for description".to_s, 2)
     response.should have_tag("ul>li[class='price']", 1.to_s, 2)
-    response.should have_tag("h3>a[href='value for url']", "value for name".to_s, 2)
+    #response.should have_tag("h3>a[href='value for url']", "value for name".to_s, 2)
   end
 end

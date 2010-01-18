@@ -2,6 +2,11 @@ Given /^the following items:$/ do |items|
   Item.create!(items.hashes)
 end
 
+Given /^a fresh database$/ do
+  Item.delete_all
+  SyncItem.delete_all
+end
+
 When /^I delete the (\d+)(?:st|nd|rd|th) item$/ do |pos|
   visit items_url
   within("table > tr:nth-child(#{pos.to_i+1})") do

@@ -1,0 +1,33 @@
+<p>
+  <b>Name:</b>
+  <%=h @shop.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @shop.address %>
+</p>
+
+<p>
+  <b>Suburb:</b>
+  <%=h @shop.suburb %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @shop.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%=h @shop.state %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%=h @shop.country %>
+</p>
+
+
+<%= link_to 'Edit', edit_shop_path(@shop) %> |
+<%= link_to 'Back', shops_path %>
