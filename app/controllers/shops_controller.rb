@@ -1,4 +1,7 @@
 class ShopsController < ApplicationController
+
+  before_filter :require_login
+
   # GET /shops
   # GET /shops.xml
   def index

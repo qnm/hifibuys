@@ -1,6 +1,12 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :manufacturers
 
+  map.namespace :admin do |admin|
+    admin.resource :session
+    admin.resource :dashboard, :controller => 'dashboard'
+  end
+
+
+  map.resources :manufacturers
   map.resources :shops
 
   map.search_items  'items/search/:term', :controller => 'items', :action => 'search', :term => nil

@@ -1,5 +1,7 @@
 class ItemsController < ApplicationController
 
+  before_filter :require_login, :except => [:search, :home]
+
   # GET /home
   def home
     respond_to do |format|
@@ -57,10 +59,12 @@ class ItemsController < ApplicationController
   def show
     @item = Item.find(params[:id])
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @item }
-    end
+    redirect_to @item.url
+
+    #respond_to do |format|
+    #  format.html # show.html.erb
+    #  format.xml  { render :xml => @item }
+    #end
   end
 
   # GET /items/new

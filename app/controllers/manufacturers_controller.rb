@@ -1,4 +1,7 @@
 class ManufacturersController < ApplicationController
+
+  before_filter  :require_login
+
   # GET /manufacturers
   # GET /manufacturers.xml
   def index
