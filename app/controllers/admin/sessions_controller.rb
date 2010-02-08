@@ -1,5 +1,4 @@
 class Admin::SessionsController < ApplicationController
-  layout 'login'
 
   def show
     if using_open_id?

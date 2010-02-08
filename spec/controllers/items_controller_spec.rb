@@ -8,6 +8,7 @@ describe ItemsController do
 
   describe "GET index" do
     it "assigns all items as @items" do
+      ApplicationController.stub!(:require_login).and_return(false)
       Item.stub!(:paginate).and_return([mock_item])
       get :index
       assigns[:items].should == [mock_item]
@@ -16,9 +17,9 @@ describe ItemsController do
 
   describe "GET show" do
     it "assigns the requested item as @item" do
-      Item.stub!(:find).with("37").and_return(mock_item)
+      Item.stub!(:find).with("37").and_return(mock_item(:url => "/thing"))
       get :show, :id => "37"
-      assigns[:item].should equal(mock_item)
+      response.should redirect_to("/thing")
     end
   end
 

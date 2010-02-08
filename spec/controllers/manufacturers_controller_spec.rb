@@ -2,6 +2,10 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe ManufacturersController do
 
+  before(:each) do
+    session[:logged_in] = true
+  end
+
   def mock_manufacturer(stubs={})
     @mock_manufacturer ||= mock_model(Manufacturer, stubs)
   end

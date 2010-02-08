@@ -2,6 +2,11 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe ShopsController do
 
+  before(:each) do
+    session[:logged_in] = true
+  end
+
+
   def mock_shop(stubs={})
     @mock_shop ||= mock_model(Shop, stubs)
   end
