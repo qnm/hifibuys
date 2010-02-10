@@ -1,5 +1,5 @@
 class Item < ActiveRecord::Base
-  #include Synchroniser::Model
+  include Synchroniser::Model
 
   require 'twitter'
 
