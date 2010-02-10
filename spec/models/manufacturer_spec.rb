@@ -1,9 +1,10 @@
-require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
+require 'spec_helper'
 
 describe Manufacturer do
   before(:each) do
     @valid_attributes = {
-      :name => "value for name"
+      :name => "value for name",
+      :status => 1
     }
   end
 

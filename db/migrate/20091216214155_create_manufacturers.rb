@@ -2,6 +2,7 @@ class CreateManufacturers < ActiveRecord::Migration
   def self.up
     create_table :manufacturers do |t|
       t.string :name
+      t.integer :status
 
       t.timestamps
     end
