@@ -8,13 +8,6 @@
     <%= f.text_field :name %>
   </p>
   <p>
-    <% @item.build_manufacturer unless @item.manufacturer %>
-    <% f.fields_for(:manufacturer) do |m| %>
-      <%= m.label "Manufacturer " + :name.to_s  %>
-      <%= m.text_field :name  %>
-  <% end %>
-  </p>
-  <p>
     <%= f.label :description %><br />
     <%= f.text_area :description %>
   </p>

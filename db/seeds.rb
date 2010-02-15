@@ -13,7 +13,7 @@ puts "Deleting existing data"
 Item.delete_all
 SyncItem.delete_all
 Shop.delete_all
-Manufacturer.delete_all
+Entity.delete_all
 
 # Add in our default shops
 shops = [{  :name     => "Audio Connection",
@@ -42,7 +42,7 @@ shops = [{  :name     => "Audio Connection",
 
 shops = Shop.create(shops)
 
-manufacturers = [{  :name => "Arcam" },
+entities =      [{  :name => "Arcam" },
                 {   :name => "Denon" },
                 {   :name => "Micromega" },
                 {   :name => "Myryad" },
@@ -96,7 +96,7 @@ manufacturers = [{  :name => "Arcam" },
                 {   :name => "REL" },
                 {   :name => "Linn" }]
 
-manufacturers = Manufacturer.create(manufacturers)
+entities = Entity.create(entities)
 
 shops.each do |shop|
   configuration = Synchroniser::Config::Params.new("/config/ingestors.yml", shop.feed)

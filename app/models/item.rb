@@ -1,13 +1,9 @@
 class Item < ActiveRecord::Base
-  include Synchroniser::Model
+  #include Synchroniser::Model
 
   require 'twitter'
 
   attr_accessor :group
-
-  belongs_to  :manufacturer
-  accepts_nested_attributes_for :manufacturer
-
 
   def item
     url
@@ -16,10 +12,15 @@ class Item < ActiveRecord::Base
 
   def before_save
     # attempt to associate a manufacturer
-    manufacturer = Manufacturer.search(self.name)
-    if manufacturer.nil? == false
-      self.manufacturer = manufacturer.first
-    end
+    #manufacturer = Manufacturer.search(self.name).first
+    #if manufacturer.nil? == false
+      #self.manufacturer = manufacturer
+
+      #tag the manufacturer as being in use
+      #self.manufacturer.status = 1
+      #self.manufacturer.save
+    #end
+    super
   end
 
   def after_save

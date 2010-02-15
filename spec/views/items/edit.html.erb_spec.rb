@@ -17,12 +17,6 @@ describe "/items/edit.html.erb" do
       :shop_country => "value for shop_country"
     )
 
-    assigns[:manufacturer] = @manufacturer = stub_model(Manufacturer,
-      :new_record? => false,
-      :name => "value for name",
-      :description => "value for description"
-    )
-
   end
 
   it "renders the edit item form" do

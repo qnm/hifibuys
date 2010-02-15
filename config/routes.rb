@@ -6,7 +6,7 @@ ActionController::Routing::Routes.draw do |map|
   end
 
 
-  map.resources :manufacturers
+  map.resources :entities
   map.resources :shops
 
   map.search_items  'items/search/:term', :controller => 'items', :action => 'search', :term => nil

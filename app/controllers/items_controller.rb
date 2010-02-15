@@ -38,20 +38,6 @@ class ItemsController < ApplicationController
     end
   end
 
-  # GET /items/search/:term
-  def unextracted
-    @items = Item.paginate( :all, 
-                            :conditions => ["manufacturer_id IS NULL"],
-                            :page => params[:page], 
-                            :per_page => 10, 
-                            :order => 'created_at DESC' )
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @items }
-    end
-  end
-
   # GET /items/1
   # GET /items/1.xml
   # TODO  we might want to simple throw a 302 header at this point
