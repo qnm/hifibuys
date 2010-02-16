@@ -64,12 +64,15 @@ module Moonshine::Manifest::Rails::Rails
       :owner    => configuration[:user],
       :group    => configuration[:group] || configuration[:user],
       :mode     => '775',
-      :content  => ' '
+      :content  => ' ',
+      :backup   => false,
+      :loglevel => :debug
     exec 'rake tasks',
-      :command => 'rake environment >> /var/log/moonshine_rake.log 2>&1',
+      :command => 'rake environment 2>&1 | tee -a /var/log/moonshine_rake.log',
       :user => configuration[:user],
       :cwd => rails_root,
       :environment => "RAILS_ENV=#{ENV['RAILS_ENV']}",
+      :logoutput => true,
       :require => [
         exec('rails_gems'),
         package('rake'),
@@ -103,7 +106,7 @@ module Moonshine::Manifest::Rails::Rails
     exec 'rails_gems', :command => 'true'
     return unless configuration[:gems]
     configuration[:gems].each do |gem|
-      gem.delete(:source) if gem[:source] && gem[:source] =~ /gems.github.com/
+      gem.delete(:source) if gem[:source] && gemrc[:sources].include?(gem[:source])
       gem(gem[:name], {
         :version => gem[:version],
         :source => gem[:source]
@@ -226,11 +229,13 @@ private
   # app, with RAILS_ENV properly set
   def rake(name, options = {})
     exec("rake #{name}", {
-      :command => "rake #{name} >> /var/log/moonshine_rake.log 2>&1",
+      :command => "rake #{name} 2>&1 | tee -a /var/log/moonshine_rake.log",
       :user => configuration[:user],
       :cwd => rails_root,
       :environment => "RAILS_ENV=#{ENV['RAILS_ENV']}",
-      :require => exec('rake tasks')
+      :require => exec('rake tasks'),
+      :logoutput => true,
+      :timeout => -1
     }.merge(options)
   )
   end
