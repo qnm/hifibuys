@@ -96,7 +96,7 @@ entities =      [{  :name => "Arcam" },
                 {   :name => "REL" },
                 {   :name => "Linn" }]
 
-entities = Entity.create(entities)
+entities = Entity.create(entities.map { |e| e.merge(:category => "manufacturer") })
 
 shops.each do |shop|
   configuration = Synchroniser::Config::Params.new("/config/ingestors.yml", shop.feed)
