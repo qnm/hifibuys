@@ -43,6 +43,11 @@ class ApplicationManifest < Moonshine::Manifest::Rails
         :user => configuration[:user],
         :minute => 18
 
+    cron 'sitemapper',
+        :command => "cd #{rails_root} && RAILS_ENV=production rake sitemap:generate",
+        :user => configuration[:user],
+        :minute => 20
+
 # removing caxton until it's tested
 #    cron 'synchroniser:provider:caxton',
 #        :command => "cd #{rails_root} && RAILS_ENV=production rake synchroniser:provider name=caxton",

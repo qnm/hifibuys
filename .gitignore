@@ -4,3 +4,4 @@ doc/api
 doc/app
 db/development_structure.sql
 rerun.txt
+public/sitemap.xml

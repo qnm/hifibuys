@@ -3,6 +3,9 @@ class Item < ActiveRecord::Base
   acts_as_taggable_on :manufacturers
   acts_as_taggable_on :types
 
+  # this model is sitemappable
+  sitemap
+
   require 'twitter'
 
   attr_accessor :group
