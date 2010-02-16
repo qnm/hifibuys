@@ -98,6 +98,17 @@ entities =      [{  :name => "Arcam" },
 
 entities = Entity.create(entities.map { |e| e.merge(:category => "manufacturer") })
 
+categories = [{ :name => "CD Player",
+                :category => "type"},
+              { :name => "Amplifier",
+                :category => "type"},
+              { :name => "DVD Player",
+                :category => "type"},
+              { :name => "Speaker",
+                :category => "type"}]
+
+entities = Entity.create(categories)
+
 shops.each do |shop|
   configuration = Synchroniser::Config::Params.new("/config/ingestors.yml", shop.feed)
   configuration.config["params"]["container"]["defaults"].merge!({:shop_id      => shop.id})

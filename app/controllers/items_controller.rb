@@ -4,6 +4,9 @@ class ItemsController < ApplicationController
 
   # GET /home
   def home
+    @manufacturers = Item.tag_counts_on(:manufacturers)
+    @types = Item.tag_counts_on(:types)
+
     respond_to do |format|
       format.html # home.html.erb
     end

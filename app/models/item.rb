@@ -1,6 +1,7 @@
 class Item < ActiveRecord::Base
   include Synchroniser::Model
   acts_as_taggable_on :manufacturers
+  acts_as_taggable_on :types
 
   require 'twitter'
 
@@ -12,10 +13,17 @@ class Item < ActiveRecord::Base
 
   def before_save
     # attempt to associate a manufacturer
-    entity = Entity.search(self.name).first
+    entity = Entity.search(self.name, "manufacturer").first
     if entity.nil? == false
       self.manufacturer_list = entity.name
     end
+
+    # attempt to associate a type
+    entity = Entity.search(self.name, "type").first
+    if entity.nil? == false
+      self.type_list = entity.name
+    end
+
     super
   end
 

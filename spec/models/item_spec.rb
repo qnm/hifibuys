@@ -33,7 +33,7 @@ describe Item do
   end
 
   it "should create a manufacturers tag if an entity matches" do
-    Entity.create!(:name => "test_manufacturer")
+    Entity.create!(:name => "test_manufacturer", :category => "manufacturer")
 
     @item = Item.create!(@valid_attributes_b)
     @item.manufacturers.first.name == "test manufacturer"
