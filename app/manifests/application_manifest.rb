@@ -74,4 +74,13 @@ class ApplicationManifest < Moonshine::Manifest::Rails
   end
   # The following line includes the 'application_packages' recipe defined above
   recipe :application_packages
+
+
+  # add in god
+  plugin :god
+  recipe :god
+
+  #add un sphix
+  plugin :sphinx
+  recipe :sphinx
 end
