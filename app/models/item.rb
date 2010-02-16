@@ -1,5 +1,6 @@
 class Item < ActiveRecord::Base
-  #include Synchroniser::Model
+  include Synchroniser::Model
+  acts_as_taggable_on :manufacturers
 
   require 'twitter'
 
@@ -9,19 +10,15 @@ class Item < ActiveRecord::Base
     url
   end
 
-
   def before_save
     # attempt to associate a manufacturer
-    #manufacturer = Manufacturer.search(self.name).first
-    #if manufacturer.nil? == false
-      #self.manufacturer = manufacturer
-
-      #tag the manufacturer as being in use
-      #self.manufacturer.status = 1
-      #self.manufacturer.save
-    #end
+    entity = Entity.search(self.name).first
+    if entity.nil? == false
+      self.manufacturer_list = entity.name
+    end
     super
   end
+
 
   def after_save
     #config = YAML::load(File.open(RAILS_ROOT + "/config/twitter.yml"))
