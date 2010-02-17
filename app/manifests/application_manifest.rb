@@ -77,10 +77,10 @@ class ApplicationManifest < Moonshine::Manifest::Rails
 
 
   # add in god
-  plugin :god
-  recipe :god
+  #plugin :god
+  #recipe :god
 
   #add un sphix
-  plugin :sphinx
-  recipe :sphinx
+  #plugin :sphinx
+  #recipe :sphinx
 end
