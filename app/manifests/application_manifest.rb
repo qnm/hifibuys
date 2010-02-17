@@ -76,7 +76,7 @@ class ApplicationManifest < Moonshine::Manifest::Rails
   recipe :application_packages
 
   # use different values depending on the stage
-  configure( :deploy_to => "/opt/apps/hifibuys/#{deploy_stage}" )
+  #configure( :deploy_to => "/opt/apps/hifibuys/#{deploy_stage}" )
 
   # add in god
   #plugin :god
