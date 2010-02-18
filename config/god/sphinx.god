@@ -1,7 +1,7 @@
-# Replace YOURAPP with the name of your application
+# Replace hifibuys with the name of your application
 # Edit the location of the sphinx.conf file if necessary
 God.watch do |w|
-  w.group = "YOURAPP-sphinx"
+  w.group = "hifibuys-sphinx"
   w.name  = w.group + "-1"
 
   w.interval = 30.seconds
