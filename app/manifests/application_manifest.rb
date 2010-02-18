@@ -83,6 +83,7 @@ class ApplicationManifest < Moonshine::Manifest::Rails
   recipe :god
 
   #add un sphix
+  configure(:sphinx => {:version => '0.9.9'}) # 0.9.8.1 is the default
   plugin :sphinx
   recipe :sphinx
 end
