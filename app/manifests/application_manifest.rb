@@ -18,7 +18,7 @@ class ApplicationManifest < Moonshine::Manifest::Rails
   # })
 
   # use different values depending on the stage
-  configure( :deploy_to => "/opt/apps/hifibuys/#{deploy_stage}" )
+  #configure( :deploy_to => "/opt/apps/hifibuys/#{deploy_stage}" )
 
   # The default_stack recipe install Rails, Apache, Passenger, the database from 
   # database.yml, Postfix, Cron, logrotate and NTP. See lib/moonshine/manifest/rails.rb
