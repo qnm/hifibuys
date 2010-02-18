@@ -17,6 +17,9 @@ class ApplicationManifest < Moonshine::Manifest::Rails
   #   :custom => { :random => random  }
   # })
 
+  # use different values depending on the stage
+  configure( :deploy_to => "/opt/apps/hifibuys/#{deploy_stage}" )
+
   # The default_stack recipe install Rails, Apache, Passenger, the database from 
   # database.yml, Postfix, Cron, logrotate and NTP. See lib/moonshine/manifest/rails.rb
   # for details. To customize, remove this recipe and specify the components you want.
@@ -75,14 +78,11 @@ class ApplicationManifest < Moonshine::Manifest::Rails
   # The following line includes the 'application_packages' recipe defined above
   recipe :application_packages
 
-  # use different values depending on the stage
-  configure( :deploy_to => "/opt/apps/hifibuys/#{deploy_stage}" )
-
   # add in god
-  #plugin :god
-  #recipe :god
+  plugin :god
+  recipe :god
 
   #add un sphix
-  #plugin :sphinx
-  #recipe :sphinx
+  plugin :sphinx
+  recipe :sphinx
 end
