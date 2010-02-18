@@ -27,6 +27,7 @@ Rails::Initializer.run do |config|
   config.gem 'builder'
   config.gem 'mysql'
   config.gem "acts-as-taggable-on", :source => "http://gemcutter.org"
+  config.gem('thinking-sphinx', :lib     => 'thinking_sphinx', :version => '1.3.11')
   #config.gem 'ruby-openid'
 
   # Only load the plugins named here, in the order given (default is alphabetical).
