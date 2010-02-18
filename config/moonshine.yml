@@ -2,7 +2,7 @@
 :application: hifibuys
 :user: robsharp
 #:time_zone: UTC
-#:deploy_to: /opt/apps/hifibuys
+:deploy_to: /opt/apps/hifibuys/staging
 :domain: www.hifibuys.com.au
 :domain_aliases: hifibuys.com.au
 #  - assets1.yourapp.com
