@@ -29,11 +29,7 @@ class ItemsController < ApplicationController
 
   # GET /items/search/:term
   def search
-    @items = Item.paginate( :all, 
-                            :conditions => ["MATCH (name, description, shop_state, shop_suburb) AGAINST (? IN BOOLEAN MODE)", '+' + params[:term].to_s.strip ],
-                            :page => params[:page], 
-                            :per_page => 10, 
-                            :order => 'created_at DESC' )
+    @items = Item.search(params[:term].to_s.strip)
 
     respond_to do |format|
       format.html # search.html.erb

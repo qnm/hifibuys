@@ -10,6 +10,12 @@ class Item < ActiveRecord::Base
 
   attr_accessor :group
 
+  define_index do
+    indexes [name, description, shop_state, shop_suburb], :as => :name
+
+    set_property :delta => true
+  end
+
   def item
     url
   end
