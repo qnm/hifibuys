@@ -45,4 +45,9 @@ class Item < ActiveRecord::Base
     super
   end
 
+  # we now add the to_param method which Rails's routing uses
+  def to_param
+    "#{id}-#{name.downcase.gsub(/[^[:alnum:]]/,'-')}".gsub(/-{2,}/,'-')
+  end 
+
 end
