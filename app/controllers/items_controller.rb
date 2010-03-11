@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
 
-  #before_filter :require_login, :except => [:search, :home]
+  before_filter :require_login, :except => [:search, :home]
 
   # GET /home
   def home

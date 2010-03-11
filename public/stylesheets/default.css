@@ -103,6 +103,9 @@ a:hover {
   font-weight: bold;
 }
 
+.description .shop dl {
+}
+
 .description ul {
   display: inline;
 }

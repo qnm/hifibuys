@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :ug_items
+
 
   map.namespace :admin do |admin|
     admin.resource :session

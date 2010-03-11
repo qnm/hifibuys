@@ -48,6 +48,15 @@ development:
         object: Item
         defaults:
           group: caxton
+  ug_item:
+    ingestor: ug_item
+    params:
+      url: http://blah.com
+      notify: none
+      container:
+        object: Item
+        defaults:
+          group: ug_item
 
 production:
   audio_connection:
@@ -79,3 +88,14 @@ production:
         object: Item
         defaults:
           group: carlton
+  ug_item:
+    ingestor: ug_item
+    params:
+      url: http://blah.com
+      notify: none
+      container:
+        object: Item
+        defaults:
+          group: ug_item
+
+

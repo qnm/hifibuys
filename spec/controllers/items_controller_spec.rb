@@ -2,13 +2,16 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe ItemsController do
 
+  before(:each) do
+    session[:logged_in] = true
+  end
+
   def mock_item(stubs={})
     @mock_item ||= mock_model(Item, stubs)
   end
 
   describe "GET index" do
     it "assigns all items as @items" do
-      ApplicationController.stub!(:require_login).and_return(false)
       Item.stub!(:paginate).and_return([mock_item])
       get :index
       assigns[:items].should == [mock_item]

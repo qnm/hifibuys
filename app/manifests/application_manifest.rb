@@ -46,6 +46,12 @@ class ApplicationManifest < Moonshine::Manifest::Rails
         :user => configuration[:user],
         :minute => 18
 
+    cron 'synchroniser:provider:ug_item',
+        :command => "cd #{rails_root} && RAILS_ENV=production rake synchroniser:provider name=ug_item",
+        :user => configuration[:user],
+        :minute => 19
+
+
     cron 'sitemapper',
         :command => "cd #{rails_root} && RAILS_ENV=production rake sitemap:generate",
         :user => configuration[:user],
