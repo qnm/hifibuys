@@ -1,7 +1,6 @@
 class Item < ActiveRecord::Base
   include Synchroniser::Model
-  acts_as_taggable_on :manufacturers
-  acts_as_taggable_on :types
+  acts_as_taggable_on :manufacturers, :types
 
   # this model is sitemappable
   sitemap

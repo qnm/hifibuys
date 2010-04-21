@@ -1,3 +1,3 @@
 module ItemsHelper
-    include TagsHelper
+  include TagsHelper
 end
