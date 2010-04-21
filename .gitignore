@@ -7,3 +7,5 @@ rerun.txt
 public/sitemap.xml
 db/sphinx/*
 log/*
+.bundle
+Gemfile.lock
