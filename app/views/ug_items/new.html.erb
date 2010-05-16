@@ -1,31 +1,20 @@
-<h1>New ug_item</h1>
+<h2>Found a great deal you want to share? Tell us all about it below.</h2>
 
-<% form_for(@ug_item) do |f| %>
+<% semantic_form_for(@ug_item) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </p>
-  <p>
-    <%= f.label :price %><br />
-    <%= f.text_field :price %>
-  </p>
-  <p>
-    <%= f.label :url %><br />
-    <%= f.text_field :url %>
-  </p>
-  <p>
-    <%= f.label :location %><br />
-    <%= f.text_field :location %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
+    <% f.inputs :name => "Share a great deal", :id => "deal" do %>
 
-<%= link_to 'Back', ug_items_path %>
+      <%= f.input :name, :label => "Model", :hint => "Tell us as much as you can. We'll do the rest." %>
+      <%= f.input :price, :hint => "The total price paid" %>
+      <%= f.input :description, :label => "Additional Info:", :hint => "Are there any conditions? E.g. compulsory warranty?" %>
+      <%= f.input :url, :label => "Webpage URL", :hint => "Is it online? Tell us the URL if so." %>
+      <%= f.input :location, :hint => "Store Name and Address. We'll work out the rest" %>
+
+    <% end %>
+
+    <% f.buttons do %>
+      <%= f.commit_button %>
+    <% end %>
+
+<% end %>
