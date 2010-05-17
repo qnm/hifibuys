@@ -1,6 +1,6 @@
 class AddDeltaToItem < ActiveRecord::Migration
   def self.up
-    add_column :items, :delta, :boolean, :default => 1
+    add_column :items, :delta, :boolean, :default => true
   end
 
   def self.down

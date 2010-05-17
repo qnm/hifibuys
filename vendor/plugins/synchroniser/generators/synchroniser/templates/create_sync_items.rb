@@ -1,6 +1,6 @@
 class CreateSyncItems < ActiveRecord::Migration
   def self.up
-    create_table :sync_items, :options => "ENGINE=MyISAM"  do |t|
+    create_table :sync_items  do |t|
       t.string :item
       t.string :group
       t.string :class_name

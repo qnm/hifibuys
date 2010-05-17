@@ -6,7 +6,7 @@ module Synchroniser::Model
   end
 
   def delete_expired_items
-    params = {:status => 0,
+    params = {:status => false,
               :group    => group}
     SyncItem.find(:all, :conditions => params).each {|sync_item|
       begin

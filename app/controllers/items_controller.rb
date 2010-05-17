@@ -29,7 +29,11 @@ class ItemsController < ApplicationController
 
   # GET /items/search/:term
   def search
-    @items = Item.search(params[:term].to_s.strip)
+    @items = Item.paginate(:all,
+                            :conditions => ["name LIKE ? ", '%' + params['term'].to_s + '%' ],
+                            :page => params[:page], 
+                            :per_page => 10, 
+                            :order => 'created_at DESC' )
 
     respond_to do |format|
       format.html # search.html.erb

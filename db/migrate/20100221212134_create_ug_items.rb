@@ -6,7 +6,7 @@ class CreateUgItems < ActiveRecord::Migration
       t.string :price
       t.string :url
       t.string :location
-      t.boolean :import, :default => 0
+      t.boolean :import, :default => false
 
       t.timestamps
     end
