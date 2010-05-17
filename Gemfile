@@ -12,7 +12,6 @@ gem "mash"
 gem "httparty"
 gem "twitter"
 gem "builder"
-gem "mysql"
 gem "acts-as-taggable-on"
 gem "formtastic"
 gem "thin"
@@ -24,5 +23,4 @@ group :test do
  gem "webrat"
  gem "rspec"
  gem "rspec-rails"
- gem "acts-as-taggable-on"
 end
