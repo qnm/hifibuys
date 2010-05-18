@@ -15,20 +15,6 @@ Rails::Initializer.run do |config|
   # config.load_paths += %W( #{RAILS_ROOT}/extras )
 
   # Specify gems that this application depends on and have them installed with rake gems:install
-#  config.gem "hpricot"
-#  config.gem 'will_paginate', :version => '~> 2.3.11', :source => 'http://gemcutter.org'
-#  config.gem 'brianmario-yajl-ruby', :lib => 'yajl', :source => 'http://gems.github.com'
-#  config.gem 'rubaidh-google_analytics', :lib => 'rubaidh/google_analytics', :source => 'http://gems.github.com'
-#  config.gem 'oauth'
-#  config.gem 'hashie'
-#  config.gem 'mash', :version => '0.0.3'
-#  config.gem 'httparty', :version => '0.4.3'
-#  config.gem 'jnunemaker-twitter', :lib => 'twitter', :source => 'http://gems.github.com'
-#  config.gem 'builder'
-#  config.gem 'mysql'
-#  config.gem "acts-as-taggable-on", :source => "http://gemcutter.org"
-#  config.gem('thinking-sphinx', :lib     => 'thinking_sphinx', :version => '1.3.11')
-  #config.gem 'ruby-openid'
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named

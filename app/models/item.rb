@@ -9,32 +9,30 @@ class Item < ActiveRecord::Base
 
   attr_accessor :group
 
-  define_index do
-    indexes [name, description, shop_state, shop_suburb], :as => :name
-
-    set_property :delta => true
-  end
-
   def item
     url
   end
 
   def before_save
     # attempt to associate a manufacturer
-    entity = Entity.search(self.name, "manufacturer").first
-    if entity.nil? == false
-      self.manufacturer_list = entity.name
+    entities = self.name.split(" ")
+    entities.each do |entity|
+      entity = Entity.search(entity, "manufacturer").first
+      if entity.nil? == false
+        self.manufacturer_list = entity.name
+      end
     end
 
     # attempt to associate a type
-    entity = Entity.search(self.name, "type").first
-    if entity.nil? == false
-      self.type_list = entity.name
+    entities.each do |entity|
+      entity = Entity.search(entity, "type").first
+      if entity.nil? == false
+        self.type_list = entity.name
+      end
     end
 
     super
   end
-
 
   def after_save
     #config = YAML::load(File.open(RAILS_ROOT + "/config/twitter.yml"))
