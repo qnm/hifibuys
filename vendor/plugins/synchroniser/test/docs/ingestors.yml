@@ -2,7 +2,7 @@ test:
   rss:
     ingestor: rss
     params:
-      url: /home/robsharp/Dropbox/workspace/synchroniser_tests/vendor/plugins/synchroniser/test/docs/rss.xml
+      url: test/docs/rss.xml
       container:
         object: Post
         defaults:

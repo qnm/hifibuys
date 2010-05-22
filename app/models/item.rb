@@ -7,8 +7,6 @@ class Item < ActiveRecord::Base
 
   require 'twitter'
 
-  attr_accessor :group
-
   def item
     url
   end
