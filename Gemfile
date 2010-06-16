@@ -1,7 +1,7 @@
 # include at least one source and the rails gem
 source :gemcutter
 gem "rails", "2.3.5"
-gem "bundler", "0.9.25"
+gem "bundler", "~> 0.9.25"
 gem "rack"
 gem "hpricot"
 gem "will_paginate"

@@ -11,6 +11,15 @@ class Item < ActiveRecord::Base
     url
   end
 
+  def self.search(term, page)
+   paginate(:conditions => ["name ILIKE ? ", "%#{term.to_s}%" ],
+            :page => page, 
+            :per_page => 10, 
+            :order => 'created_at DESC' )
+  end
+
+
+
   def before_save
     # attempt to associate a manufacturer
     entities = self.name.split(" ")

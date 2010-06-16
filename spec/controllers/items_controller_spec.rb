@@ -36,10 +36,17 @@ describe ItemsController do
 
   describe "GET edit" do
     it "assigns the requested item as @item" do
+      session[:logged_in] = true
       Item.stub!(:find).with("37").and_return(mock_item)
       get :edit, :id => "37"
       assigns[:item].should equal(mock_item)
     end
+
+   #it "disallows edit when not logged in" do
+   #   Item.stub!(:find).with("37").and_return(mock_item)
+   #   get :edit, :id => "37"
+   #   assigns[:item].should equal(mock_item)
+   #end
   end
 
   describe "POST create" do
@@ -131,5 +138,13 @@ describe ItemsController do
       response.should redirect_to(items_url)
     end
   end
+
+  describe "GET search" do
+    it "assigns all items as @items" do
+      Item.stub!(:search).and_return([mock_item])
+      get :search
+      assigns[:items].should == [mock_item]
+    end
+  end  
 
 end

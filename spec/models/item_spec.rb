@@ -11,11 +11,12 @@ describe Item do
       :shop_address => "value for shop_address",
       :shop_suburb => "value for shop_suburb",
       :shop_state => "value for shop_state",
-      :shop_country => "value for shop_country"
+      :shop_country => "value for shop_country",
+      :group => "nogroup"
     }
 
     @valid_attributes_b = {
-      :name => "test_manufacturer",
+      :name => "test_manufacturer test_type",
       :description => "value for description",
       :price => "value for price",
       :url => "value for url2",
@@ -23,7 +24,8 @@ describe Item do
       :shop_address => "value for shop_address",
       :shop_suburb => "value for shop_suburb",
       :shop_state => "value for shop_state",
-      :shop_country => "value for shop_country"
+      :shop_country => "value for shop_country",
+      :group => "nogroup"
     }
 
   end
@@ -36,6 +38,26 @@ describe Item do
     Entity.create!(:name => "test_manufacturer", :category => "manufacturer")
 
     @item = Item.create!(@valid_attributes_b)
-    @item.manufacturers.first.name == "test manufacturer"
+    @item.manufacturers.first.name.should == "test_manufacturer"
   end
+
+  it "should create a type tag if an entity matches" do
+    Entity.create!(:name => "test_type", :category => "type")
+
+    @item = Item.create!(@valid_attributes_b)
+    @item.types.first.name.should == "test_type"
+  end
+
+  it "should return an exact match search" do
+    @item = Item.create!(@valid_attributes_b)
+
+    Item.search(@valid_attributes_b[:name], 1).first.name.should == @valid_attributes_b[:name]
+  end
+
+  it "should return a case insensitive match search" do
+    @item = Item.create!(@valid_attributes_b)
+
+    Item.search(@valid_attributes_b[:name].swapcase, 1).first.name.should == @valid_attributes_b[:name]
+  end
+
 end
