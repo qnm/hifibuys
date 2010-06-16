@@ -2,7 +2,7 @@ development:
   audio_connection:
     ingestor: audio_connection
     params:
-      url: /home/robsharp/workspace/hifibuys/test/siteref/audioconnection.html
+      url: test/siteref/audioconnection.html
       notify: none
       container:
         object: Item
@@ -12,8 +12,8 @@ development:
     ingestor: tivoli
     params:
       url: 
-      - /home/robsharp/workspace/hifibuys/test/siteref/tivoli.html
-      - /home/robsharp/workspace/hifibuys/test/siteref/tivoli2.html
+      - test/siteref/tivoli.html
+      - test/siteref/tivoli2.html
       notify: none
       container:
         object: Item
@@ -22,7 +22,7 @@ development:
   pymble:
     ingestor: pymble
     params:
-      url: /home/robsharp/workspace/hifibuys/test/siteref/pymble.html
+      url: test/siteref/pymble.html
       notify: none
       container:
         object: Item
@@ -32,13 +32,12 @@ development:
   carlton:
     ingestor: carlton
     params:
-      url: /home/robsharp/workspace/hifibuys/test/siteref/carlton.html
+      url: test/siteref/carlton.html
       notify: none
       container:
         object: Item
         defaults:
           group: carlton
-
   caxton:
     ingestor: yql_opendatatable
     params:
