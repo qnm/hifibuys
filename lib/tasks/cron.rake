@@ -14,5 +14,5 @@ task :cron => :environment do
   Rake::Task["synchroniser:provider"].execute(name)
 
   # regenerate the sitemap
-  Rake::Task["sitemap:generate"].execute()
+  Rake::Task["sitemap:refresh"].execute()
 end
