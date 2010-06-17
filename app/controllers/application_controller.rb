@@ -23,11 +23,13 @@ class ApplicationController < ActionController::Base
   end
 
   def require_login
-    return redirect_to(admin_session_path) unless logged_in?
+    # switch off authentication for now
+    #return redirect_to(admin_session_path) unless logged_in?
   end
 
   def logged_in?
-    session[:logged_in]
+    # switch off authentication for now
+    #session[:logged_in]
   end
 
   helper_method :config

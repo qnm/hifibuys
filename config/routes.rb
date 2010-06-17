@@ -1,12 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :ug_items
 
-
-  map.namespace :admin do |admin|
-    admin.resource :session
-    admin.resource :dashboard, :controller => 'dashboard'
-  end
-
+  #map.namespace :admin do |admin|
+  #  admin.resource :session
+  #  admin.resource :dashboard, :controller => 'dashboard'
+  #end
 
   map.resources :entities
   map.resources :shops
