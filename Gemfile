@@ -20,6 +20,7 @@ gem "pg"
 gem "ruby-openid"
 gem "openid"
 gem "acts-as-taggable-on", "2.0.0.rc1"
+gem 'sitemap_generator'
 
 group :test do
  gem "webrat"

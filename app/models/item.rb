@@ -2,9 +2,6 @@ class Item < ActiveRecord::Base
   include Synchroniser::Model
   acts_as_taggable_on :manufacturers, :types
 
-  # this model is sitemappable
-  sitemap
-
   require 'twitter'
 
   def item
