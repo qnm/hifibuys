@@ -19,9 +19,12 @@ gem "thin"
 gem "pg"
 gem "ruby-openid"
 gem "openid"
+gem "acts-as-taggable-on", "2.0.0.rc1"
 
 group :test do
  gem "webrat"
  gem "rspec"
  gem "rspec-rails"
+ gem "autotest"
+ gem "autotest-rails"
 end
