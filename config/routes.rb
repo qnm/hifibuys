@@ -6,10 +6,18 @@ ActionController::Routing::Routes.draw do |map|
   #  admin.resource :dashboard, :controller => 'dashboard'
   #end
 
+  # user stuff for authlogic
+  map.resource :user_session
+  #map.root :controller => "user_sessions", :action => "new" # optional, this just sets the root route
+
+  map.resource :account, :controller => "users"
+  map.resources :users
+
   map.resources :entities
   map.resources :shops
 
   map.search_items  'items/search/:term', :controller => 'items', :action => 'search', :term => nil
+  map.search_items  'items/feed', :controller => 'items', :action => 'feed'
   map.unextracted_items  'items/unextracted', :controller => 'items', :action => 'unextracted'
   map.resources     :items
 

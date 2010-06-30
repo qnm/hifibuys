@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+<channel>
+<title>The name of your data feed</title>
+<link>http://www.example.com</link>
+<description>A description of your content</description>
+<% @items.each do |item| %>
+<item>
+    <title><%=h item.name %></title>
+    <description><%=h item.description %></description>
+    <g:price><%=h item.price %></g:price>
+    <link><%=h item.url %></link>
+    <g:condition>new</g:condition>
+    <g:id><%=h item.id %></g:id>
+</item>
+<% end %>
+</channel>
+</rss>

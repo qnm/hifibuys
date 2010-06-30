@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
 
-  before_filter :require_login, :except => [:search, :home, :show]
+  before_filter :require_user, :except => [:search, :home, :show, :feed]
 
   # GET /home
   def home
@@ -26,6 +26,20 @@ class ItemsController < ApplicationController
       format.xml  { render :xml => @items }
     end
   end
+
+  # GET /items
+  # GET /items.xml
+  def feed
+    @items = Item.paginate(:all,
+                            :page => params[:page], 
+                            :per_page => 10, 
+                            :order => 'created_at DESC' )
+
+    respond_to do |format|
+      format.html { render :layout => false } # feed.html.erb
+    end
+  end
+
 
   # GET /items/search/:term
   def search
