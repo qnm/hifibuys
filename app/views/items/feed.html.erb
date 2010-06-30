@@ -1,17 +1,18 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0" xmlns:c="http://base.google.com/cns/1.0">
 <channel>
-<title>The name of your data feed</title>
-<link>http://www.example.com</link>
-<description>A description of your content</description>
+<title>HifiBuys Specials</title>
+<link>http://www.hifibuys.com.au</link>
+<description>Hifi For Sale</description>
 <% @items.each do |item| %>
 <item>
     <title><%=h item.name %></title>
     <description><%=h item.description %></description>
     <g:price><%=h item.price %></g:price>
-    <link>http://www.hifibuys.com.au/item/<%=h item.id %></link>
+    <link>http://www.hifibuys.com.au/items/<%=h item.id %></link>
     <g:condition>new</g:condition>
     <g:id><%=h item.id %></g:id>
+    <c:manufacturer><%=h item.manufacturer_list.to_s %></c:manufacturer>
 </item>
 <% end %>
 </channel>
