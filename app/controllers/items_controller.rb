@@ -35,9 +35,7 @@ class ItemsController < ApplicationController
                             :per_page => 10, 
                             :order => 'created_at DESC' )
 
-    respond_to do |format|
-      format.html { render :layout => false } # feed.html.erb
-    end
+    render 'items/feed', :layout => false, :content_type => 'application/xml'
   end
 
 
