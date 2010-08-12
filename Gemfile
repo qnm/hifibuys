@@ -1,7 +1,7 @@
 # include at least one source and the rails gem
 source :gemcutter
 gem "rails", "2.3.5"
-gem "bundler", "~> 0.9.25"
+gem "bundler"
 gem "rack"
 gem "hpricot"
 gem "will_paginate"
@@ -13,13 +13,12 @@ gem "mash"
 gem "httparty"
 gem "twitter"
 gem "builder"
-gem "acts-as-taggable-on"
 gem "formtastic"
 gem "thin"
 gem "pg"
 gem "ruby-openid"
 gem "openid"
-gem "acts-as-taggable-on", "2.0.0.rc1"
+gem "acts-as-taggable-on"
 gem 'sitemap_generator'
 
 group :test do
