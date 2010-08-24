@@ -1,0 +1,25 @@
+--- 
+- 
+  name: Tivoli
+  city: Melbourne
+  address: 155-157 Camberwell Road
+  country: Australia
+  suburb: Hawthorn East
+  state: VIC
+  feed: tivoli
+- 
+  name: Carlton Audio Visual
+  city: Melbourne
+  address: 164-172 Lygon Street
+  country: Australia
+  suburb: Carlton
+  state: Victoria
+  feed: carlton
+- 
+  name: Audio Connection
+  city: Sydney
+  address: ""
+  country: Australia
+  suburb: Leichhardt
+  state: NSW
+  feed: audio_connection
