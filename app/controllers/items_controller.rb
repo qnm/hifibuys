@@ -1,7 +1,5 @@
 class ItemsController < ApplicationController
 
-  before_filter :require_user, :except => [:search, :home, :show, :feed]
-
   # GET /home
   def home
     @manufacturers = Item.tag_counts_on(:manufacturers)

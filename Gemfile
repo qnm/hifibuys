@@ -27,4 +27,9 @@ group :test do
  gem "rspec-rails"
  gem "autotest"
  gem "autotest-rails"
+ gem "cucumber"
+ gem "cucumber-rails"
+ gem "database_cleaner"
+ gem "capybara"
+ gem "pickle"
 end

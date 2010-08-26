@@ -17,7 +17,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :shops
 
   map.search_items  'items/search/:term', :controller => 'items', :action => 'search', :term => nil
-  map.search_items  'items/feed', :controller => 'items', :action => 'feed'
+  map.feed_items  'items/feed', :controller => 'items', :action => 'feed'
   map.unextracted_items  'items/unextracted', :controller => 'items', :action => 'unextracted'
   map.resources     :items
 
