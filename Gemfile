@@ -19,6 +19,7 @@ gem "ruby-openid"
 gem "openid"
 gem "acts-as-taggable-on"
 gem 'sitemap_generator'
+gem "synchroniser", "0.4.1"
 
 group :test do
  gem "webrat"

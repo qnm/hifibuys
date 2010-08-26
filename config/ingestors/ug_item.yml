@@ -1,0 +1,18 @@
+development:
+  ingestor: ug_item
+  params:
+    url: http://blah.com
+    notify: none
+    container:
+      object: Item
+      defaults:
+        group: ug_item
+production:
+  ingestor: ug_item
+  params:
+    url: http://blah.com
+    notify: none
+    container:
+      object: Item
+      defaults:
+        group: ug_item

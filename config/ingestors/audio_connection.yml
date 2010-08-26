@@ -1,0 +1,18 @@
+development:
+  ingestor: audio_connection
+  params:
+    url: test/siteref/audioconnection.html
+    notify: none
+    container:
+      object: Item
+      defaults:
+        group: audio_connection
+production:
+  ingestor: audio_connection
+  params:
+    url: http://audioconnection.com.au/trade-ins-clearance-audio-equipment.asp
+    notify: twitter
+    container:
+      object: Item
+      defaults:
+        group: audio_connection

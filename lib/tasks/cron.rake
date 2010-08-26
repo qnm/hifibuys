@@ -1,18 +1,10 @@
 desc "Cron"
 task :cron => :environment do
 
-  # audio connection provider
-  name = 'audio_connection'
-  Rake::Task["synchroniser:provider"].execute(name)
-
-  # tivoli provider
-  name = 'tivoli'
-  Rake::Task["synchroniser:provider"].execute(name)
-
-  # carlton provider
-  name = 'carlton'
-  Rake::Task["synchroniser:provider"].execute(name)
+  ["audio_connection", "tivoli", "carlton_audio_visual"].each do |provider|
+    Rake::Task["synchroniser:provider"].execute({"name" => provider})
+  end
 
   # regenerate the sitemap
-  Rake::Task["sitemap:refresh"].execute()
+  #Rake::Task["sitemap:refresh"].execute()
 end
