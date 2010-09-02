@@ -1,0 +1,43 @@
+development:
+  ingestor: rebel
+  params:
+    url:
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=910
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=166
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=195
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=673
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=357
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=705
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=706
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=707
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=157
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=159
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=890
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=163
+
+    notify: none
+    container:
+      object: Item
+      defaults:
+        group: rebel
+production:
+  ingestor: rebel
+  params:
+    url:
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=910
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=166
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=195
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=673
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=357
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=705
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=706
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=707
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=157
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=159
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=890
+    - http://www.rebelsport.com.au/ecom/rebel/product_listing.aspx?cat=163
+    notify: none
+    container:
+      object: Item
+      defaults:
+        group: rebel
