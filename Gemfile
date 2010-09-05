@@ -2,7 +2,7 @@ source :gemcutter
 gem "eventmachine", "0.12.10"
 gem "nokogiri", "1.4.3.1"
 gem "rake", "0.8.7"
-gem "rails", "2.3.5"
+gem "rails", "2.3.8"
 gem "bundler", "1.0.0"
 gem "hpricot", "0.8.2"
 gem "will_paginate", "2.3.14"
