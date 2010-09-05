@@ -12,4 +12,10 @@ class Shop < ActiveRecord::Base
   def filename
     name.downcase.gsub(' ', '_')
   end
+
+  # FIXME: use args here
+  def self.normalise(data, name)
+    data
+  end
+
 end
