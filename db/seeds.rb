@@ -9,7 +9,10 @@ Harvester::Base.category = "electronics/hifi"
 end
 
 Shop.find(:all).each do |shop|
-  Harvester::Base.synchroniser(shop).sync
+  logger.info "Ingesting #{shop.name}"
+  synchroniser = Harvester::Base.synchroniser(shop)
+  synchroniser.sync
+  synchroniser.display_stats
 end
 
 logger.info "DB Synchronised"

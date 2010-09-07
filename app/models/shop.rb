@@ -6,7 +6,8 @@ class Shop < ActiveRecord::Base
       :shop_suburb  => suburb,
       :shop_city    => city,
       :shop_state   => state,
-      :shop_country => country }
+      :shop_country => country,
+      :group        => ingestor}
   end
 
   def filename
@@ -16,6 +17,11 @@ class Shop < ActiveRecord::Base
   # FIXME: use args here
   def self.normalise(data, name)
     data
+  end
+
+  def ingestors
+    my_ingestor = Module.const_get(ingestor).new
+    my_ingestor.strategise(feed)
   end
 
 end

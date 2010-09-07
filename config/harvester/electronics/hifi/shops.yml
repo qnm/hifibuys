@@ -6,7 +6,9 @@
   country: Australia
   suburb: Hawthorn East
   state: VIC
-  feed: tivoli
+  feed: http://tivolihifi.com/store/second-hand-equipment
+  ingestor: TivoliIngestor
+
 - 
   name: Carlton Audio Visual
   city: Melbourne
@@ -14,7 +16,8 @@
   country: Australia
   suburb: Carlton
   state: Victoria
-  feed: carlton
+  feed: http://www.carltonaudiovisual.com.au/?q=node/view/7
+  ingestor: CarltonIngestor
 - 
   name: Audio Connection
   city: Sydney
@@ -22,4 +25,5 @@
   country: Australia
   suburb: Leichhardt
   state: NSW
-  feed: audio_connection
+  feed: http://audioconnection.com.au/trade-ins-clearance-audio-equipment.asp
+  ingestor: AudioConnectionIngestor

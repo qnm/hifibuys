@@ -23,12 +23,12 @@ module Harvester
     end
 
     def self.populate(name, entity)
-      data = File.open("#{self.base}/entities/#{name}.yml", "r") { |f| YAML::load (f) }
+      data = File.open("#{self.base}/#{name}.yml", "r") { |f| YAML::load (f) }
       entity.create(entity.normalise(data, name))
     end
 
     def self.synchroniser(shop)
-      Synchroniser::Config::Params.new("/#{base}/#{shop.filename}.yml", shop.filename, shop.defaults).get_sync
+      Synchroniser.new(Item.new(shop.defaults), shop.ingestors)
     end
 
   end

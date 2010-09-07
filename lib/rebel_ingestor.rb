@@ -5,7 +5,6 @@ class RebelIngestor
   require 'cgi'
 
   def pagination()
-    puts "moo"
 		Nokogiri::HTML(@data).css("#topStatusNav").css("a").inject([]) do |store, node|
 			store << "http://www.rebelsport.com.au" + node['href']
 		end	
