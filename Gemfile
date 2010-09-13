@@ -15,6 +15,10 @@ gem "sitemap_generator", "1.0.1"
 gem "synchroniser", "0.6.0"
 gem "formtastic",  "1.0.1"
 
+group :development do
+  gem "yaml_db", "0.1.0"
+end
+
 group :test do
   gem "ZenTest", "4.4.0"
   gem "webrat", "0.7.1"
@@ -30,4 +34,5 @@ group :test do
   gem "culerity", "0.2.12"
   gem "gherkin", "2.1.5"
   gem "rack-test", "0.5.4"
+  gem "spork", "0.8.4"
 end
