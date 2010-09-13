@@ -36,3 +36,7 @@ group :test do
   gem "rack-test", "0.5.4"
   gem "spork", "0.8.4"
 end
+
+group :production do
+  gem "newrelic_rpm", "2.13.1"
+end
