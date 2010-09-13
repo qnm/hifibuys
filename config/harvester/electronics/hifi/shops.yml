@@ -1,29 +1,41 @@
---- 
-- 
+shop_1:
   name: Tivoli
   city: Melbourne
   address: 155-157 Camberwell Road
+  created_at: Sun Sep 12 21:40:39 UTC 2010
   country: Australia
+  updated_at: Sun Sep 12 21:40:39 UTC 2010
   suburb: Hawthorn East
-  state: VIC
-  feed: http://tivolihifi.com/store/second-hand-equipment
+  id: 208
   ingestor: TivoliIngestor
+  state: VIC
+  feed: test/siteref/tivoli.html
+  #feed: http://tivolihifi.com/store/second-hand-equipment
 
-- 
+shop_2:
   name: Carlton Audio Visual
   city: Melbourne
   address: 164-172 Lygon Street
+  created_at: Sun Sep 12 21:40:39 UTC 2010
   country: Australia
+  updated_at: Sun Sep 12 21:40:39 UTC 2010
   suburb: Carlton
-  state: Victoria
-  feed: http://www.carltonaudiovisual.com.au/?q=node/view/7
+  id: 209
   ingestor: CarltonIngestor
-- 
+  state: Victoria
+  feed: test/siteref/carlton.html
+  #feed: http://www.carltonaudiovisual.com.au/?q=node/view/7
+
+shop_3:
   name: Audio Connection
   city: Sydney
-  address: ""
+  address: 
+  created_at: Sun Sep 12 21:40:40 UTC 2010
   country: Australia
+  updated_at: Sun Sep 12 21:40:40 UTC 2010
   suburb: Leichhardt
-  state: NSW
-  feed: http://audioconnection.com.au/trade-ins-clearance-audio-equipment.asp
+  id: 210
   ingestor: AudioConnectionIngestor
+  state: NSW
+  feed: test/siteref/audioconnection.html
+  #feed: http://audioconnection.com.au/trade-ins-clearance-audio-equipment.asp

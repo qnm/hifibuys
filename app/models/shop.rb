@@ -14,11 +14,6 @@ class Shop < ActiveRecord::Base
     name.downcase.gsub(' ', '_')
   end
 
-  # FIXME: use args here
-  def self.normalise(data, name)
-    data
-  end
-
   def ingestors
     my_ingestor = Module.const_get(ingestor).new
     my_ingestor.strategise(feed)

@@ -4,30 +4,23 @@ module Harvester
 
   class Base
 
-    def self.category=(category)
+    def initialize(category)
+      @base = "config/harvester"
       @@category = category
     end
 
-    def self.category
-      @@category
-    end
-
-    def self.base
-      "config/harvester/#{self.category}" 
-    end
-
-    def self.wipe
+    def wipe
       [Item, SyncItem, Shop, Entity].each do |model|
         model.delete_all
       end
     end
 
-    def self.populate(name, entity)
-      data = File.open("#{self.base}/#{name}.yml", "r") { |f| YAML::load (f) }
-      entity.create(entity.normalise(data, name))
+    def populate(name, entity)
+      data = File.open("#{@base}/#{@@category}/#{name}.yml", "r") { |f| YAML::load(f) }
+      entity.create(data.values)
     end
 
-    def self.synchroniser(shop)
+    def synchroniser(shop)
       Synchroniser.new(Item.new(shop.defaults), shop.ingestors)
     end
 

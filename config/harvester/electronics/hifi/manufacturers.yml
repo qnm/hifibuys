@@ -1,53 +1,211 @@
--  Jadis
--  Classe Audio
--  Denon
--  Eventus
--  Martin Logan
--  Rega
--  MBL
--  Micromega
--  Theta
--  "Graham Robin"
--  Clearaudio
--  Cyrus
--  Myryad
--  Aelite
--  Wilson
--  Magnum
--  "Aerial Acoustics"
--  Omega
--  "Audio Research"
--  Oracle
--  Sony
--  CEC
--  Krell
--  Triangle
--  Gryphon
--  Thiel
--  Revel
--  MBL
--  "Audio Note"
--  Audiolab
--  Vincent
--  Meridian
--  "Musical Fidelity"
--  Aegis
--  REL
--  Linn
--  Klipsch
--  Threshold
--  "Definitive Technology"
--  Coincident
--  Avalon
--  AE
--  Pathos
--  Anthem
--  Hovland
--  Yamaha
--  ATC
--  Focus Audio
--  Genesis
--  Dali
--  Arcam
--  "Schroers & Schroers"
--  "Mark Levinson"
+entity_1:
+  name: Jadis
+  category: manufacturer
+
+entity_2:
+  name: Classe Audio
+  category: manufacturer
+
+entity_3:
+  name: Denon
+  category: manufacturer
+
+entity_4:
+  name: Eventus
+  category: manufacturer
+
+entity_5:
+  name: Martin Logan
+  category: manufacturer
+
+entity_6:
+  name: Rega
+  category: manufacturer
+
+entity_7:
+  name: MBL
+  category: manufacturer
+
+entity_8:
+  name: Micromega
+  category: manufacturer
+
+entity_9:
+  name: Theta
+  category: manufacturer
+
+entity_10:
+  name: Graham Robin
+  category: manufacturer
+
+entity_11:
+  name: Clearaudio
+  category: manufacturer
+
+entity_12:
+  name: Cyrus
+  category: manufacturer
+
+entity_13:
+  name: Myryad
+  category: manufacturer
+
+entity_14:
+  name: Aelite
+  category: manufacturer
+
+entity_15:
+  name: Wilson
+  category: manufacturer
+
+entity_16:
+  name: Magnum
+  category: manufacturer
+
+entity_17:
+  name: Aerial Acoustics
+  category: manufacturer
+
+entity_18:
+  name: Omega
+  category: manufacturer
+
+entity_19:
+  name: Audio Research
+  category: manufacturer
+
+entity_20:
+  name: Oracle
+  category: manufacturer
+
+entity_21:
+  name: Sony
+  category: manufacturer
+
+entity_22:
+  name: CEC
+  category: manufacturer
+
+entity_23:
+  name: Krell
+  category: manufacturer
+
+entity_24:
+  name: Triangle
+  category: manufacturer
+
+entity_25:
+  name: Gryphon
+  category: manufacturer
+
+entity_26:
+  name: Thiel
+  category: manufacturer
+
+entity_27:
+  name: Revel
+  category: manufacturer
+
+entity_28:
+  name: MBL
+  category: manufacturer
+
+entity_29:
+  name: Audio Note
+  category: manufacturer
+
+entity_30:
+  name: Audiolab
+  category: manufacturer
+
+entity_31:
+  name: Vincent
+  category: manufacturer
+
+entity_32:
+  name: Meridian
+  category: manufacturer
+
+entity_33:
+  name: Musical Fidelity
+  category: manufacturer
+
+entity_34:
+  name: Aegis
+  category: manufacturer
+
+entity_35:
+  name: REL
+  category: manufacturer
+
+entity_36:
+  name: Linn
+  category: manufacturer
+
+entity_37:
+  name: Klipsch
+  category: manufacturer
+
+entity_38:
+  name: Threshold
+  category: manufacturer
+
+entity_39:
+  name: Definitive Technology
+  category: manufacturer
+
+entity_40:
+  name: Coincident
+  category: manufacturer
+
+entity_41:
+  name: Avalon
+  category: manufacturer
+
+entity_42:
+  name: AE
+  category: manufacturer
+
+entity_43:
+  name: Pathos
+  category: manufacturer
+
+entity_44:
+  name: Anthem
+  category: manufacturer
+
+entity_45:
+  name: Hovland
+  category: manufacturer
+
+entity_46:
+  name: Yamaha
+  category: manufacturer
+
+entity_47:
+  name: ATC
+  category: manufacturer
+
+entity_48:
+  name: Focus Audio
+  category: manufacturer
+
+entity_49:
+  name: Genesis
+  category: manufacturer
+
+entity_50:
+  name: Dali
+  category: manufacturer
+
+entity_51:
+  name: Arcam
+  category: manufacturer
+
+entity_52:
+  name: Schroers & Schroers
+  category: manufacturer
+
+entity_53:
+  name: Mark Levinson
+  category: manufacturer

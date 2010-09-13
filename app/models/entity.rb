@@ -6,11 +6,4 @@ class Entity < ActiveRecord::Base
       :order => 'created_at DESC' )
   end
 
-  #FIXME: Use args here
-  def self.normalise(data, name)
-    data.inject([]) do |store, entity| 
-      store << {:category => name.singularize, :name => entity}
-    end
-  end
-
 end
