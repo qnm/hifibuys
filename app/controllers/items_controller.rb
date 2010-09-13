@@ -5,6 +5,7 @@ class ItemsController < ApplicationController
     @manufacturers = Item.tag_counts_on(:manufacturers)
     @types = Item.tag_counts_on(:types)
 
+    response.headers['Cache-Control'] = 'public, max-age=600'
     respond_to do |format|
       format.html # home.html.erb
     end
@@ -28,11 +29,8 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.xml
   def feed
-    @items = Item.paginate(:all,
-                            :page => params[:page], 
-                            :per_page => 10, 
-                            :order => 'created_at DESC' )
-
+    @items = Item.all
+    response.headers['Cache-Control'] = 'public, max-age=600'
     render 'items/feed', :layout => false, :content_type => 'application/xml'
   end
 
