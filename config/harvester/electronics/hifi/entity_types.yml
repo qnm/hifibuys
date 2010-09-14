@@ -1,0 +1,11 @@
+entity_type_1:
+  name: shops
+
+entity_type_2:
+  name: manufacturers
+
+entity_type_3:
+  name: types
+
+entity_type_4:
+  name: colours

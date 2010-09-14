@@ -6,7 +6,7 @@ shop_1:
   country: Australia
   updated_at: Sun Sep 12 21:40:39 UTC 2010
   suburb: Hawthorn East
-  id: 208
+  id: 217
   ingestor: TivoliIngestor
   state: VIC
   feed: test/siteref/tivoli.html
@@ -19,7 +19,7 @@ shop_2:
   country: Australia
   updated_at: Sun Sep 12 21:40:39 UTC 2010
   suburb: Carlton
-  id: 209
+  id: 218
   ingestor: CarltonIngestor
   state: Victoria
   feed: test/siteref/carlton.html
@@ -32,7 +32,7 @@ shop_3:
   country: Australia
   updated_at: Sun Sep 12 21:40:40 UTC 2010
   suburb: Leichhardt
-  id: 210
+  id: 219
   ingestor: AudioConnectionIngestor
   state: NSW
   feed: test/siteref/audioconnection.html

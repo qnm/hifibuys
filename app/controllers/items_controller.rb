@@ -2,8 +2,9 @@ class ItemsController < ApplicationController
 
   # GET /home
   def home
-    @manufacturers = Item.tag_counts_on(:manufacturers)
-    @types = Item.tag_counts_on(:types)
+    EntityType.all.each do |type|
+      instance_variable_set("@#{type.name}", Item.tag_counts_on(type.name.to_sym))
+    end
 
     response.headers['Cache-Control'] = 'public, max-age=600'
     respond_to do |format|

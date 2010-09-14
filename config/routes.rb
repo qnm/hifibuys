@@ -14,6 +14,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
 
   map.resources :entities
+  map.resources :entity_types
   map.resources :shops
 
   map.search_items  'items/search/:term', :controller => 'items', :action => 'search', :term => nil
