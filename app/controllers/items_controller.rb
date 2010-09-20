@@ -29,7 +29,7 @@ class ItemsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @items }
+      format.xml # GCS feed
       format.rss # Add this line so we can respond in RSS format.
     end
   end
