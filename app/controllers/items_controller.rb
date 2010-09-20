@@ -1,4 +1,7 @@
 class ItemsController < ApplicationController
+  caches_action :home
+  cache_sweeper :item_sweeper
+
 
   # GET /home
   def home
