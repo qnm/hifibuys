@@ -7,6 +7,7 @@
   <meta name="google-site-verification" content="QI82EAMFKAxfWPzw8vNmmhFqJWh-JBmUj_-UbRxoLmc" />
   <title>HifiBuys <%=  params[:term] || '' %></title>
   <%= stylesheet_link_tag 'default' %>
+  <%= auto_discovery_link_tag(:rss, items_url(:format => 'rss')) %>
 </head>
 <body>
 

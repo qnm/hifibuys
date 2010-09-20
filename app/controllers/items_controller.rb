@@ -19,14 +19,18 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.xml
   def index
+=begin
     @items = Item.paginate(:all,
                             :page => params[:page], 
                             :per_page => 10, 
                             :order => 'created_at DESC' )
+=end
+    @items = Item.all
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @items }
+      format.rss # Add this line so we can respond in RSS format.
     end
   end
 
