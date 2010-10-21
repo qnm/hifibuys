@@ -11,11 +11,6 @@ describe ItemsController do
   end
 
   describe "GET index" do
-    it "assigns all items as @items" do
-      Item.stub!(:paginate).and_return([mock_item])
-      get :index
-      assigns[:items].should == [mock_item]
-    end
   end
 
   describe "GET show" do
