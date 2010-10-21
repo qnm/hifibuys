@@ -14,6 +14,7 @@ gem "acts-as-taggable-on", "2.0.6"
 gem "sitemap_generator", "1.0.1"
 gem "synchroniser", "0.6.0"
 gem "formtastic",  "1.0.1"
+gem "nibbler", "1.1.0"
 
 group :development do
   gem "yaml_db", "0.1.0"
