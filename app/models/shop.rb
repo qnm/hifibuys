@@ -15,8 +15,7 @@ class Shop < ActiveRecord::Base
   end
 
   def ingestors
-    my_ingestor = Module.const_get(ingestor).new
-    my_ingestor.strategise(feed)
+    [ingestor.constantize.parse(open(feed))]
   end
 
 end

@@ -31,4 +31,8 @@ end
 
 class Carlton < Nibbler
   elements "//html/body/table/tr[2]/td[2]/table/tr[2]/td/table" => :items, :with => CarltonItem
+
+  def ingest(container)
+    self.items.map { |item| Item.new(item.to_hash) }
+  end
 end
