@@ -6,8 +6,7 @@ class Shop < ActiveRecord::Base
       :shop_suburb  => suburb,
       :shop_city    => city,
       :shop_state   => state,
-      :shop_country => country,
-      :group        => ingestor}
+      :shop_country => country}
   end
 
   def filename
@@ -16,6 +15,14 @@ class Shop < ActiveRecord::Base
 
   def ingestors
     [ingestor.constantize.parse(open(feed))]
+  end
+
+  def ingest
+    ingestor.constantize.parse(open(feed)).items
+  end
+
+  def item(data)
+    Item.new(defaults.merge(data))
   end
 
 end

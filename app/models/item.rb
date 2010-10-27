@@ -1,12 +1,7 @@
 class Item < ActiveRecord::Base
-  include Synchroniser::Model
   acts_as_taggable_on :manufacturers, :types
 
   require 'twitter'
-
-  def item
-    url
-  end
 
   def self.search(term, page)
    paginate(:conditions => ["name ILIKE ? ", "%#{term.to_s}%" ],
@@ -15,11 +10,9 @@ class Item < ActiveRecord::Base
             :order => 'created_at DESC' )
   end
 
-
-
   def before_save
     # attempt to associate a manufacturer
-    entities = self.name.split(" ")
+    entities = self.name.split(" ") rescue ""
     entities.each do |entity|
       entity = Entity.search(entity, "manufacturer").first
       if entity.nil? == false

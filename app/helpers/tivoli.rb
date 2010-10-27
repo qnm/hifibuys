@@ -14,8 +14,4 @@ end
 
 class Tivoli < Nibbler
   elements '//div[2]/div[2]/table/tr[position() > 1]' => :items, :with => TivoliItem
-
-  def ingest(container)
-    self.items.map { |item| Item.new(item.to_hash) }
-  end
 end

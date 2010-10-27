@@ -12,9 +12,7 @@ end
 
 Shop.find(:all).each do |shop|
   logger.info "Ingesting #{shop.name}"
-  synchroniser = harvester.synchroniser(shop)
-  synchroniser.sync
-  synchroniser.display_stats
+  harvester.synchronise(shop)
 end
 
 logger.info "DB Synchronised"

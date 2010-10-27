@@ -15,8 +15,4 @@ end
 
 class AudioConnection < Nibbler
   elements '//table[@class="prodlist"]/tr[position() > 1]' => :items, :with => AudioConnectionItem
-
-  def ingest(container)
-    self.items.map { |item| Item.new(item.to_hash) }
-  end
 end
