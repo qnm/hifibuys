@@ -11,8 +11,7 @@ describe Item do
       :shop_address => "value for shop_address",
       :shop_suburb => "value for shop_suburb",
       :shop_state => "value for shop_state",
-      :shop_country => "value for shop_country",
-      :group => "nogroup"
+      :shop_country => "value for shop_country"
     }
 
     @valid_attributes_b = {
@@ -24,8 +23,7 @@ describe Item do
       :shop_address => "value for shop_address",
       :shop_suburb => "value for shop_suburb",
       :shop_state => "value for shop_state",
-      :shop_country => "value for shop_country",
-      :group => "nogroup"
+      :shop_country => "value for shop_country"
     }
 
     @valid_attributes_c = {
@@ -37,8 +35,7 @@ describe Item do
       :shop_address => "value for shop_address",
       :shop_suburb => "value for shop_suburb",
       :shop_state => "value for shop_state",
-      :shop_country => "value for shop_country",
-      :group => "nogroup"
+      :shop_country => "value for shop_country"
     }
 
   end
