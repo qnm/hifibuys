@@ -13,16 +13,8 @@ class Shop < ActiveRecord::Base
     name.downcase.gsub(' ', '_')
   end
 
-  def ingestors
-    [ingestor.constantize.parse(open(feed))]
-  end
-
   def ingest
     ingestor.constantize.parse(open(feed)).items
-  end
-
-  def item(data)
-    Item.new(defaults.merge(data))
   end
 
 end
