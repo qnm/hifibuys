@@ -1,18 +1,28 @@
 logger = Logger.new(STDOUT)
 
 logger.info "Deleting existing data"
-harvester = Harvester::Base.new("electronics/hifi")
-harvester.wipe
 
-{"manufacturers" => Entity, "types" => Entity, "shops" => Shop, "entity_types" => EntityType}. each do |name, entity|
-  logger.info("Populating #{name.pluralize}")
-  creations = harvester.populate(name, entity)
-  logger.info("Created #{creations.count} #{name.pluralize}")
+Entity.delete_all
+
+@base = 'config/harvester'
+@category = 'electronics/hifi'
+
+entity_types = [  "manufacturers",
+                  "types" ]
+
+entity_types.each do |entity_type|
+  logger.info("Populating #{entity_type.pluralize}")
+  data = File.open("#{@base}/#{@category}/#{entity_type}.yml", "r") { |f| YAML::load(f) }
+  Entity.create(data.values)
 end
 
-Shop.find(:all).each do |shop|
-  logger.info "Ingesting #{shop.name}"
-  harvester.synchronise(shop)
+feeds = { Tivoli => "spec/integration/siteref/tivoli.html",
+          AudioConnection => "spec/integration/siteref/audioconnection.html",
+          Carlton => "spec/integration/siteref/carlton.html" }
+
+feeds.each do |ingestor, feed|
+  logger.info "Ingesting #{ingestor.to_s}"
+  Harvester::Base.synchronise(ingestor, feed)
 end
 
 logger.info "DB Synchronised"

@@ -10,6 +10,15 @@ class TivoliItem < Nibbler
     element ".//td[2]/div" => :description, :with => lambda { |node| node.text.gsub(/Second [Hh]and/,"").strip }
     element ".//td[2]/h3/a/@href" => :url
     element ".//td[3]" => :price, :with => lambda { |node| node.text.scan(/\$([0-9\.,.]{1,})/).first.first.to_f }
+
+    def to_hash
+      { :shop_name    => "Tivoli",
+        :shop_address => "155-157 Camberwell Road",
+        :shop_suburb  => "Hawthorn East",
+        :shop_city    => "Melbourne",
+        :shop_state   => "VIC",
+        :shop_country => "Australia"}.merge(super)
+    end
 end
 
 class Tivoli < Nibbler
