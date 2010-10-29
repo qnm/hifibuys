@@ -5,8 +5,8 @@ class ItemsController < ApplicationController
 
   # GET /home
   def home
-    EntityType.all.each do |type|
-      instance_variable_set("@#{type.name}", Item.tag_counts_on(type.name.to_sym))
+    ["manufacturers", "types"].each do |type|
+      instance_variable_set("@#{type}", Item.tag_counts_on(type.to_sym))
     end
 
     response.headers['Cache-Control'] = 'public, max-age=600'
