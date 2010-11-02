@@ -17,9 +17,13 @@ entity_types.each do |entity_type|
   Entity.create(data.values)
 end
 
-feeds = { Tivoli => "spec/integration/siteref/tivoli.html",
-          AudioConnection => "spec/integration/siteref/audioconnection.html",
-          Carlton => "spec/integration/siteref/carlton.html" }
+#feeds = { Tivoli => "spec/integration/siteref/tivoli.html",
+#          AudioConnection => "spec/integration/siteref/audioconnection.html",
+#          Carlton => "spec/integration/siteref/carlton.html" }
+
+feeds = { Tivoli => "http://tivolihifi.com/store/second-hand-equipment",
+          AudioConnection => "http://audioconnection.com.au/trade-ins-clearance-audio-equipment.asp",
+          Carlton => "http://www.carltonaudiovisual.com.au/?q=node/view/7" }
 
 feeds.each do |ingestor, feed|
   logger.info "Ingesting #{ingestor.to_s}"
