@@ -29,7 +29,7 @@ feeds.each do |ingestor, feed|
   logger.info "Ingesting #{ingestor.to_s}"
 
   items = ingestor.parse(open(feed)).items
-  Item.synchronise(items)
+  Item.synchronise(items, {:key => :url} )
 end
 
 # and remove any that haven't been updated

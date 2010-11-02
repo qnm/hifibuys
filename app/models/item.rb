@@ -35,9 +35,10 @@ class Item < ActiveRecord::Base
     "#{id}-#{name.downcase.gsub(/[^[:alnum:]]/,'-')}".gsub(/-{2,}/,'-')
   end 
 
-  def self.synchronise(items)
+  def self.synchronise(items, options = {})
     items.each do |ingestee| 
-      item = Item.find_or_create_by_url(ingestee.url)
+      key = ingestee.send(options[:key]).to_s
+      item = Item.send("find_or_create_by_" + options[:key].to_s, key)
       item.attributes = ingestee.to_hash.merge(:delta => true)
 
       if item.save
