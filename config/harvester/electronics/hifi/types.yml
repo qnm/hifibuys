@@ -1,0 +1,18 @@
+entity_54:
+  name: Speaker
+  category: type
+  id: 4435
+
+entity_55:
+  name: CD Player
+  category: type
+  id: 4436
+
+entity_56:
+  name: Amplifier
+  category: type
+  id: 4437
+
+entity_57:
+  name: DVD Player
+  category: type

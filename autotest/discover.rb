@@ -1,5 +1,2 @@
-$:.push(File.join(File.dirname(__FILE__), %w[.. .. rspec]))    
-  
-Autotest.add_discovery do    
-  "rspec"   
-end  
+Autotest.add_discovery { "rails" }
+Autotest.add_discovery { "rspec2" }

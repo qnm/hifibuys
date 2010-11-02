@@ -15,9 +15,9 @@ xml.channel do
   @items.each do |item|
     xml.item do
       xml.title         item.name
-      xml.link          item.url
+      xml.link          item.url.to_s
       xml.pubDate       item.created_at.to_s(:rfc822)
-      xml.guid          item.url
+      xml.guid          item.url.to_s
     end
   end
 end

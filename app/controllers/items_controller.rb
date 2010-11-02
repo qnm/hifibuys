@@ -45,7 +45,7 @@ class ItemsController < ApplicationController
 
   # GET /items/search/:term
   def search
-    @items = Item.search(params['term'], params[:page])
+    @items = Item.search(params['q'], params[:page])
 
     respond_to do |format|
       format.html # search.html.erb

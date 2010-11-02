@@ -1,41 +1,40 @@
-source :gemcutter
-gem "eventmachine", "0.12.10"
-gem "nokogiri", "1.4.3.1"
-gem "rake", "0.8.7"
-gem "rails", "2.3.8"
-gem "bundler", "1.0.0"
-gem "will_paginate", "2.3.14"
-gem "google_analytics", "1.1.5"
-gem "twitter", "0.6.3"
-gem "thin", "1.2.7"
-gem "pg", "0.9.0"
-gem "acts-as-taggable-on", "2.0.6"
-gem "sitemap_generator", "1.0.1"
-gem "formtastic",  "1.0.1"
-gem "nibbler", "1.1.0"
+source 'http://rubygems.org'
 
-group :development do
-  gem "yaml_db", "0.1.0"
-end
+gem 'rails', '3.0.1'
 
-group :test do
-  gem "ZenTest", "4.4.0"
-  gem "webrat", "0.7.1"
-  gem "rspec", "1.3.0"
-  gem "rspec-rails", "1.3.2"
-  gem "autotest", "4.3.2"
-  gem "autotest-rails", "4.1.0"
-  gem "cucumber", "0.8.5"
-  gem "cucumber-rails", "0.3.2"
-  gem "database_cleaner", "0.5.2"
-  gem "capybara", "0.3.9"
-  gem "pickle", "0.4.2"
-  gem "culerity", "0.2.12"
-  gem "gherkin", "2.1.5"
-  gem "rack-test", "0.5.4"
-  gem "spork", "0.8.4"
-end
+# Bundle edge Rails instead:
+# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :production do
-  gem "newrelic_rpm", "2.13.1"
-end
+gem 'sqlite3-ruby', :require => 'sqlite3'
+
+# Use unicorn as the web server
+# gem 'unicorn'
+
+# Deploy with Capistrano
+# gem 'capistrano'
+
+# To use debugger
+# gem 'ruby-debug'
+
+# Bundle the extra gems:
+# gem 'bj'
+# gem 'nokogiri'
+# gem 'sqlite3-ruby', :require => 'sqlite3'
+# gem 'aws-s3', :require => 'aws/s3'
+
+# Bundle gems for the local environment. Make sure to
+# put test-only gems in this group so their generators
+# and rake tasks are available in development mode:
+# group :development, :test do
+#   gem 'webrat'
+# end
+gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]
+gem "steak", ">= 1.0.0.rc.1"
+gem "capybara"
+gem "omniauth"
+gem "haml", ">= 3.0.0"
+gem "haml-rails"
+gem "pg"
+gem 'nibbler'
+gem "acts-as-taggable-on"
+gem 'will_paginate', '3.0.pre2'

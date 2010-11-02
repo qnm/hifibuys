@@ -5,7 +5,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <meta name="google-site-verification" content="QI82EAMFKAxfWPzw8vNmmhFqJWh-JBmUj_-UbRxoLmc" />
-  <title>HifiBuys <%=  params[:term] || '' %></title>
+  <title>HifiBuys <%=  params[:q] || '' %></title>
   <%= stylesheet_link_tag 'default' %>
   <%= auto_discovery_link_tag(:rss, items_url(:format => 'rss')) %>
 </head>
@@ -15,12 +15,12 @@
   <a href="/"><h1 style="float:left"><span style="color: #ff4fac">Hifi</span><span style="color: #4fa8ff">Buys</span></h1></a>
   <h1>&nbsp;:&nbsp;Discover Compare Share</h1>
 
-  <% if params[:action] != "index" %>
-    <% form_tag search_items_path, :method => :get, :style => "float:right" do %>
+  <%- if params[:action] != "index" %>
+    <%- form_tag search_items_path, :method => :get, :style => "float:right" do %>
       <p><%= text_field_tag :term, params['term'].to_s.strip %>
       <%= submit_tag 'Search' %></p>
-    <% end %>
-  <% end %>
+    <%- end %>
+  <%- end %>
 </div>
 
 <p style="color: green"><%= flash[:notice] %></p>

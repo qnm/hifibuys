@@ -2,6 +2,7 @@ logger = Logger.new(STDOUT)
 
 logger.info "Deleting existing data"
 
+Item.update_all(:delta => false)
 Entity.delete_all
 
 @base = 'config/harvester'
@@ -22,7 +23,12 @@ feeds = { Tivoli => "spec/integration/siteref/tivoli.html",
 
 feeds.each do |ingestor, feed|
   logger.info "Ingesting #{ingestor.to_s}"
-  Harvester::Base.synchronise(ingestor, feed)
+  Harvester.synchronise(ingestor, feed)
+end
+
+# and remove any that haven't been updated
+Item.find(:all, :conditions => {:delta => false}).each do |item|
+  item.delete
 end
 
 logger.info "DB Synchronised"

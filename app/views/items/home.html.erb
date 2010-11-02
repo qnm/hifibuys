@@ -1,14 +1,14 @@
 <h3>Follow us on twitter to <a href="http://twitter.com/twifibuys">get the best hifi deals</a></h3>
 
-<% form_tag search_items_path, :method => :get do %>
-  <p><%= text_field_tag :term %></p>
+<%- form_tag search_items_path, :method => :get do %>
+  <p><%= text_field_tag :q %></p>
   <p><%= submit_tag 'Search' %></p>
   <br />
 
   <h3>Search for</h3> 
   <div>
     <% tag_cloud(@types, %w(css1 css2 css3 css4)) do |tag, css_class| %>
-      <%= link_to tag.name.pluralize, { :action => :search, :term => tag.name }, :class => css_class %>
+      <%= link_to tag.name.pluralize, search_items_path(:q => tag.name), :class => css_class %>
     <% end %>
   </div>
   <br />
@@ -16,9 +16,9 @@
   <h3>Search for hifi from</h3>
   <div>
     <% tag_cloud(@manufacturers, %w(css1 css2 css3 css4)) do |tag, css_class| %>
-      <%= link_to tag.name, { :action => :search, :term => tag.name }, :class => css_class %>
+      <%= link_to tag.name, search_items_path(:q => tag.name),  :class => css_class %>
     <% end %>
   </div>
-<% end %>
+<%- end %>
 
 

@@ -1,4 +1,4 @@
-<h2>Results of your search for '<%= params[:term] %>'</h2>
+<h2>Results of your search for '<%= params[:q] %>'</h2>
 <%= render :partial => 'item',
   :collection => @items, 
   :as => :item
@@ -9,5 +9,5 @@
 </div>
 
 <% if @items.empty? %>
-  Sorry! We don't have anything matching "<%= params[:term] %>".
+  Sorry! We don't have anything matching "<%= params[:q] %>".
 <% end %>

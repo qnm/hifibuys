@@ -3,7 +3,7 @@ require 'uri'
 require 'nokogiri'
 
 class CarltonItem < Nibbler
-    SITE = URI("http://www.carltonaudiovisual.com.au/")
+    SITE = "http://www.carltonaudiovisual.com.au/"
     element ".//tr/td/div/a" => :name, :with => lambda { |node| node.text.split("-").first.split(",").first.split("WAS").first.strip }
     element ".//tr/td/p" => :description
     element ".//tr/td/div/a/@href" => :url, :with => lambda { |node| SITE + node.text }

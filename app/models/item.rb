@@ -1,8 +1,6 @@
 class Item < ActiveRecord::Base
   acts_as_taggable_on :manufacturers, :types
 
-  require 'twitter'
-
   def self.search(term, page)
    paginate(:conditions => ["name ILIKE ? ", "%#{term.to_s}%" ],
             :page => page, 
@@ -10,6 +8,7 @@ class Item < ActiveRecord::Base
             :order => 'created_at DESC' )
   end
 
+  # TODO use an observer instead
   def before_save
     # attempt to associate a manufacturer
     entities = self.name.split(" ") rescue ""
@@ -27,16 +26,6 @@ class Item < ActiveRecord::Base
         self.type_list = entity.name
       end
     end
-
-    super
-  end
-
-  def after_save
-    #config = YAML::load(File.open(RAILS_ROOT + "/config/twitter.yml"))
-    #httpauth = Twitter::HTTPAuth.new(config["user"], config["password"])
-    #client = Twitter::Base.new(httpauth)
-    #client.update("#{name} for #{price} : #{url}")
-    super
   end
 
   # we now add the to_param method which Rails's routing uses
