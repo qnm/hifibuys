@@ -9,7 +9,7 @@ class TivoliItem < Nibbler
     element ".//td[2]/h3/a[position() = 1]" => :name, :with => lambda { |node| node.text.gsub(/- Second [hH]and/,"").strip }
     element ".//td[2]/div" => :description, :with => lambda { |node| node.text.gsub(/Second [Hh]and/,"").strip }
     element ".//td[2]/h3/a/@href" => :url
-    element ".//td[3]" => :price, :with => lambda { |node| '$' + node.text.scan(/\$([0-9\.,.]{1,})/).first.first.to_s }
+    element ".//td[3]" => :price, :with => lambda { |node| '$' + node.text.scan(/\$([0-9\.,.]{1,})/).first.first.to_i.to_s }
 
     def to_hash
       { :shop_name    => "Tivoli",

@@ -28,6 +28,8 @@ class Item < ActiveRecord::Base
     end
   end
 
+  # TODO handle item deletion in tag-land
+
   # we now add the to_param method which Rails's routing uses
   def to_param
     "#{id}-#{name.downcase.gsub(/[^[:alnum:]]/,'-')}".gsub(/-{2,}/,'-')
