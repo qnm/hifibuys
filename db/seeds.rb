@@ -29,7 +29,13 @@ feeds.each do |ingestor, feed|
   logger.info "Ingesting #{ingestor.to_s}"
 
   items = ingestor.parse(open(feed)).items
-  Item.synchronise(items, {:key => :url} )
+  Item.synchronise(items, {:key => :url} ).each do |item|
+    if item.save
+      logger.info("Saved #{item.name} with id #{item.id}")
+    else
+      logger.info("#{item.name} hasnt changed") unless item.id.nil?
+    end
+  end
 end
 
 # and remove any that haven't been updated

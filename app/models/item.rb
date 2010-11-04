@@ -1,8 +1,6 @@
 class Item < ActiveRecord::Base
   acts_as_taggable_on :manufacturers, :types
 
-  @@logger = Logger.new(STDOUT)
-
   def self.search(term, page)
    paginate(:conditions => ["name ILIKE ? ", "%#{term.to_s}%" ],
             :page => page, 
@@ -38,17 +36,11 @@ class Item < ActiveRecord::Base
   end 
 
   def self.synchronise(items, options = {})
-
-    items.each do |ingestee| 
+    items.inject([]) do |items, ingestee| 
       key = ingestee.send(options[:key]).to_s
       item = Item.send("find_or_create_by_" + options[:key].to_s, key)
       item.attributes = ingestee.to_hash.merge(:delta => true)
-
-      if item.save
-        @@logger.info("Saved #{item.name} with id #{item.id}")
-      else
-        @@logger.info("#{item.name} hasnt changed") unless item.id.nil?
-      end
+      items << item
     end
   end
 
