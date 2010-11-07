@@ -58,6 +58,20 @@ describe "Item::Synchronise" do
 
     a = Item.create({:name => "Denon 7500 DVD Player Special Offer"})
     a.type_list.should == ["DVD Player"]
-end
+  end
+
+  it "should remove all tags when the original item is deleted and no further parents exist" do\
+    Entity.create({:category => "type", :name => "DVD Player"})
+    Entity.create({:category => "manufacturer", :name => "Denon"})
+
+    a = Item.create({:name => "Denon 7500 DVD Player Special Offer"})
+    a.type_list.should == ["DVD Player"]
+
+    Item.tagged_with(["Denon", "DVD Player"], :any => true).should == [a]
+
+    a.delete
+
+    Item.tagged_with(["Denon", "DVD Player"], :any => true).should == []
+  end
  
 end
