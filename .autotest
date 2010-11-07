@@ -1,9 +1,12 @@
+# vi: ft=ruby
+
 module Autotest::GnomeNotify
 
   # Time notification will be displayed before disappearing automatically
-  EXPIRATION_IN_SECONDS = 2
+  EXPIRATION_IN_SECONDS = 20
   ERROR_STOCK_ICON = "gtk-dialog-error"
   SUCCESS_STOCK_ICON = "gtk-dialog-info"
+  
 
   # Convenience method to send an error notification message
   #
@@ -14,13 +17,53 @@ module Autotest::GnomeNotify
     options = "-t #{EXPIRATION_IN_SECONDS * 1000} -i #{stock_icon}"
     system "notify-send #{options} '#{title}' '#{message}'"
   end
-
+  
   Autotest.add_hook :red do |at|
-    notify ERROR_STOCK_ICON, "Tests failed", "#{at.files_to_test.size} tests failed"
+    title = filter_title(at.results)
+    message = filter_message(at.results)
+    notify ERROR_STOCK_ICON, title, message
   end
 
   Autotest.add_hook :green do |at|
-    notify SUCCESS_STOCK_ICON, "All tests passed, good job!", ""
+    title = filter_title(at.results)
+    if title
+      message = filter_message(at.results)
+      notify SUCCESS_STOCK_ICON, title, message
+    else
+      title = 'ERROR'
+      notify ERROR_STOCK_ICON, title, message
+    end
   end
 
+  def self.filter_title(results)
+    output = results.slice(/(\d+)\sexamples?,\s(\d+)\sfailures?/)
+    output = swap_position(output)
+    return output
+  end
+
+  def self.swap_position(string)
+    return string if string.nil?
+
+    splitted = string.split(',')
+    "#{splitted[1]}, #{splitted[0]}"
+  end
+
+  def self.filter_message(results)
+    output = ''
+
+    magneta = results[/\n\e\[35m.*\n.*/]
+    if magneta
+      output << magneta.sub(/\n\e\[35m/, '').sub(/\e\[0m/, '')
+    end
+
+    unless magneta # no need to find red if magneta excisted
+      red = results[/\n\e\[31m.*\n.*/]
+      if red
+        output << red.sub(/\n\e\[31m/, '').sub(/\e\[0m/, '')
+      end
+    end
+
+    output.gsub!(/['#`<>]/, '') # notify-send don't like those symbols
+    return output
+  end
 end
