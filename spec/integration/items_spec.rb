@@ -45,4 +45,19 @@ describe "Item::Synchronise" do
   end
 
   it "should delete an Item when the Item no longer exists in the source"
+
+  it "should tag a manufacturer when the manufacturer is recognised" do
+    Entity.create({:category => "manufacturer", :name => "Arcam"})
+
+    a = Item.create({:name => "Arcam AVR 350"})
+    a.manufacturer_list.should == ["Arcam"]
+  end
+
+  it "should tag a type when the type is recognised" do
+    Entity.create({:category => "type", :name => "DVD Player"})
+
+    a = Item.create({:name => "Denon 7500 DVD Player Special Offer"})
+    a.type_list.should == ["DVD Player"]
+end
+ 
 end
