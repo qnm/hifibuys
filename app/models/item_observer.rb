@@ -19,5 +19,4 @@ class ItemObserver < ActiveRecord::Observer
     end
   end
 
-  # TODO handle item deletion in tag-land
 end
