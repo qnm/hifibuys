@@ -1,3 +1,5 @@
+require 'open-uri'
+
 logger = Logger.new(STDOUT)
 
 logger.info "Deleting existing data"
