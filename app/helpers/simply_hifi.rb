@@ -26,5 +26,5 @@ class SimplyHifiItem < Nibbler
 end
 
 class SimplyHifi < Nibbler
-  elements '//div[6]/center/table/tr' => :items, :with => SimplyHifiItem
+  elements '//div[@align = "center"]/center/table/tr' => :items, :with => SimplyHifiItem
 end
