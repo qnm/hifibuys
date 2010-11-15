@@ -5,9 +5,9 @@ describe "Tivoli" do
   it "should return an item for some example html" do
     parser = Tivoli.parse open('spec/integration/siteref/tivoli.html')									
     item = parser.items.first.to_hash
-    item[:name].should == "Arcam Alpha 7 CD Player"
-    item[:description].should == 'The Alpha 7 CD player topped the UK sales charts for three years and has a long list of awards from the UK and internationally,...'
-    item[:url].to_s.should == "http://tivolihifi.com/store/index.php?main_page=product_info&cPath=13&products_id=566&zenid=0dc5c3cff2edb01cb475133bfbabe090"
-    item[:price].should == "$499"
+    item[:name].should == "Arcam A32 Integrated Amplifier"
+    item[:description].should == '100wpc Integrated Current Feedback Amplifier Ultra wide band power amplifier Studio grade electronic volume control Menu driven advanced control...'
+    item[:url].to_s.should == "http://tivolihifi.com/store/second-hand-equipment/arcam-a32-integrated-amplifier?zenid=7fd1f1569d0e9e1f1f337f743dc32427"
+    item[:price].should == "$1999"
   end
 end
