@@ -1,5 +1,10 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
+Factory.define :item do |f|
+  f.sequence(:id) { |n| "#{n}" }
+  f.name { |n| "hi, my name is item number #{n}" }
+end
+
 describe "Item::Synchronise" do
 
   it "should do nothing given an empty source" do
@@ -12,36 +17,37 @@ describe "Item::Synchronise" do
     test_key = :url
     test_value = "http:rob.sharp.id.au"
 
-    Item.find(:all).count.should == 0
+    Item.find(:all).should have(0).items
 
-    source_item = double("IngestedItem")
+    @item = Factory(:item)
+    source_item = double(@item)
     source_item.stub(test_key).and_return(test_value)
     source_item.stub(:to_hash).and_return({test_key => test_value})
+    source_item.stub(:name).and_return("hi, my name is...")
     source = [source_item]
 
     items = Item.synchronise(source, {:key => test_key} )
     items.first.send(test_key).should ==  test_value
 
-    Item.find(:all).count.should == 1
+    Item.find(:all).should have(1).items
   end
 
   it "should update an Item when an existing Item exists" do
     test_key = :url
     test_value = "http:rob.sharp.id.au"
 
-    Item.create({test_key => test_value})
-
-    Item.find(:all).count.should == 1
-
-    source_item = double("IngestedItem")
+    @item = Factory(:item)
+    Item.find(:all).should have(1).items
+    source_item = double(@item)
     source_item.stub(test_key).and_return(test_value)
     source_item.stub(:to_hash).and_return({test_key => test_value})
+    source_item.stub(:name).and_return("hi, my name is...")
     source = [source_item]
 
     items = Item.synchronise(source, {:key => test_key} )
     items.first.send(test_key).should ==  test_value
 
-    Item.find(:all).count.should == 1
+    Item.find(:all).should have(1).items
   end
 
   it "should delete an Item when the Item no longer exists in the source"
