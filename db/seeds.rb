@@ -23,12 +23,14 @@ end
 feeds = { Tivoli => "spec/integration/siteref/tivoli.html",
           AudioConnection => "spec/integration/siteref/audioconnection.html",
           Carlton => "spec/integration/siteref/carlton.html",
+          Pymble => "spec/integration/siteref/pymble.html" ,
           SimplyHifi => "spec/integration/siteref/simplyhifi.html" }
 
 # remote feeds
 feeds = { Tivoli => "http://tivolihifi.com/store/second-hand-equipment",
           AudioConnection => "http://audioconnection.com.au/trade-ins-clearance-audio-equipment.asp",
           Carlton => "http://www.carltonaudiovisual.com.au/?q=node/view/7",
+          Pymble => "http://www.pymblehifi.com.au/Specials.htm",
           SimplyHifi => "http://www.simplyhifi.com.au/Trade_ins.htm" } if Rails.env.production?
 
 feeds.each do |ingestor, feed|
