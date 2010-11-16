@@ -9,5 +9,6 @@ describe "AudioConnection" do
     item[:description].should == ''
     item[:url].to_s.should == "http://www.audioconnection.com.au/products/lambda-tv-mini-stand.asp"
     item[:price].should == "$600"
+    item[:original_price].should == "$1125"
   end
 end
