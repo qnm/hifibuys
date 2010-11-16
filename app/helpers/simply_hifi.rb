@@ -9,7 +9,8 @@ class SimplyHifiItem < Nibbler
     element "./td[1]/div/center/table/tr/td/p/font" => :description, :with => lambda { |node| self.tidy(node.inner_html) }
     element "./td[1]/div/center/table/tr/td/p/font/b" => :name, :with => lambda { |node| self.tidy(node.inner_html) }
     element "./td[1]/div/center/table/tr/td/p/font/b" => :url, :with => lambda { |node| SITE  + "?source=hifibuys.com.au&product=#{self.tidy(node.inner_html).downcase.gsub(/[^[:alnum:]]/,'-')}".gsub(/-{2,}/,'-') }
-    #element ".//td[1]/p/font" => :original_price, :with => lambda { |node| "$" + node.inner_html.strip.gsub(",","").scan(/\$([0-9\.,.]{1,})/).map { |x| x.first.to_i }.min.to_s }
+    element "./td[1]/div/center/table/tr/td/p/font" => :original_price, :with => lambda { |node| 
+      '$' + node.inner_html.scan(/\$([0-9,]{1,})/).first.to_s.gsub(',','') }
     element "./td[2]/b/font" => :price
 
     # in this case there's no description in the datasource, so we return an empty string instead
