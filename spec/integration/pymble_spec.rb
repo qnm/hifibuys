@@ -8,7 +8,7 @@ describe "Pymble" do
     item[:name].should == "Parasound 7100"
     item[:description].should == 'Silver'
     item[:url].to_s.should == "http://www.pymblehifi.com.au/parasound-7100"
-    #item[:original_price].should == "$14900"
+    item[:original_price].should == "$6999"
     item[:price].should == "$Call for sale price"
   end
 end
