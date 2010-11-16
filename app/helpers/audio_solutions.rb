@@ -2,7 +2,7 @@ require 'nibbler'
 require 'uri'
 
 class AudioSolutionsItem < Nibbler
-    SITE = "http://www.audiosolutions.com.au/sydney-audio-solutions/specials.html"
+    SITE = "http://www.audiosolutions.net.au/sydney-audio-solutions/specials.html"
 
     element ".//td[1]/font" => :name, :with => lambda { |node| node.inner_html.strip.gsub(/[",]/,"") }
     element ".//td[2]/font" => :description, :with => lambda { |node| node.inner_html.strip.gsub(/[",]/,"") }

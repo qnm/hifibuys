@@ -7,7 +7,7 @@ describe "AudioSolutions" do
     item = parser.items.first.to_hash
     item[:name].should == "ARCAM AV9"
     item[:description].should == 'Surround Sound Pre Amplifier'
-    item[:url].to_s.should == "http://www.audiosolutions.com.au/sydney-audio-solutions/specials.html?source=hifibuys.com.au&product=arcam-av9"
+    item[:url].to_s.should == "http://www.audiosolutions.net.au/sydney-audio-solutions/specials.html?source=hifibuys.com.au&product=arcam-av9"
     item[:price].should == "$5500"
     item[:original_price].should == "$9999"
   end
