@@ -5,12 +5,12 @@ xml.channel do
   xml.description       "Cheap but awesome hifi"
   xml.link              "http://www.hifibuys.com.au"
   
-  @items.each do |item|
+  @items.reject { |item| item.name.nil? }.each do |item|
     xml.item do
       xml.title         item.name
       xml.description   item.description
       xml.g             :price, item.price
-      xml.link          item.url
+      xml.link          item_url(item)
       xml.g             :condition, 'new'
       xml.g             :id, item.id
       xml.c             :manufacturer, item.manufacturer_list.to_s
