@@ -19,14 +19,7 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.xml
   def index
-=begin
-    @items = Item.paginate(:all,
-                            :page => params[:page], 
-                            :per_page => 10, 
-                            :order => 'created_at DESC' )
-=end
-    @items = Item.all
-
+    @items = Item.find(:all)
     respond_to do |format|
       format.html # index.html.erb
       format.xml # GCS feed
@@ -37,7 +30,7 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.xml
   def feed
-    @items = Item.all
+    @items = Item.find(:all).reject { |item| item.name.nil? }
     response.headers['Cache-Control'] = 'public, max-age=600'
     render 'items/feed', :layout => false, :content_type => 'application/xml'
   end
