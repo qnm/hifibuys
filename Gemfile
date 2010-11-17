@@ -14,4 +14,4 @@ gem "pg"
 gem 'nibbler'
 gem "acts-as-taggable-on"
 gem 'will_paginate', '3.0.pre2'
-gem "newrelic_rpm"
+#gem "newrelic_rpm"
