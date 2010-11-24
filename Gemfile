@@ -15,5 +15,5 @@ gem 'nibbler'
 gem "acts-as-taggable-on"
 gem 'will_paginate', '3.0.pre2'
 #gem "newrelic_rpm"
-gem 'yaml_db', :git => "https://robsharp@github.com/robsharp/yaml_db.git"
+gem 'yaml_db'#, :git => "https://robsharp@github.com/robsharp/yaml_db.git"
 gem 'friendly_id'
