@@ -1,3 +1,9 @@
+GIT
+  remote: https://robsharp@github.com/robsharp/yaml_db.git
+  revision: ca178cfb59cfbd5a1a4972798a74a6f06f83602d
+  specs:
+    yaml_db (0.2.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -32,6 +38,7 @@ GEM
     addressable (2.2.2)
     arel (1.0.1)
       activesupport (~> 3.0.0)
+    babosa (0.2.0)
     builder (2.1.2)
     capybara (0.3.9)
       culerity (>= 0.2.4)
@@ -51,6 +58,8 @@ GEM
       rack (>= 1.1.0, < 2)
     ffi (0.6.3)
       rake (>= 0.8.7)
+    friendly_id (3.1.8)
+      babosa (~> 0.2.0)
     haml (3.0.22)
     haml-rails (0.3.4)
       actionpack (~> 3.0)
@@ -167,6 +176,7 @@ DEPENDENCIES
   acts-as-taggable-on
   capybara
   factory_girl
+  friendly_id
   haml (>= 3.0.0)
   haml-rails
   nibbler
@@ -177,3 +187,4 @@ DEPENDENCIES
   sqlite3-ruby
   steak (>= 1.0.0.rc.1)
   will_paginate (= 3.0.pre2)
+  yaml_db!

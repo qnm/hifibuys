@@ -1,6 +1,7 @@
 require 'nibbler'
 require 'uri'
 require 'html/sanitizer'
+include Feed
 
 class SimplyHifiItem < Nibbler
     @@sanitizer = HTML::FullSanitizer.new
@@ -33,5 +34,8 @@ class SimplyHifiItem < Nibbler
 end
 
 class SimplyHifi < Nibbler
+  consumes "http://www.simplyhifi.com.au/Trade_ins.htm"
+  synchronises Item, :unique => :url
+
   elements '/html/body/div[position() > 5]/center/table/tbody/tr' => :items, :with => SimplyHifiItem
 end

@@ -1,6 +1,6 @@
 require 'nibbler'
 require 'uri'
-require 'nokogiri'
+include Feed
 
 class CarltonItem < Nibbler
     SITE = "http://www.carltonaudiovisual.com.au/"
@@ -20,5 +20,8 @@ class CarltonItem < Nibbler
 end
 
 class Carlton < Nibbler
+  consumes "http://www.carltonaudiovisual.com.au/?q=node/view/7"
+  synchronises Item, :unique => :url
+
   elements "//html/body/table/tr[2]/td[2]/table/tr[2]/td/table" => :items, :with => CarltonItem
 end

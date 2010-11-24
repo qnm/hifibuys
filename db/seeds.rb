@@ -1,4 +1,5 @@
 require 'lib/openuri.rb'
+include Feed
 
 logger = Logger.new(STDOUT)
 
@@ -19,19 +20,10 @@ entity_types.each do |entity_type|
   Entity.create(data.values)
 end
 
-# remote feeds
-feeds = { Tivoli => "http://tivolihifi.com/store/second-hand-equipment",
-          AudioConnection => "http://audioconnection.com.au/trade-ins-clearance-audio-equipment.asp",
-          Carlton => "http://www.carltonaudiovisual.com.au/?q=node/view/7",
-          Pymble => "http://www.pymblehifi.com.au/Specials.htm",
-          AudioSolutions => "http://audiosolutions.net.au/sydney-audio-solutions/specials.html",
-          SimplyHifi => "http://www.simplyhifi.com.au/Trade_ins.htm" }
+feeds.each do |feed|
+  logger.info "Ingesting #{feed.to_s}"
 
-feeds.each do |ingestor, feed|
-  logger.info "Ingesting #{ingestor.to_s}"
-
-  items = ingestor.parse(open(feed)).items
-  Item.synchronise(items, {:key => :url} ).each do |item|
+  feed.synchronise.each do |item|
     if item.save
       logger.info("Saved #{item.name} with id #{item.id}")
     else

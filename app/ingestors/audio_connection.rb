@@ -1,5 +1,6 @@
 require 'nibbler'
 require 'uri'
+include Feed
 
 class AudioConnectionItem < Nibbler
     SITE = "http://www.audioconnection.com.au"
@@ -22,5 +23,8 @@ class AudioConnectionItem < Nibbler
 end
 
 class AudioConnection < Nibbler
+  consumes "http://audioconnection.com.au/trade-ins-clearance-audio-equipment.asp"
+  synchronises Item, :unique => :url
+
   elements '//table[@class="prodlist"]/tr[position() > 1]' => :items, :with => AudioConnectionItem
 end

@@ -1,6 +1,6 @@
 require 'nibbler'
 require 'uri'
-require 'nokogiri'
+include Feed
 
 class TivoliItem < Nibbler
     element ".//td[2]/a[1]/@href" => :url, :with => lambda { |node| SITE + node.text }
@@ -23,5 +23,8 @@ class TivoliItem < Nibbler
 end
 
 class Tivoli < Nibbler
+  consumes "http://tivolihifi.com/store/second-hand-equipment"
+  synchronises Item, :unique => :url
+
   elements '//div[2]/div[2]/table/tr[position() > 1]' => :items, :with => TivoliItem
 end

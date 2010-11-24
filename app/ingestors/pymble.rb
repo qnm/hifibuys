@@ -1,6 +1,7 @@
 require 'nibbler'
 require 'uri'
 require 'html/sanitizer'
+include Feed
 
 class PymbleItem < Nibbler
     @@sanitizer = HTML::FullSanitizer.new
@@ -35,5 +36,8 @@ class PymbleItem < Nibbler
 end
 
 class Pymble < Nibbler
+  consumes "http://www.pymblehifi.com.au/Specials.htm"
+  synchronises Item, :unique => :url
+
   elements '//div[@class = "Specials"]/table/tr[position() > 3]' => :items, :with => PymbleItem
 end
