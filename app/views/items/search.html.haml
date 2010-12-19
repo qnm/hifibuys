@@ -1,0 +1,8 @@
+%h2 We help you find...
+- unless @items
+  %h2= "Sorry! We don't have anything matching #{params[:q]}."
+- else
+  .items= render @items 
+
+.hlisting= will_paginate @items
+

@@ -1,0 +1,8 @@
+.item.hproduct{ :class => cycle('even', 'odd') }
+  .shop= "from #{item.seller.name}, #{item.seller.city}"
+  .name
+    .fn
+      %h3= link_to item.name, item
+    .description
+      %ul
+        %li.price= item.price

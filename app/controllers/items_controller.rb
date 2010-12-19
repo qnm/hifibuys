@@ -21,7 +21,6 @@ class ItemsController < ApplicationController
   def index
     @items = Item.find(:all)
     respond_to do |format|
-      format.html # index.html.erb
       format.xml # GCS feed
       format.rss # Add this line so we can respond in RSS format.
     end
@@ -54,7 +53,10 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
 
     respond_to do |format|
-      format.html { redirect_to @item.url }
+      format.html { 
+        redirect_to @item.url unless @item.url.blank?
+        render :html => @item if @item.url.blank?
+      }
       format.xml  { render :xml => @item }
     end
   end
@@ -79,6 +81,8 @@ class ItemsController < ApplicationController
   # POST /items.xml
   def create
     @item = Item.new(params[:item])
+    @item.seller = current_user
+    @item.submitter = current_user
 
     respond_to do |format|
       if @item.save

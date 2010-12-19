@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101124101637) do
+ActiveRecord::Schema.define(:version => 20101203091754) do
 
   create_table "entities", :force => true do |t|
     t.string   "name"
@@ -25,19 +25,27 @@ ActiveRecord::Schema.define(:version => 20101124101637) do
     t.text     "description"
     t.string   "price"
     t.string   "url"
-    t.string   "shop_name"
-    t.string   "shop_address"
-    t.string   "shop_suburb"
-    t.string   "shop_state"
-    t.string   "shop_country"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "shop_hash"
-    t.string   "shop_city"
-    t.integer  "shop_id"
     t.boolean  "delta",          :default => true
     t.string   "original_price"
+    t.integer  "submitter_id"
+    t.integer  "seller_id"
   end
+
+  create_table "login_accounts", :force => true do |t|
+    t.string   "type"
+    t.integer  "user_id"
+    t.string   "remote_account_id"
+    t.string   "name"
+    t.string   "login"
+    t.string   "picture_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "login_accounts", ["type"], :name => "index_login_accounts_on_type"
+  add_index "login_accounts", ["user_id"], :name => "index_login_accounts_on_user_id"
 
   create_table "slugs", :force => true do |t|
     t.string   "name"
@@ -66,6 +74,17 @@ ActiveRecord::Schema.define(:version => 20101124101637) do
 
   create_table "tags", :force => true do |t|
     t.string "name"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "remember_token"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "address"
+    t.string   "suburb"
+    t.string   "city"
+    t.string   "state"
+    t.string   "country"
   end
 
 end

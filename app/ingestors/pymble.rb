@@ -17,12 +17,10 @@ class PymbleItem < Nibbler
 
     # in this case there's no description in the datasource, so we return an empty string instead
     def to_hash
-      { :shop_name    => "Pymble",
-        :shop_address => "",
-        :shop_suburb  => "",
-        :shop_city    => "",
-        :shop_state   => "NSW",
-        :shop_country => "Australia" }.merge(super)
+      { 
+        :seller_id    => 9,
+        :submitter_id => 9,
+      }.merge(super)
     end
 
     def self.tidy(value)

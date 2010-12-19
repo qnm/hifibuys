@@ -13,13 +13,11 @@ class AudioSolutionsItem < Nibbler
 
     # in this case there's no description in the datasource, so we return an empty string instead
     def to_hash
-      { :shop_name    => "Audio Solutions",
-        :shop_address => "",
-        :shop_suburb  => "Leichardt",
-        :shop_city    => "Sydney",
-        :shop_state   => "NSW",
-        :shop_country => "Australia",
-        :description  => ''}.merge(super)
+      {
+        :seller_id    => 7,
+        :submitter_id => 7,
+        :description  => ''
+      }.merge(super)
     end
 end
 

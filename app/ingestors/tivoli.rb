@@ -13,12 +13,10 @@ class TivoliItem < Nibbler
 
 
     def to_hash
-      { :shop_name    => "Tivoli",
-        :shop_address => "155-157 Camberwell Road",
-        :shop_suburb  => "Hawthorn East",
-        :shop_city    => "Melbourne",
-        :shop_state   => "VIC",
-        :shop_country => "Australia"}.merge(super)
+      { 
+        :seller_id    => 11,
+        :submitter_id => 11,
+      }.merge(super)
     end
 end
 

@@ -1,0 +1,32 @@
+
+--- 
+login_accounts: 
+  columns: 
+  - id
+  - type
+  - user_id
+  - remote_account_id
+  - name
+  - login
+  - picture_url
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - Omnisocial::TwitterAccount
+    - "1"
+    - "91552288"
+    - Hifi Buys
+    - twifibuys
+    - http://s.twimg.com/a/1290538325/images/default_profile_2_normal.png
+    - 2010-11-25 10:00:14.169057
+    - 2010-11-25 10:00:14.395211
+  - - "2"
+    - Omnisocial::TwitterAccount
+    - "2"
+    - "792230"
+    - R0b Sh4rp
+    - quannum
+    - http://a3.twimg.com/profile_images/578432007/twitterProfilePhoto_normal.jpg
+    - 2010-11-25 12:27:13.877668
+    - 2010-11-25 12:27:14.013323

@@ -1,0 +1,35 @@
+
+--- 
+users: 
+  columns: 
+  - id
+  - remember_token
+  - created_at
+  - updated_at
+  - name
+  - address
+  - suburb
+  - city
+  - state
+  - country
+  records: 
+  - - "1"
+    - $2a$10$fQgp9IDwKfL7RmOwtPIG0O3gyTexea9sunYbzmitkj8K/sySHzsge
+    - 2010-11-25 10:00:14.369784
+    - 2010-11-25 10:00:14.825573
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - "2"
+    - $2a$10$dXBbPATjpF4TUP1z73SE7eEBW0OV/nY4WRSDsmuoyf9hONO1ld/Y.
+    - 2010-11-25 12:27:13.975422
+    - 2010-11-25 12:27:14.309666
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 

@@ -8,3 +8,4 @@ public/sitemap.xml
 db/sphinx/*
 log/*
 .bundle
+vendor/gems/*

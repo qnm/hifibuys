@@ -3,3 +3,9 @@
 
 en:
   hello: "Hello world"
+  helpers:
+    label:
+      item:
+        name: Name of the item you're selling
+        description: Describe what you're selling - don't forget your contact details!
+        price: How much you'd like to sell the item for

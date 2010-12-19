@@ -1,196 +1,80 @@
-body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   13px;
-  line-height: 18px;
-  margin: 0px;
-  padding: 0px;
-}
+/* Everything
+-------------------------------------------------------------- */
+html { font-size:100.01%; background:#fff }
+body, select, input, textarea { color:#444; padding: 0em; margin: 0em; } 
+a { color: #4fa8ff; text-decoration: none; }
+.pink { color: #ff4fac }
+.blue { color: #4fa8ff }
 
-h1, h2, h3, h4 {
-  margin: 2px;
-}
+/* Headings
+-------------------------------------------------------------- */
 
-h1 {
-  color: #666;
-}
+h1,h2,h3,h4,h5,h6 { font-weight: normal; }
 
-body { 
-  background: url("/images/topbluefade.gif") repeat-x #fff;
-  color: #333; 
-  padding: 5px;
-}
+h1 { font-size: 1.8em; line-height: 1; margin-bottom: 0.2em; }
+h2 { font-size: 1.5em; margin-bottom: 0.2em; }
+h3 { font-size: 1.2em; margin-bottom: 0.2em; font-weight: bold;}
+h4 { font-size: 0.7em; line-height: 1; margin-bottom: 1em; }
+h5 { font-size: 0.5em; line-height: margin-bottom: 1.25em; }
+h6 { font-size: 0.2em; font-weight: bold; margin-bottom: 1.5em; }
 
-div {
-  margin: 0px;
-  padding: 0px;
-}
+h1 img, h2 img, h3 img,
+h4 img, h5 img, h6 img { margin: 0; }
 
-pre {
-  background-color: #eee;
-  padding: 10px;
-  font-size: 11px;
-}
+/* Forms
+-------------------------------------------------------------- */
+fieldset.left { float: left; width: 27%; }
+fieldset.right { float: right; width: 67% }
+fieldset label { font-size: 1.0em; margin: 1.5em 0em; }
+fieldset input, fieldset textarea { height: 2.0em; border: 1px #444 solid;
+                                    background: #dfdfdf; width: 100%; 
+                                    margin-bottom: 1.5em; padding: 0.2em; 
+                                    -webkit-border-radius: 3px; -moz-border-radius: 3px;
+                                    border-radius: 3px;
+                                  }
+fieldset textarea { height: 10em; }
 
-a { 
-  color: #000; 
-}
+div.actions input { width: 8em; float: right; }
 
-a:visited { 
-  color: #666; 
-}
+/* Header
+-------------------------------------------------------------- */
+#header { height: 3.5em; }
+#logo { position: absolute; top: 1.3em; left: 1.3em; padding-right: 0.0em; height: 3.0em; }
+#logo a { text-decoration: none }
+#search { position: absolute; top: 1.4em; right: 1.3em; padding-right: 0.0em; height: 3.0em; }
+#search input { font-size: 1.1em; }
 
-a:hover {
-  color: #4fa8ff;
-  background-color:#000;
-}
+/* Navigation
+-------------------------------------------------------------- */
+#nav { border-top: 2px solid #4fa8ff; border-bottom: 2px solid #4fa8ff; height: 1.8em; }
+#nav ul li {  float:left; display:block; height: 2em; font-size: 1.0em; 
+              line-height: 1.8em; margin: 0em 1.5em; font-weight: bold;  }
+#nav .last { float: right }
 
-#content {
-  padding: 50px 50px 0px 50px;
-  min-height: 300px;
-  text-align: center;
-}
+/* Content
+-------------------------------------------------------------- */
+#content { margin: 0.7em 1.5em; clear: left }
 
-#content form {
-  text-align: center;
-  padding: 75px;
-  background: #ddd;
-  -moz-border-radius: 4pt;
-  margin: 50px 0px;
-}
+/* Page Specifics
+-------------------------------------------------------------- */
+#items_home       { text-align: center; }
+#items_home .tags { margin: 0.5em 4em 2em 4em; }
+#items_home input { font-size: 1.1em; }
 
+/* Tag clouds
+-------------------------------------------------------------- */
+.css1 { font-size: 0.6em; }
+.css2 { font-size: 0.8em; }
+.css3 { font-size: 1.0em; }
+.css4 { font-size: 1.2em; }
 
-#footer {
-  text-align: center;
-  padding: 10px;
-}
+/* Items
+-------------------------------------------------------------- */
+.items { border-top: 1px solid #ddd; margin: 0.5em 0em; }
+.item  { border-bottom: 1px solid #ddd; margin: 0.5em 0em; clear: right; }
+.item .shop { float: right; width: 16em;}
 
-.odd {
-  background-color: #ccc;
-}
-
-.even {
-  background-color: #eee;
-}
-
-.item {
-  text-align: left;
-  margin: 2px 0px;
-  padding: 5px;
-  min-height: 30px;
-}
-
-
-.item .name {
-  float: left;
-  width: 30em;
-}
-
-.item .description {
-  float: left;
-}
-
-.description .price {
-  font-size: 160%;
-  text-color: #666;
-  font-weight: bold;
-  float: left;
-  width: 7em;
-}
-
-.description .shop {
-  font-size: 100%;
-  text-color: #666;
-  font-weight: bold;
-}
-
-.description .shop dl {
-}
-
-.description ul {
-  display: inline;
-}
-
-.description li {
-  list-style-type: none;
-  display: inline;
-  padding: 0em 5px 0em 5px;
-}
-
-.description li:last-child { 
-}
-
-
-.pagination {
-  padding: 10px;
-  font-size: 120%;
-  font-weight: bold;
-}
-
-.pagination .disabled {
-  color: #bbb;
-}
-
-.pagination .current {
-  color: #4fa8ff;
-}
-
-
-#header {
-  padding: 5px;
-}
-
-form {
-  font-size: 150%;
-}
-
-.fieldWithErrors {
-  padding: 2px;
-  background-color: red;
-  display: table;
-}
-
-#errorExplanation {
-  width: 400px;
-  border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 12px;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-}
-
-#errorExplanation h2 {
-  text-align: left;
-  font-weight: bold;
-  padding: 5px 5px 5px 15px;
-  font-size: 12px;
-  margin: -7px;
-  background-color: #c00;
-  color: #fff;
-}
-
-#errorExplanation p {
-  color: #333;
-  margin-bottom: 0;
-  padding: 5px;
-}
-
-#errorExplanation ul li {
-  font-size: 12px;
-  list-style: square;
-}
-
-.css1 { 
-  font-size: 0.6em; 
-}
-
-.css2 { 
-  font-size: 0.8em; 
-}
-
-.css3 { 
-  font-size: 1.0em; 
-}
-
-.css4 { 
-  font-size: 1.2em; 
-}
+/* Footer
+-------------------------------------------------------------- */
+#footer { border-top: 2px solid #4fa8ff; border-bottom: 2px solid #4fa8ff; height: 1.8em; margin-top: 2em; clear: both; }
+#footer h3 { float:left; display:block; height: 2em; font-size: 1.0em; line-height: 1.8em; margin-left: 1.5em }

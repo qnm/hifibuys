@@ -1,3 +1,10 @@
+GIT
+  remote: http://github.com/robsharp/yaml_db.git
+  revision: b6fbe9b1f4827d87001fb0a6893ef660ddfa7d09
+  ref: patched
+  specs:
+    yaml_db (0.2.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -33,6 +40,7 @@ GEM
     arel (1.0.1)
       activesupport (~> 3.0.0)
     babosa (0.2.0)
+    bcrypt-ruby (2.1.2)
     builder (2.1.2)
     capybara (0.3.9)
       culerity (>= 0.2.4)
@@ -106,6 +114,10 @@ GEM
       oa-enterprise (= 0.1.6)
       oa-oauth (= 0.1.6)
       oa-openid (= 0.1.6)
+    omnisocial (0.1.2)
+      bcrypt-ruby (~> 2.1)
+      oa-core (~> 0.1.2)
+      oa-oauth (~> 0.1.2)
     pg (0.9.0)
     polyglot (0.3.1)
     pyu-ruby-sasl (0.0.3.2)
@@ -162,7 +174,6 @@ GEM
       polyglot (>= 0.3.1)
     tzinfo (0.3.23)
     will_paginate (3.0.pre2)
-    yaml_db (0.1.0)
 
 PLATFORMS
   ruby
@@ -176,10 +187,11 @@ DEPENDENCIES
   haml-rails
   nibbler
   omniauth
+  omnisocial
   pg
   rails (= 3.0.1)
   rspec-rails (>= 2.0.1)
   sqlite3-ruby
   steak (>= 1.0.0.rc.1)
   will_paginate (= 3.0.pre2)
-  yaml_db
+  yaml_db!

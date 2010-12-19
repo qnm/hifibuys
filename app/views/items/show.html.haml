@@ -1,0 +1,4 @@
+%h2= @item.name
+%p= @item.description
+%p= "On sale for $#{@item.price}"
+= link_to 'Edit', edit_item_path(@item) if current_user == @item.submitter

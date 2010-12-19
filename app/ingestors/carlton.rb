@@ -10,12 +10,10 @@ class CarltonItem < Nibbler
     element ".//tr/td/div" => :price, :with => lambda { |node| '$' + node.text.gsub(",","").scan(/\$([0-9\.,.]{1,})/).map { |x| x.first.to_i }.min.to_i.to_s }
 
     def to_hash
-      { :shop_name    => "Carlton Audio Visual",
-        :shop_address => "164-172 Lygon Street",
-        :shop_suburb  => "Carlton",
-        :shop_city    => "Melbourne",
-        :shop_state   => "VIC",
-        :shop_country => "Australia"}.merge(super)
+      {
+        :seller_id    => 8,
+        :submitter_id => 8,
+      }.merge(super)
     end
 end
 
