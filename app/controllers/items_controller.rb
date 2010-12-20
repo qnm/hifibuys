@@ -1,7 +1,6 @@
 class ItemsController < ApplicationController
-  caches_action :home
-  cache_sweeper :item_sweeper
-
+  caches_action   :home
+  cache_sweeper   :item_sweeper
 
   # GET /home
   def home
@@ -87,6 +86,7 @@ class ItemsController < ApplicationController
     respond_to do |format|
       if @item.save
         flash[:notice] = 'Item was successfully created.'
+        flash[:analytics] = "_gaq.push(['_trackPageview', '/items/sell']);"
         format.html { redirect_to(@item) }
         format.xml  { render :xml => @item, :status => :created, :location => @item }
       else
