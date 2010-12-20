@@ -25,7 +25,10 @@
 
 #nav
   %ul
-    %li= link_to("Sell something", sell_path)
+    - if current_user
+      %li= link_to("Sell something", sell_path)
+    - else
+      %li= link_to('Sell something', login_path)
     %li= "Find out more"
     - if current_user
       %li.last
