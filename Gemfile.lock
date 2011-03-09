@@ -180,6 +180,7 @@ PLATFORMS
 
 DEPENDENCIES
   acts-as-taggable-on
+  bundler (= 1.0.7)
   capybara
   factory_girl
   friendly_id
