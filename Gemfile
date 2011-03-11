@@ -14,8 +14,9 @@ gem "pg"
 gem 'nibbler'
 gem "acts-as-taggable-on"
 gem 'will_paginate', '3.0.pre2'
-gem 'yaml_db', :git => "http://github.com/robsharp/yaml_db.git", :ref => 'patched'
+gem 'yaml_db'
 gem 'friendly_id'
 gem 'omnisocial'
+gem 'rd_searchlogic', :require => 'searchlogic', :git => 'git://github.com/railsdog/searchlogic.git'
 
 #gem "newrelic_rpm"
