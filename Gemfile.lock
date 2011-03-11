@@ -162,6 +162,8 @@ GEM
       ruby-openid (>= 2.1.7)
     rubyntlm (0.1.1)
     rubyzip (0.9.4)
+    sanitize (1.2.1)
+      nokogiri (~> 1.4.1)
     selenium-webdriver (0.0.28)
       ffi (>= 0.6.1)
       json_pure
@@ -174,7 +176,6 @@ GEM
       polyglot (>= 0.3.1)
     tzinfo (0.3.23)
     will_paginate (3.0.pre2)
-    yaml_db (0.2.0)
 
 PLATFORMS
   ruby
@@ -194,7 +195,7 @@ DEPENDENCIES
   rails (= 3.0.1)
   rd_searchlogic!
   rspec-rails (>= 2.0.1)
+  sanitize
   sqlite3-ruby
   steak (>= 1.0.0.rc.1)
   will_paginate (= 3.0.pre2)
-  yaml_db
