@@ -26,10 +26,10 @@
 #nav
   %ul
     - if current_user
-      %li= link_to("Sell something", sell_path)
+      %li= link_to("Sell Something", sell_path)
     - else
-      %li= link_to('Sell something', login_path)
-    %li= "Find out more"
+      %li= link_to('Sell Something', login_path)
+    %li= link_to("Contact Us", contact_path)
     - if current_user
       %li.last
         = "You are logged in as #{current_user.name}"
