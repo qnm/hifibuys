@@ -8,6 +8,8 @@ class ItemsController < ApplicationController
       instance_variable_set("@#{type}", Item.tag_counts_on(type.to_sym))
     end
 
+    @search = Item.search(params[:search])
+
     response.headers['Cache-Control'] = 'public, max-age=600'
     respond_to do |format|
       format.html # home.html.erb
@@ -18,10 +20,13 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.xml
   def index
-    @items = Item.find(:all)
+    @search = Item.search(params[:search])
+    @items = @search.all.paginate(:page => params[:page], :per_page => 10, :order => 'created_at DESC' )
+
     respond_to do |format|
       format.xml # GCS feed
       format.rss # Add this line so we can respond in RSS format.
+      format.html # index.html.haml
     end
   end
 
@@ -36,7 +41,8 @@ class ItemsController < ApplicationController
 
   # GET /items/search/:term
   def search
-    @items = Item.name_like(params[:q]).paginate(:page => params[:page], :per_page => 10, :order => 'created_at DESC' )
+    @search = Item.search(params[:search])
+    @items = @search.all.paginate(:page => params[:page], :per_page => 10, :order => 'created_at DESC' )
 
     respond_to do |format|
       format.html # search.html.erb
