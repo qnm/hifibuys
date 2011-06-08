@@ -20,3 +20,4 @@ gem 'omnisocial'
 gem 'sanitize'
 #gem "newrelic_rpm"
 gem "meta_search"
+gem 'jquery-rails', '>= 1.0.3'
