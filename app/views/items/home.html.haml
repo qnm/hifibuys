@@ -4,7 +4,7 @@
     %a{ :href => 'http://twitter.com/twifibuys'}get the best hifi deals
 
   = form_for(@search) do |f|                                                                                                                       
-    = f.text_field :name_contains
+    = f.autocomplete_field :name_contains, autocomplete_item_name_items_path
     = f.submit 'Search'
 
   %h2 Search for products

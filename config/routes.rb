@@ -7,6 +7,7 @@ Hifibuys::Application.routes.draw do
       get 'search'
       get 'feed'
     end
+    get :autocomplete_item_name, :on => :collection
   end
 
   root :to => "items#home"

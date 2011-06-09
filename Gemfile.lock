@@ -138,6 +138,9 @@ GEM
       activesupport (= 3.0.1)
       bundler (~> 1.0.0)
       railties (= 3.0.1)
+    rails3-jquery-autocomplete (0.7.4)
+      rails (~> 3.0)
+      yajl-ruby
     railties (3.0.1)
       actionpack (= 3.0.1)
       activesupport (= 3.0.1)
@@ -177,6 +180,8 @@ GEM
       polyglot (>= 0.3.1)
     tzinfo (0.3.23)
     will_paginate (3.0.pre2)
+    yajl-ruby (0.8.2)
+    yaml_db (0.2.1)
 
 PLATFORMS
   ruby
@@ -196,8 +201,10 @@ DEPENDENCIES
   omnisocial
   pg
   rails (= 3.0.1)
+  rails3-jquery-autocomplete
   rspec-rails (>= 2.0.1)
   sanitize
   sqlite3-ruby
   steak (>= 1.0.0.rc.1)
   will_paginate (= 3.0.pre2)
+  yaml_db

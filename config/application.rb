@@ -35,7 +35,7 @@ module Hifibuys
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-    config.action_view.javascript_expansions[:defaults] = %w(jquery.min rails)
+    config.action_view.javascript_expansions[:defaults] = %w(jquery.min rails autocomplete-rails jquery-ui.min)
 
 
     # Configure the default encoding used in templates for Ruby 1.9.

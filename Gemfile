@@ -21,3 +21,5 @@ gem 'sanitize'
 #gem "newrelic_rpm"
 gem "meta_search"
 gem 'jquery-rails', '>= 1.0.3'
+gem 'rails3-jquery-autocomplete'                                                                                                                                   
+gem 'yaml_db'

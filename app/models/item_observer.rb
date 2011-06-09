@@ -4,7 +4,7 @@ class ItemObserver < ActiveRecord::Observer
     entities = item.name.split(" ") rescue ""
 
     entities.each do |entity|
-      entity = Entity.name_like(entity).category_like("manufacturer").first
+      entity = Entity.search(:name_contains => entity, :category_eq => 'manufacturer').first
       if entity.nil? == false
         item.manufacturer_list = entity.name
       end
@@ -12,7 +12,7 @@ class ItemObserver < ActiveRecord::Observer
 
     # attempt to associate a type
     entities.each do |entity|
-      entity = Entity.name_like(entity).category_like("type").first
+      entity = Entity.search(:name_contains => entity, :category_eq => 'type').first
       if entity.nil? == false
         item.type_list = entity.name
       end

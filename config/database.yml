@@ -1,23 +1,23 @@
 development:
-  #adapter: postgresql
-  #encoding: utf8
-  #reconnect: false
-  #database: hifibuys_development
-  #pool: 5
-  #username: postgres
-  #password: postgres 
-  #host: localhost
-
-  adapter: sqlite3
-  database: db/development.sqlite3
+  adapter: postgresql
+  encoding: utf8
+  reconnect: false
+  database: hifibuys_development
   pool: 5
-  timeout: 5000
+  username: postgres
+  password: postgres 
+  host: localhost
 
 test: &TEST
-  adapter: sqlite3
-  database: db/test.sqlite3
+  adapter: postgresql
+  encoding: utf8
+  reconnect: false
+  database: hifibuys_test
   pool: 5
-  timeout: 5000
+  username: postgres
+  password: postgres 
+  host: localhost
+
 
 production:
   adapter: postgresql
