@@ -22,9 +22,9 @@
 
 - unless controller.action_name == 'home'
   #search
-    = form_tag search_items_path, :method => :get do
-      = text_field_tag :term, h(params['term'])
-      = submit_tag 'Search'
+    = form_for(@search) do |f|                                                                                                                       
+      = f.autocomplete_field :name_contains, autocomplete_item_name_items_path
+      = f.submit 'Search'
 
 #nav
   %ul

@@ -1,7 +1,7 @@
 class ItemsController < ApplicationController
   caches_action   :home
   cache_sweeper   :item_sweeper
-  autocomplete    :item, :name
+  autocomplete    :item, :name, :full => true
 
   # GET /home
   def home
