@@ -42,9 +42,9 @@
 
 #content
   = yield
-  = render('shared/ga')
+  = render('shared/ga') if Rails.env == 'production'
 #footer
   %h3
     Follow us on twitter to
     %a{ :href => "http://twitter.com/twifibuys"}get the best hifi deals
-    &copy; 2010 HifiBuys Pty Ltd
+    &copy; 2012 HifiBuys Pty Ltd
