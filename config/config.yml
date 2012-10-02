@@ -1,0 +1,14 @@
+development: &DEVELOPMENT
+  pipes:
+    simply_hifi:
+      - connector: ProviderConnectors::SimplyHifiConnector
+        sources:
+          - "http://www.simplyhifi.com.au/Trade_ins.htm"
+test:
+  <<: *DEVELOPMENT
+      - connector: FileConnector
+        sources:
+          - spec/integration/siteref/simplyhifi.html
+
+production: &PRODUCTION
+  <<: *DEVELOPMENT

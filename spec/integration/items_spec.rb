@@ -1,10 +1,10 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
-
+=begin
 Factory.define :item do |f|
   f.sequence(:id) { |n| "#{n}" }
   f.name { |n| "hi, my name is item number #{n}" }
 end
-
+=end
 describe "Item::Synchronise" do
 =begin
   it "should do nothing given an empty source" do
@@ -15,7 +15,7 @@ describe "Item::Synchronise" do
 =end
 
 =begin
-  it "should create a new Item when an existing Item does not exist" do
+  it "should make! a new Item when an existing Item does not exist" do
     test_key = :url
     test_value = "http:rob.sharp.id.au"
 
@@ -56,24 +56,24 @@ describe "Item::Synchronise" do
   it "should delete an Item when the Item no longer exists in the source"
 
   it "should tag a manufacturer when the manufacturer is recognised" do
-    Entity.create({:category => "manufacturer", :name => "Arcam"})
+    Entity.make!({:category => "manufacturer", :name => "Arcam"})
 
-    a = Item.create({:name => "Arcam AVR 350"})
+    a = Item.make!({:name => "Arcam AVR 350"})
     a.manufacturer_list.should == ["Arcam"]
   end
 
   it "should tag a type when the type is recognised" do
-    Entity.create({:category => "type", :name => "DVD Player"})
+    Entity.make!({:category => "type", :name => "DVD Player"})
 
-    a = Item.create({:name => "Denon 7500 DVD Player Special Offer"})
+    a = Item.make!({:name => "Denon 7500 DVD Player Special Offer"})
     a.type_list.should == ["DVD Player"]
   end
 
   it "should remove all tags when the original item is deleted and no further parents exist" do\
-    Entity.create({:category => "type", :name => "DVD Player"})
-    Entity.create({:category => "manufacturer", :name => "Denon"})
+    Entity.make!({:category => "type", :name => "DVD Player"})
+    Entity.make!({:category => "manufacturer", :name => "Denon"})
 
-    a = Item.create({:name => "Denon 7500 DVD Player Special Offer"})
+    a = Item.make!({:name => "Denon 7500 DVD Player Special Offer"})
     a.type_list.should == ["DVD Player"]
 
     Item.tagged_with(["Denon", "DVD Player"], :any => true).should == [a]

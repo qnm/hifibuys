@@ -1,5 +1,4 @@
-require 'omnisocial'
-class IngestorAccount < Omnisocial::LoginAccount
+class IngestorAccount < Omnipopulus::LoginAccount
   def assign_account_info(user)
     self.login        = user[:login]
     self.picture_url  = user[:picture_url]
