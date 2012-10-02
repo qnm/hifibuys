@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 describe "Pymble" do
 
   it "should return an item for some example html" do
-    parser = Pymble.parse(open('spec/integration/siteref/pymble.html'))
+    parser = Pymble.parse(open('spec/ingestors/siteref/pymble.html'))
     item = parser.items.first.to_hash
     item[:name].should == "Parasound 7100"
     item[:description].should == 'Silver'

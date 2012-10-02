@@ -1,6 +1,6 @@
-module Feed
-  require 'lib/openuri.rb'
+require 'html/sanitizer'
 
+module Feed
   def consumes(source)
     include Feed
     class_eval %(
@@ -21,7 +21,7 @@ module Feed
         attr_accessor :myoptions
 
         def _sink
-          #{sink}
+      #{sink}
         end
 
       end
@@ -48,6 +48,21 @@ module Feed
 
   def self.included(receiver)
     receiver.extend(ClassMethods)
+  end
+
+  def sanitizer
+    @@sanitizer ||= HTML::FullSanitizer.new
+  end
+
+  def tidy(value)
+    # remove non-ascii chars
+    value = ActiveSupport::Inflector.transliterate(value, '')
+
+    # remove html
+    value = sanitizer.sanitize(value)
+
+    # remove rogue whitespace
+    value = value.gsub(/\s+/, " ").strip
   end
 
   def feeds

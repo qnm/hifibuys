@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 describe "AudioConnection" do
 
   it "should return an item for some example html" do
-    parser = AudioConnection.parse open('spec/integration/siteref/audioconnection.html')										
+    parser = AudioConnection.parse open('spec/ingestors/siteref/audioconnection.html')										
     item = parser.items.first.to_hash
     item[:name].should == "Schroers &amp; Schroers Lambda TV mini stand"
     item[:description].should == ''

@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 describe "Tivoli" do
 
   it "should return an item for some example html" do
-    parser = Tivoli.parse open('spec/integration/siteref/tivoli.html')									
+    parser = Tivoli.parse open('spec/ingestors/siteref/tivoli.html')									
     item = parser.items.first.to_hash
     item[:name].should == "Arcam A32 Integrated Amplifier"
     item[:description].should == '100wpc Integrated Current Feedback Amplifier Ultra wide band power amplifier Studio grade electronic volume control Menu driven advanced control...'
