@@ -1,4 +1,3 @@
-require 'lib/openuri.rb'
 include Feed
 
 logger = Logger.new(STDOUT)
