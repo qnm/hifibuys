@@ -1,14 +1,20 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
+require 'open-uri'
 
 describe "AudioConnection" do
 
+  class AudioConnection
+  end
+
   it "should return an item for some example html" do
-    parser = AudioConnection.parse open('spec/ingestors/siteref/audioconnection.html')										
-    item = parser.items.first.to_hash
-    item[:name].should == "Schroers &amp; Schroers Lambda TV mini stand"
-    item[:description].should == ''
-    item[:url].to_s.should == "http://www.audioconnection.com.au/products/lambda-tv-mini-stand.asp"
-    item[:price].should == "$600"
-    item[:original_price].should == "$1125"
+    VCR.use_cassette('audio_connection') do
+      parser = AudioConnection.parse open(AudioConnection._source)
+      item = parser.items.first.to_hash
+      item[:name].should == "Transparent Reference XL 1.2 metre pair"
+      item[:description].should == ''
+      item[:url].to_s.should == "http://www.audioconnection.com.au/products/transparent-reference-xl-1.2-metre-pair.asp"
+      item[:price].should == "$1800"
+      item[:original_price].should == "$"
+    end
   end
 end

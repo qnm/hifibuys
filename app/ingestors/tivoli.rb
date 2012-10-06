@@ -2,16 +2,31 @@ require 'nibbler'
 require 'uri'
 include Feed
 
+class Scraper < ::Nibbler
+  def initialize url
+    doc = get_document url
+    super doc
+  end
+
+  private
+
+  # open web pages with UTF-8 encoding
+  def get_document(url)
+    URI === url ? Nokogiri::HTML::Document.parse(open(url), url.to_s, 'UTF-8') : url
+  rescue OpenURI::HTTPError
+    $stderr.puts "ERROR opening #{url}"
+    Nokogiri('')
+  end
+end
+
 class TivoliItem < Nibbler
-    #element ".//td[2]/a[1]/@href" => :url, :with => lambda { |node| SITE + node.text }
-    element ".//td[2]/h3/a/@href" => :url, :with => lambda { |node| node.text }
-    #element ".//td[5]" => :price, :with => lambda { |node| '$' + node.inner_html.strip.gsub(",","").scan(/\$([0-9\.,.]{1,})/).map { |x| x.first.to_i }.min.to_s + ".00" }
+    element ".//td[1]/a/img/@src" => :image_url, :with => lambda { |node| node.text.strip }
+    element ".//td[2]/a/@href" => :url, :with => lambda { |node| "http://tivolihifi.com#{node.text}" }
 
-    element ".//td[2]/h3/a[position() = 1]" => :name, :with => lambda { |node| node.text.gsub(/- Second [hH]and/,"").strip }
-    element ".//td[2]/div" => :description, :with => lambda { |node| node.text.gsub(/Second [Hh]and/,"").strip }
-    #element ".//td[2]/h3/a/@href" => :url, :with => lambda { |node| node.text.split('&amp;').reject { |t| t.match('zenid') }.join('&amp;') }
-    element ".//td[3]" => :price, :with => lambda { |node| '$' + node.text.scan(/\$([0-9,]{1,})/).first.first.to_s.gsub(',','') }
-
+    element ".//td[2]/a" => :name, :with => lambda { |node| node.text.strip }
+    element ".//td[3]" => :description, :with => lambda { |node| node.text.strip }
+    element ".//td[4]" => :original_price, :with => lambda { |node| '$' + node.inner_html.strip.gsub(",","").scan(/\$([0-9\.,.]{1,})/).map { |x| x.first.to_i }.min.to_s + ".00" }
+    element ".//td[5]" => :price, :with => lambda { |node| '$' + node.inner_html.strip.gsub(",","").scan(/\$([0-9\.,.]{1,})/).map { |x| x.first.to_i }.min.to_s + ".00" }
 
     def to_hash
       { 
@@ -21,9 +36,20 @@ class TivoliItem < Nibbler
     end
 end
 
-class Tivoli < Nibbler
-  consumes "http://tivolihifi.com/store/second-hand-equipment"
+class Tivoli < Scraper
+  consumes APP_CONFIG['pipes']['tivoli'][0]['sources'][0]
   synchronises Item, :unique => :url
 
-  elements '//div[2]/div[2]/table/tr[position() > 1]' => :items, :with => TivoliItem
+  elements '//div[@id="content-content"]/table/tbody/tr' => :items, :with => TivoliItem
+  element '//li[@class="pager-next"]/a/@href' => :next_page_url
+
+  # augment to recursively parse other pages
+  def parse
+    super
+    if next_page_url
+      @doc = get_document(URI("http://tivolihifi.com" + next_page_url))
+      self.parse
+    end
+    self
+  end
 end

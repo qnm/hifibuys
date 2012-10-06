@@ -18,7 +18,7 @@ class CarltonItem < Nibbler
 end
 
 class Carlton < Nibbler
-  consumes "http://www.carltonaudiovisual.com.au/?q=node/view/7"
+  consumes APP_CONFIG['pipes']['carlton'][0]['sources'][0]
   synchronises Item, :unique => :url
 
   elements "//html/body/table/tr[2]/td[2]/table/tr[2]/td/table" => :items, :with => CarltonItem

@@ -1,0 +1,472 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.carltonaudiovisual.com.au/?q=node/view/7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 04 Oct 2012 11:44:07 GMT
+      server:
+      - Apache
+      x-powered-by:
+      - PHP/4.4.2
+      set-cookie:
+      - PHPSESSID=a87055390f97c499671021484ad42557; path=/
+      expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      cache-control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      pragma:
+      - no-cache
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - text/html; charset=utf-8
+    body:
+      encoding: US-ASCII
+      string: ! "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"
+        \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html>\n<head>\n<meta
+        name=\"author\" content=\"Anthony O'Connell\">\n<meta name=\"description\"
+        content=\"Carlton Audio Visual products are selected to maintain an inventory
+        of current equipment references in quality and value. We are not brand demagogues
+        and at all times will offer unbiased advice, putting the customer's needs
+        first.\">\n<meta name=\"keywords\" content=\"Aaron,AKG,AMC,Ambience,Andrews
+        Audio,Arcam,Arista,Audioquest,Avico,Cambridge Audio,Chord,Cyrus,Denon,Dynaudio,Ear
+        Science,Elac,Alektra,Fujitsu,Hitachi,Jamo,Koss,Krix,Legend,Lesuirtech,Lynx,Marantz,Metz,Mission,Monitor
+        Audio,Musical Fidelity,Neotech,Niles,Nordost,Ortofon,Perreaux,Pioneer,PMC,QED,Quad,Rega,Sennheiser,Sharp
+        Projection,Sharp LCD,Speakercraft,Stax,Tara Labs\">\n<meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=utf-8\" /><base href=\"http://www.carltonaudiovisual.com.au/\"
+        />\n<style type=\"text/css\">\n@import url(misc/drupal.css);\n</style>\n\n\t<title>
+        \nClearance Corner - Carlton Audio Visual - Hi Fi & Audio Visual Store, Melbourne
+        Australia\t</title>\n<!-- Include stylesheets because import doesn't seem
+        to be supported by some browsers -->\n<style>\n/* $Id:cav.css,v 1.0 2004/04/24
+        07:27:21 aoconnell Exp $ */\n\nbody {\n\tmargin:0px;\n\tcolor:#444444;\n\tbackground-color:#fff;\n\tfont-family:verdana,
+        arial, helvetica, sans-serif;\n/*\tfont-size:76%; */\n\tfont-size:12px;\n}\nh1
+        {\n\tfont-size:1.2em;\n}\nh2 {\n\tfont-size:1.1em;\n}\nh3, h4, h5, h6 {\n\tfont-size:1em;\n}\n\np
+        {\n\tmargin:0px 0px 0px 5px;\n\tpadding:0px;\n\tfont-size:12px;\n}\np a {\n\tfont-weight:bold;\n}\na
+        {\n\tcolor:#006;\n\ttext-decoration:none;\n}\na:visited {\n\tcolor:#600;\n\ttext-decoration:none;\n}\na:hover
+        {\n\ttext-decoration:underline;\n}\n.bolded {\n\tfont-weight:bold;\n}\n.leftmenu
+        {\n\twidth:140px;\n\tvertical-align:top;\n\ttext-align:left;\n\tfont-style:italic;\n\tpadding:0px
+        5px 0px 20px;\n\t}\n.mainlink, .mainlink a, .mainlink a:visited {\n\tcolor:#555;\n\tfont-size:14px;\n\tmargin-top:10px;\n\tfont-weight:bold;\n\t}\n.sublink,
+        .sublink a, .sublink a:visited {\n\tcolor:#555;\n\tfont-size:11px;\n\tfont-weight:normal;\n\t}\n.leftmenu
+        a, .leftmenu a:visited {\n\tcolor:#006;\n\t}\n.leftmenu a:hover {\n\ttext-decoration:underline;\n\t}\n\n.rightmenu
+        {\n\tmin-width:200px;\n\tvertical-align:top;\n\tpadding:0px 10px 8px 10px;\n
+        \       }\n\n.item-list {\n\tfont-size:11px;\n\t}\n.item-list a {\n\tfont-size:11px;\n\tfont-weight:bold;\n\t}\n.menu
+        {\t\n\tfont-size:11px;\n\t}\n\n.menubar, .menubar a, .menubar a:visited {\n\tcolor:#ff3;\n\tfont-size:12px;\n\tfont-weight:bold;\n\ttext-align:left;\n\ttext-decoration:none;\n\tfont-style:italic;\n\tmargin:0px;\n\tpadding:10px
+        0px 10px 5px;\n}\n.menubar a:hover {\n\ttext-decoration:underline;\n}\n.topmenu,
+        .topmenu a, .topmenu a:visited {\n\tcolor:#ff3;\n/* \tcolor:#fff; */\n\tfont-size:12px;\n\tfont-style:italic;\n\tfont-weight:bold;\n\tmargin:0px;\n\ttext-align:center;\n\tvertical-align:middle;\n\t}\n.topmenu
+        a:hover {\n\ttext-decoration:underline;\n\t}\n.pagebody {\n\twdith:100%;\n\tvertical-align:top;\n\tpadding:0px
+        10px 0px 10px;\n}\n.caveat {\n\tcolor:#555;\n\tfont-size:11px;\n\tfont-style:italic;\n\ttext-align:center;\n\tpadding:10px
+        15px 0px 10px;\n\t}\n.small {\n\tcolor:#7c7c7c;\n\tfont-weight:normal;\n\tfont-size:10px;\n\tpadding-top:3px;\n\tpadding-bottom:3px;\n\t}\n.fronttitle
+        {\n\tcolor:#555;\n\tfont-weight:bold;\n\tfont-size:14px;\n\ttext-align:left;\n\tpadding-top:15px;\n}\n.title
+        {\n\tcolor:#555;\n\tfont-weight:bold;\n\tfont-size:14px;\n\ttext-align:left;\n\tpadding-top:15px;\n}\n.titleright
+        {\n\tcolor:#555;\n\tfont-weight:bold;\n\tfont-size:14px;\n\ttext-align:right;\n\tpadding-top:10px;\n}\n.footer
+        {\n\tcolor:#555;\n\tfont-size:10px;\n\ttext-align:center;\n}\n\nimg {\n\tborder-width:0;\n}\n.calendar
+        .day-today, .calendar .day-selected, .calendar .header-month, .calendar .header-week,
+        .calendar .day-blank {\n\tfont-family:palatino, georgia, times new roman,
+        serif;\n\tfont-style:italic;\n}\n.calendar .day-link a {\n\tfont-family:palatino,
+        georgia, times new roman, serif;\n\tcolor:#c90;\n\tfont-style:italic;\n}\n.calendar
+        .row-week {\n\tfont-family:palatino, georgia, times new roman, serif;\n\tcolor:#aaa;\n\tfont-style:italic;\n}\n\n.path,
+        .path a, .path a:visited {\n\tcolor:#888;\n}\n</style>\n<!-- End of stylesheet
+        import -->\n\t\n</head>\n<body \n> \n<table border=\"0\" cellpadding=\"0\"
+        cellspacing=\"0\" width=\"100%\">\n<tr>\n\n<!-- Top shop logo and links -->\n\t<td
+        bgcolor=\"#336699\" colspan=\"2\" class=\"menubar\">\n\t\t<a href=\"http://www.carltonaudiovisual.com.au/\"><img
+        src=\"themes/cav/images/logo.gif\" style=\"border: 0px;\" alt=\"fanatics welcome\"
+        title=\"fanatic\" /></a> \n\t</td>\n<!-- Top shop logo and links -->\n\n<!--
+        Shop hot link -->\n\t<td bgcolor=\"#336699\" class=\"topmenu\" width=\"200\">\n\t\t<a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/7\"><img src=\"themes/cav/images/clearance.gif\"
+        style=\"border: 0px;\" alt=\"clearance corner\" title=\"clearance\" /></a>
+        \n\t</td>\n<!-- Shop hot link -->\n\n</tr>\n<tr>\n\n<!-- Left menu -->\n<td
+        class=\"leftmenu\" width=\"160\">\n\t<p class=\"mainlink\">\n\t\t<img src=\"themes/cav/images/dummy.gif\"
+        width=\"160\" height=\"1\">\n\t<!-- <br><a href=\"http://www.carltonaudiovisual.com.au/\">Home</a>
+        -->\n\t</p>\n\t<!--\n\t<p class=\"sublink\">\n\t\thome is where the sound
+        is \n\t</p>\n\t-->\n\t<p class=\"mainlink\">\n\tHome Theatre \n\t</p>\n\t<p
+        class=\"sublink\">\n\t\t<li>\n\t\t<a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/31\">Surround
+        amplifiers</a>\n\t\t</li>\n\t\t<li>\n\t\t<a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/427\">Surround
+        systems</a>\n\t\t</li>\n\t\t<li>\n\t\t<a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/34\">Blu-ray/dvd
+        players</a>\n\t\t</li> \n\t</p>\n\t<p class=\"mainlink\">\n\tHi Fi\n\t</p>\n\t<p
+        class=\"sublink\">\n\t\t<li><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/30\">Integrated</a></li>\n\t\t<li><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/53\">Pre Amplifiers</a></li>\n\t\t<li><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/52\">Power Amplifiers</a></li>\n\t\t<li><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/26\">CD Players,
+        DACs and Music Streamers</a></li>\n\t\t<li><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/40\">Turntables</a></li>\n\t\t<li><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/39\">Radios</a></li>\n\t\t<li><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/121\">Mini systems</a></li>\n\t\t<li><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1535\">Sonos</a></li>\n\t</p>\n\t<p
+        class=\"mainlink\">\n\tLoudspeakers \n\t</p>\n\t<p class=\"sublink\">\n\t\t<li><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/68\">Bookshelf</a></li>\n\t\t<li><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/66\">Floorstanders</a></li>\n\t\t<li><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/428\">Ribbons</a></li>\n\t\t<li><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/77\">Surround</a></li>\n\t\t<li><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/76\">Lifestyle<a></li>\n\t\t<li><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/67\">Subwoofers</a></li>\n\t</p>\n\t<p
+        class=\"mainlink\">\n\tVision \n\t</p>\n\t<p class=\"sublink\">\n\t\t<li><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/88\">LCD TV and Displays</a></li>\n<!--
+        <a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/33\">Plasma TV
+        and Displays</a> , -->\n\t\t<li><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/35\">Projectors</a></li>\n\t\t<li><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/89\">Digital TV Tuners</a>
+        </li>\n\t</p>\n\t<p class=\"mainlink\">\n\t\t<a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/32\">Custom
+        Audio</a> \n\t</p>\n\t<p class=\"sublink\">\n\t\t<li><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/32\">Custom
+        Audio/Visual</a></li>\n\t\t<li><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1545\">Multi
+        room Audio</a></li>\n\t\t<li><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1546\">Control
+        Systems</a></li>\n\t</p>\n\t<p class=\"mainlink\">\n\t\t<a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/29\">Accessories</a>
+        \n\t</p>\n\t<p class=\"sublink\">\n\t\tstuff to help you get the best from
+        your equipment \n\t</p>\n\t<p class=\"mainlink\">\n\t\t<a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/7\">Clearance
+        items</a> \n\t</p>\n\t<p class=\"sublink\">\n\t\tcheck out some amazing bargains
+        \n\t</p>\n<!-- \t<p class=\"mainlink\"> -->\n<!-- \t\t<a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/69\">Feedback</a>
+        \ -->\n<!-- \t</p> -->\n<!-- \t<p class=\"sublink\"> -->\n<!-- \t\twe like
+        hearing from you  -->\n<!-- \t</p> -->\n\t<p class=\"mainlink\">\n\t<!--\t<a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/429\">CAV?</a> -->\n\t\tCAV?\n\t</p>\n\t<p
+        class=\"sublink\">\n\t\t<a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/64\">Contact
+        us</a>\n\t</p>\n\t<p class=\"mainlink\">\n\t\t<a href=\"http://www.carltonaudiovisual.com.au/?q=search\">Search</a>
+        \n\t</p>\n\t<p class=\"sublink\">\n\t\tlook for stuff \n\t</p>\n\t<p class=\"mainlink\">\n\t\t<a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/122\">Links</a> \n\t</p>\n\t<p
+        class=\"sublink\">\n\t\tlinks to product manufacturers \n\t</p>\n\t<img src=\"themes/cav/images/thx.gif\"
+        alt=\"THX\" width=\"120\" height=\"53\" /> \n\t<br />\n\t<img src=\"themes/cav/images/cedia.gif\"
+        alt=\"CEDIA\" width=\"120\" height=\"65\" /> \n\t<p class=\"sublink\">\n\t\tPrices
+        and specifications may change without notice. Australian specifications may
+        differ slightly. Always check the latest prices and specs by calling the store
+        at (03) 9639 2737 or go to the CAV? page. All care is taken, but we take no
+        responsibility for any typographical errors<a style=\"font-size:11px; font-style:italic;
+        color:#555;\" href=\"?q=user/login\">.</a> \n\t</p>\n</td>\n<!-- Left menu
+        -->\n\n<!-- Page body -->\n<td class=\"pagebody\" width=\"100%\">\n\t<img
+        src=\"themes/cav/images/pixel.gif\" width=\"480\" height=\"1\"> \n\n<!-- node:
+        \"Clearance Corner\" -->\n<table cellpadding=\"0\" cellspacing=\"2\" style=\"border
+        0px; width: 100%;\">\n <tr><td><div class=\"title\">Clearance Corner</div></td></tr>\n
+        <tr><td><p><center></center><br><center><span class=\"title\">Q Acoustics
+        2010 Clearance Special $299 $299.00</span></center><br>\n<!-- node: \"Arcam
+        A18 and CD17 amp and CD Player ex display deals\" -->\n<table cellpadding=\"0\"
+        cellspacing=\"2\" style=\"border 0px; width: 100%;\">\n <tr><td><table border=\"0\"
+        width=\"100%\"><tr width=\"100%\"><td  width=\"80%\"><div class=\"title\"><a
+        href=\"?q=node/view/1401\">Arcam A18 and CD17 amp and CD Player ex display
+        deals</a></div></td><td width=\"20%\" ><div class=\"titleright\"></div></td></tr></table></td>\n
+        <tr><td><p><p>\r\nI feel like I've been transported back into the 70's ...
+        it's been that long since I could offer a couple of pommie components at a
+        $1000 ea price point ... not only that but they have subtley useful tone controls
+        and a rich and real sound that perfectly matches for example PMC DB1's or
+        Monitor Audio RX1's. While the rest of us are chasing an impossible multi
+        channel dream you can get totally real with this simple but very cool and
+        buildable amp and CD player and do some real music in your home.\r\n<br ><br
+        >\r\n<p align=\"center\">\r\n<img src=\"images/arcam/a18.jpg\">\r\n</p>\r\n\r\n<br
+        ><br >\r\n<a target=\"_blank\" href=\"http://www.arcam.co.uk/products,fmj,Integrated-Amplifiers,A18.htm#\r\n\"
+        target=\"_blank\">Arcam's website for the A18</a>.\r\n\r\n<br ><br >\r\n<a
+        target=\"_blank\" href=\"http://www.arcam.co.uk/products,fmj,cd-players,CD17.htm\r\n\"
+        target=\"_blank\">And for the CD17</a>.</p></td></tr>\n <tr><td class=\"small\"><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1401\" title=\"Read
+        the rest of this posting.\" class=\"read-more\">read more</a></td></tr>\n</table>\n\n<!--
+        node: \"Marantz PM15 S2 Amplifier  and SA15S2 Cd player Limited Edition ...
+        demo clearance $2200 each\" -->\n<table cellpadding=\"0\" cellspacing=\"2\"
+        style=\"border 0px; width: 100%;\">\n <tr><td><table border=\"0\" width=\"100%\"><tr
+        width=\"100%\"><td  width=\"80%\"><div class=\"title\"><a href=\"?q=node/view/1605\">Marantz
+        PM15 S2 Amplifier  and SA15S2 Cd player Limited Edition ... demo clearance
+        $2200 each</a></div></td><td width=\"20%\" ><div class=\"titleright\"></div></td></tr></table></td>\n
+        <tr><td><p>Mr Ishiwata is hard at work still at Marantz after 30 years. It
+        is said he only sleeps on aeroplanes beetween Hi Fi shows and the design studio.
+        \r\n<br><br>\r\nThe S2 15 series are Ken's latest limited edition stereo venture
+        and have been getting rave initial press reports from the likes of Hi Fi News
+        et al.</p></td></tr>\n <tr><td class=\"small\"><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1605\"
+        title=\"Read the rest of this posting.\" class=\"read-more\">read more</a></td></tr>\n</table>\n\n<!--
+        node: \"Q Acoustics 2010 Clearance Special $299\" -->\n<table cellpadding=\"0\"
+        cellspacing=\"2\" style=\"border 0px; width: 100%;\">\n <tr><td><table border=\"0\"
+        width=\"100%\"><tr width=\"100%\"><td  width=\"80%\"><div class=\"title\"><a
+        href=\"?q=node/view/1677\">Q Acoustics 2010 Clearance Special $299</a></div></td><td
+        width=\"20%\" ><div class=\"titleright\">$299.00</div></td></tr></table></td>\n
+        <tr><td><p><p align=\"center\">\r\n<img src=\"/images/qacoustics/2010.jpg\"
+        alt=\"Q Acoustics 2020i Melbourne\">\r\n</p>\r\n<br><br>\r\nWe have run out
+        specials on the Q Acoustics 2010 Bookshelf speakers\r\n<br><br>\r\nGet in
+        quick for this special 25% off ($100 saving!)</p></td></tr>\n <tr><td class=\"small\"><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1677\" title=\"Read
+        the rest of this posting.\" class=\"read-more\">read more</a></td></tr>\n</table>\n\n<!--
+        node: \"Q Acoustics 2010 $299\" -->\n<table cellpadding=\"0\" cellspacing=\"2\"
+        style=\"border 0px; width: 100%;\">\n <tr><td><table border=\"0\" width=\"100%\"><tr
+        width=\"100%\"><td  width=\"80%\"><div class=\"title\"><a href=\"?q=node/view/1283\">Q
+        Acoustics 2010 $299</a></div></td><td width=\"20%\" ><div class=\"titleright\">$399.00</div></td></tr></table></td>\n
+        <tr><td><p><p>\r\nStarting out the new 2000 series from Q-Acoustics is the
+        2010, a great little speaker with bags of character. Its got a smooth sound
+        and is simple to drive, making it an ideal partner for an entry point integrated
+        amp. Plus its at home in home thatre operations too, partnering well with
+        its matching centre and sub. Gloss finish is available at a slight premium.</p></td></tr>\n
+        <tr><td class=\"small\"><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1283\"
+        title=\"Read the rest of this posting.\" class=\"read-more\">read more</a></td></tr>\n</table>\n\n<!--
+        node: \"Denon AVR1312\" -->\n<table cellpadding=\"0\" cellspacing=\"2\" style=\"border
+        0px; width: 100%;\">\n <tr><td><table border=\"0\" width=\"100%\"><tr width=\"100%\"><td
+        \ width=\"80%\"><div class=\"title\"><a href=\"?q=node/view/1399\">Denon AVR1312</a></div></td><td
+        width=\"20%\" ><div class=\"titleright\">$450.00</div></td></tr></table></td>\n
+        <tr><td><p><p>\r\nCalling this receiver entry point is doing it rather a disservice.
+        Sure, its priced like an entry point unit, but it's not featured like one.
+        4 HDMI inputs including 3D pass through, HD audio decoding, front panel portable
+        input, the list goes on. Sure, you miss a few bits and bobs, like audyssey
+        room correction, but don't forget that the 1612 is only two hundred dollars
+        more. Plus, this thing sounds great! This is no budget receiver, this is a
+        proper Denon receiver replete with Denon's control and musicality. Come in
+        and try it.'\r\n<br ><br >\r\nActually as a contender for a good budget system
+        this is a fantastic unit when combined with a Cambridge Minx system or a Monitor
+        Audio Bronze AV speaker package ...</p></td></tr>\n <tr><td class=\"small\"><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1399\" title=\"Read
+        the rest of this posting.\" class=\"read-more\">read more</a></td></tr>\n</table>\n\n<!--
+        node: \"Denon AVR1612\" -->\n<table cellpadding=\"0\" cellspacing=\"2\" style=\"border
+        0px; width: 100%;\">\n <tr><td><table border=\"0\" width=\"100%\"><tr width=\"100%\"><td
+        \ width=\"80%\"><div class=\"title\"><a href=\"?q=node/view/1398\">Denon AVR1612</a></div></td><td
+        width=\"20%\" ><div class=\"titleright\">$575.00</div></td></tr></table></td>\n
+        <tr><td><p><p>\r\n\r\nIf the AV receiver is the brains of your home automation
+        system, then none are smarter than Denon.\r\n<br />\r\nEven at its modest
+        price point the AVR1612 packs in a raft of features, including HD Audio processing,
+        HDMI 1.4 switching and Audyssey room setup.</p></td></tr>\n <tr><td class=\"small\"><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1398\" title=\"Read
+        the rest of this posting.\" class=\"read-more\">read more</a></td></tr>\n</table>\n\n<!--
+        node: \"Peachtree Audio Music Box. Dac...Amp...Dock...Valve... ex demo $700\"
+        -->\n<table cellpadding=\"0\" cellspacing=\"2\" style=\"border 0px; width:
+        100%;\">\n <tr><td><table border=\"0\" width=\"100%\"><tr width=\"100%\"><td
+        \ width=\"80%\"><div class=\"title\"><a href=\"?q=node/view/1555\">Peachtree
+        Audio Music Box. Dac...Amp...Dock...Valve... ex demo $700</a></div></td><td
+        width=\"20%\" ><div class=\"titleright\">$899.00</div></td></tr></table></td>\n
+        <tr><td><p>This thing's great!<br />\r\n<br />\r\n-20 watt amp<br />\r\n-Dac<br
+        />\r\n-ipod dock which takes digital from the ipod straight into the built
+        in dac<br />\r\n-Headphone output<br />\r\n-Pre outs<br />\r\n-Analogue in<br
+        />\r\n-Video out<br />\r\n<br />\r\nWhat elso do you want.</p></td></tr>\n
+        <tr><td class=\"small\"><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1555\"
+        title=\"Read the rest of this posting.\" class=\"read-more\">read more</a></td></tr>\n</table>\n\n<!--
+        node: \"Audio Analogue Crescendo CD Player ex display $630\" -->\n<table cellpadding=\"0\"
+        cellspacing=\"2\" style=\"border 0px; width: 100%;\">\n <tr><td><table border=\"0\"
+        width=\"100%\"><tr width=\"100%\"><td  width=\"80%\"><div class=\"title\"><a
+        href=\"?q=node/view/1456\">Audio Analogue Crescendo CD Player ex display $630</a></div></td><td
+        width=\"20%\" ><div class=\"titleright\">$999.00</div></td></tr></table></td>\n
+        <tr><td><p></p>\r\nA bit of classic eytie hardware ... a macho CD Player a
+        la Roxanne Kandy but less than a grand. The mediterranean surrender monkeys
+        fight back against the British ... aided by liberal morals and currency rates.</p></td></tr>\n
+        <tr><td class=\"small\"><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1456\"
+        title=\"Read the rest of this posting.\" class=\"read-more\">read more</a></td></tr>\n</table>\n\n<!--
+        node: \"Arcam CD 17 -  ex display $800\" -->\n<table cellpadding=\"0\" cellspacing=\"2\"
+        style=\"border 0px; width: 100%;\">\n <tr><td><table border=\"0\" width=\"100%\"><tr
+        width=\"100%\"><td  width=\"80%\"><div class=\"title\"><a href=\"?q=node/view/1021\">Arcam
+        CD 17 -  ex display $800</a></div></td><td width=\"20%\" ><div class=\"titleright\">$1198.00</div></td></tr></table></td>\n
+        <tr><td><p><p>\r\nThe CD73 was a workhorse of a machine for Carlton Audio
+        Visual, a real go-to player that you could count on to sound good in almost
+        any system you dropped it into. It's replacement, the CD17, manages to better
+        it, resulting in more detail, depth and staging,providing superlative performance
+        for the money. Cosmetically its been upgraded too, falling into the more expensive
+        FMJ (Full Metal Jacket)lineup. Do try it.</p></td></tr>\n <tr><td class=\"small\"><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1021\" title=\"Read
+        the rest of this posting.\" class=\"read-more\">read more</a></td></tr>\n</table>\n\n<!--
+        node: \"Arcam A18 ex demo $850\" -->\n<table cellpadding=\"0\" cellspacing=\"2\"
+        style=\"border 0px; width: 100%;\">\n <tr><td><table border=\"0\" width=\"100%\"><tr
+        width=\"100%\"><td  width=\"80%\"><div class=\"title\"><a href=\"?q=node/view/1250\">Arcam
+        A18 ex demo $850</a></div></td><td width=\"20%\" ><div class=\"titleright\">$1298.00</div></td></tr></table></td>\n
+        <tr><td><p><p>\r\nArcams entry point amp is a real cracker. There is great
+        grip and control, plenty of detail and enough slam to keep the bass pigs happy.
+        Its also solidly put together and come with a handy remote. Pair it up with
+        a slim floorstander or a high quality bookshelf and you'll have the makings
+        of a great system.</p></td></tr>\n <tr><td class=\"small\"><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1250\"
+        title=\"Read the rest of this posting.\" class=\"read-more\">read more</a></td></tr>\n</table>\n\n<!--
+        node: \"Wadia 151 Power Dac with amplifier ... ex demo $900\" -->\n<table
+        cellpadding=\"0\" cellspacing=\"2\" style=\"border 0px; width: 100%;\">\n
+        <tr><td><table border=\"0\" width=\"100%\"><tr width=\"100%\"><td  width=\"80%\"><div
+        class=\"title\"><a href=\"?q=node/view/1433\">Wadia 151 Power Dac with amplifier
+        ... ex demo $900</a></div></td><td width=\"20%\" ><div class=\"titleright\">$1499.00</div></td></tr></table></td>\n
+        <tr><td><p><p>\r\nThis is dead cool ... one looks at it thinking \"surely
+        this is a little geek toy that attempts to offer cuteness rather than musical
+        performance\" ... yet the sound is substantial and encompassing with the right
+        treble and bass qualities to make the most of an iPod sound track.</p></td></tr>\n
+        <tr><td class=\"small\"><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1433\"
+        title=\"Read the rest of this posting.\" class=\"read-more\">read more</a></td></tr>\n</table>\n\n<!--
+        node: \"Creek EVO CD Player ... ex demo in Silver $825\" -->\n<table cellpadding=\"0\"
+        cellspacing=\"2\" style=\"border 0px; width: 100%;\">\n <tr><td><table border=\"0\"
+        width=\"100%\"><tr width=\"100%\"><td  width=\"80%\"><div class=\"title\"><a
+        href=\"?q=node/view/783\">Creek EVO CD Player ... ex demo in Silver $825</a></div></td><td
+        width=\"20%\" ><div class=\"titleright\">$1575.00</div></td></tr></table></td>\n
+        <tr><td><p><br /><br />\r\nWe really like the new Creek EVO range. The amp
+        and CD represent ridiculous performance levels for their price point. Well
+        built. Great sound. Cool looks (well, at least in the black finish). If you
+        want serious HiFi but are on a budget of just around $1.5K for an amp or CD
+        player, the EVO range fits the bill.</p></td></tr>\n <tr><td class=\"small\"><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/783\" title=\"Read
+        the rest of this posting.\" class=\"read-more\">read more</a></td></tr>\n</table>\n\n<!--
+        node: \"Creek EVO II Integrated Amplifier ex demo at $1100\" -->\n<table cellpadding=\"0\"
+        cellspacing=\"2\" style=\"border 0px; width: 100%;\">\n <tr><td><table border=\"0\"
+        width=\"100%\"><tr width=\"100%\"><td  width=\"80%\"><div class=\"title\"><a
+        href=\"?q=node/view/784\">Creek EVO II Integrated Amplifier ex demo at $1100</a></div></td><td
+        width=\"20%\" ><div class=\"titleright\">$1575.00</div></td></tr></table></td>\n
+        <tr><td><p>We really like the new Creek EVO range. The amp and CD represent
+        ridiculous performance levels for their price point. Well built. Great sound.
+        Cool looks (well, at least in the black finish). If you want serious HiFi
+        but are on a budget of just over $1k for an amp or CD player, the EVO range
+        fits the bill.</p></td></tr>\n <tr><td class=\"small\"><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/784\"
+        title=\"Read the rest of this posting.\" class=\"read-more\">read more</a></td></tr>\n</table>\n\n<!--
+        node: \"Rega Maia Power Amplifier .. two ex display at $950 each ...\" -->\n<table
+        cellpadding=\"0\" cellspacing=\"2\" style=\"border 0px; width: 100%;\">\n
+        <tr><td><table border=\"0\" width=\"100%\"><tr width=\"100%\"><td  width=\"80%\"><div
+        class=\"title\"><a href=\"?q=node/view/536\">Rega Maia Power Amplifier ..
+        two ex display at $950 each ...</a></div></td><td width=\"20%\" ><div class=\"titleright\">$1899.00</div></td></tr></table></td>\n
+        <tr><td><p><p>The Maia is an 85 watt per channel high performance audio power
+        amplifier housed in the Rega custom built extruded aluminium case. The amplifier
+        has a fully protected output stage with DC and electronic thermal protection,
+        and a power monitor for both transformers. High quality Evox capacitors have
+        been used in the signal path throughout. The Maia uses the Rega \"common base
+        driver stage\" circuit design. Rega used circuit modelling and listening tests
+        to design this amplifier resulting in superb reliability and exceptional sound
+        quality. Sanken 200w output transistors are used in a high current output
+        stage and will drive the most awkward of speaker systems. The power supply
+        uses two generously rated toroidal transformers with 28,200mF of parallel
+        connected smoothing capacitors, which will provide enough current to drive
+        the hardest of loads.</p></td></tr>\n <tr><td class=\"small\"><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/536\"
+        title=\"Read the rest of this posting.\" class=\"read-more\">read more</a></td></tr>\n</table>\n\n<!--
+        node: \"NAD T587 Blu Ray,   $600 down from $1999\" -->\n<table cellpadding=\"0\"
+        cellspacing=\"2\" style=\"border 0px; width: 100%;\">\n <tr><td><table border=\"0\"
+        width=\"100%\"><tr width=\"100%\"><td  width=\"80%\"><div class=\"title\"><a
+        href=\"?q=node/view/1094\">NAD T587 Blu Ray,   $600 down from $1999</a></div></td><td
+        width=\"20%\" ><div class=\"titleright\">$1999.00</div></td></tr></table></td>\n
+        <tr><td><p>An excellent bargain in a high end Blu ray player ... the T587
+        is typically NAD minimalist in appearence but with good quality componenets.
+        oddly you can uniquely drive the on screen menus via the front panel without
+        the remote which is a known lifesaver in certain movie situations. Two only
+        at this price, one on display and one in backup.</p></td></tr>\n</table>\n\n<!--
+        node: \"Musical Fidelity A5.5 Cd Player\" -->\n<table cellpadding=\"0\" cellspacing=\"2\"
+        style=\"border 0px; width: 100%;\">\n <tr><td><table border=\"0\" width=\"100%\"><tr
+        width=\"100%\"><td  width=\"80%\"><div class=\"title\"><a href=\"?q=node/view/1679\">Musical
+        Fidelity A5.5 Cd Player</a></div></td><td width=\"20%\" ><div class=\"titleright\">$2000.00</div></td></tr></table></td>\n
+        <tr><td><p>This one got left behind ... <br />\r\nA fantastic dedicated CD
+        Playewr .. one only in silver with black handles ... was $4995</p></td></tr>\n</table>\n\n<!--
+        node: \"Marantz BD7003 Blu Ray Player...one unit left, brand new in box and
+        heavily reduced... $700\" -->\n<table cellpadding=\"0\" cellspacing=\"2\"
+        style=\"border 0px; width: 100%;\">\n <tr><td><table border=\"0\" width=\"100%\"><tr
+        width=\"100%\"><td  width=\"80%\"><div class=\"title\"><a href=\"?q=node/view/1183\">Marantz
+        BD7003 Blu Ray Player...one unit left, brand new in box and heavily reduced...
+        $700</a></div></td><td width=\"20%\" ><div class=\"titleright\">$2199.00</div></td></tr></table></td>\n
+        <tr><td><p>A bargain in high end Blu Ray reproduction ...</p></td></tr>\n</table>\n\n<!--
+        node: \"Arcam Solo Audiophile System with FM tuner .. one ex display at $1250
+        ....\" -->\n<table cellpadding=\"0\" cellspacing=\"2\" style=\"border 0px;
+        width: 100%;\">\n <tr><td><table border=\"0\" width=\"100%\"><tr width=\"100%\"><td
+        \ width=\"80%\"><div class=\"title\"><a href=\"?q=node/view/354\">Arcam Solo
+        Audiophile System with FM tuner .. one ex display at $1250 ....</a></div></td><td
+        width=\"20%\" ><div class=\"titleright\">$2498.00</div></td></tr></table></td>\n
+        <tr><td><p><p>Finally a simple, sleek and fabulous sounding audio system all
+        in one.  Arcam's new Solo takes design features and specifications out of
+        their award-winning CD73 CD Player, A65+ Amplifier and T61 Tuner and combines
+        them together in very accesible, low profile design.</p></td></tr>\n <tr><td
+        class=\"small\"><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/354\"
+        title=\"Read the rest of this posting.\" class=\"read-more\">read more</a></td></tr>\n</table>\n\n<!--
+        node: \"Sim2 Domino 60 DLP 1080P italianate stallion\" -->\n<table cellpadding=\"0\"
+        cellspacing=\"2\" style=\"border 0px; width: 100%;\">\n <tr><td><table border=\"0\"
+        width=\"100%\"><tr width=\"100%\"><td  width=\"80%\"><div class=\"title\"><a
+        href=\"?q=node/view/1023\">Sim2 Domino 60 DLP 1080P italianate stallion</a></div></td><td
+        width=\"20%\" ><div class=\"titleright\">$3000.00</div></td></tr></table></td>\n
+        <tr><td><p><p>Now just got two of these at this terrific price point down
+        from $6999 originally ... a fantastic value projector, combining the DLP virtues
+        of image smoothness, colour dynamic and real black levels with that magic
+        number of pixels and a price point that otherwise only enabled one to acquire
+        an LCD brand major product.</p></td></tr>\n <tr><td class=\"small\"><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1023\"
+        title=\"Read the rest of this posting.\" class=\"read-more\">read more</a></td></tr>\n</table>\n\n<!--
+        node: \"Creek Destiny CD Player  ex display $2000\" -->\n<table cellpadding=\"0\"
+        cellspacing=\"2\" style=\"border 0px; width: 100%;\">\n <tr><td><table border=\"0\"
+        width=\"100%\"><tr width=\"100%\"><td  width=\"80%\"><div class=\"title\"><a
+        href=\"?q=node/view/741\">Creek Destiny CD Player  ex display $2000</a></div></td><td
+        width=\"20%\" ><div class=\"titleright\">$3275.00</div></td></tr></table></td>\n
+        <tr><td><p>Quirky, interesting, original and just a little British. We really
+        dig the new Creek Destiny series of electronics. Revealing yet oh so musical.
+        Will breathe new life into the most sterile of systems.</p></td></tr>\n <tr><td
+        class=\"small\"><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/741\"
+        title=\"Read the rest of this posting.\" class=\"read-more\">read more</a></td></tr>\n</table>\n\n<!--
+        node: \"Rega Elicit Amp and Saturn CD Player, limited offer at $4500, Originally
+        nearly $8K ...\" -->\n<table cellpadding=\"0\" cellspacing=\"2\" style=\"border
+        0px; width: 100%;\">\n <tr><td><table border=\"0\" width=\"100%\"><tr width=\"100%\"><td
+        \ width=\"80%\"><div class=\"title\"><a href=\"?q=node/view/1331\">Rega Elicit
+        Amp and Saturn CD Player, limited offer at $4500, Originally nearly $8K ...</a></div></td><td
+        width=\"20%\" ><div class=\"titleright\">$4500.00</div></td></tr></table></td>\n
+        <tr><td><p>This is a terrific limited offer for this very beautiful English
+        combination of toploading CD Player and integrated amplifier.<br />\r\n<br
+        />\r\n<br />\r\nThe combination offers a music reproduction quality that is
+        deep and lush with a holographic out reach of the soundstage and an enveloping
+        warmth that just supplies the a musical fullness to the room in which the
+        music is played.</p></td></tr>\n <tr><td class=\"small\"><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1331\"
+        title=\"Read the rest of this posting.\" class=\"read-more\">read more</a></td></tr>\n</table>\n</p></td></tr>\n</table>\n</td>\n<!--
+        Page body -->\n\n<!-- Right Menu -->\n<td class=\"rightmenu\" width=\"200\">\n\t<img
+        src=\"themes/cav/images/pixel.gif\" width=\"200\" height=\"1\"> \n\n<!-- box:
+        \"Opinions<br><br><center><img src=\"/images/users/rab.jpg\" border=\"1\"></center>\"
+        -->\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"background-color:
+        #ffffff; width: 100%;\">\n <tr>\n  <td>\n   <table border=\"0\" cellpadding=\"5\"
+        cellspacing=\"1\" style=\"width: 100%;\">\n    <tr><td style=\"background-color:
+        #ffffff; text-align: center;\"><div style=\"color: #404040;\"><b>Opinions<br><br><center><img
+        src=\"/images/users/rab.jpg\" border=\"1\"></center></b></div></td></tr>\n
+        \   <tr><td style=\"background-color: #ffffff; vertical-align: top;\"><div
+        class=\"item-list\"><ul><li><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1740\"
+        title=\"0 comments\">Neil Young and Steve Jobs ...</a> - rab<br>When Mr Jobs
+        passed away last year it transpired that he and musical icon Neil Young had
+        been working on a high def download music format that could bring back some
+        of the warmth and embodiment of the analogue LP recordings so beloved by the
+        man from Apple...<a></a></li><li><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1737\"
+        title=\"0 comments\">Vinyl Spring</a> - rab<br>I had that particular pleasure
+        yesterday of being closely questioned about our current product directions
+        by a very careful and thorough gentleman who had last bought serious Hi Fi
+        thirty years ago...<a></a></li><li><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1732\"
+        title=\"0 comments\">New video formats ... coming soon to TV in your house</a>
+        - rab<br>Just when we were getting our customers used to the idea of 4K video
+        coming out ...<a></a></li></ul></div><div class=\"more-link\"><a href=\"http://www.carltonaudiovisual.com.au/?q=blog\"
+        title=\"Read the latest blog entries.\">more</a></div></td></tr>\n   </table>\n
+        \ </td>\n </tr>\n</table>\n<br />\n\n\n<!-- box: \"Twitter\" -->\n<table border=\"0\"
+        cellpadding=\"0\" cellspacing=\"0\" style=\"background-color: #ffffff; width:
+        100%;\">\n <tr>\n  <td>\n   <table border=\"0\" cellpadding=\"5\" cellspacing=\"1\"
+        style=\"width: 100%;\">\n    <tr><td style=\"background-color: #ffffff; text-align:
+        center;\"><div style=\"color: #404040;\"><b>Twitter</b></div></td></tr>\n
+        \   <tr><td style=\"background-color: #ffffff; vertical-align: top;\"><script
+        src=\"http://widgets.twimg.com/j/2/widget.js\"></script>\r\n<script>\r\nnew
+        TWTR.Widget({\r\n  version: 2,\r\n  type: 'profile',\r\n  rpp: 2,\r\n  interval:
+        30000,\r\n  width: 200,\r\n  height: 300,\r\n  theme: {\r\n    shell: {\r\n
+        \     background: '#336699',\r\n      color: '#ffffff'\r\n    },\r\n    tweets:
+        {\r\n      background: '#ffffff',\r\n      color: '#000000',\r\n      links:
+        '#CC6814'\r\n    }\r\n  },\r\n  features: {\r\n    scrollbar: false,\r\n    loop:
+        false,\r\n    live: false,\r\n    hashtags: true,\r\n    timestamp: true,\r\n
+        \   avatars: false,\r\n    behavior: 'all'\r\n  }\r\n}).render().setUser('CarltonAV').start();\r\n</script>\r\n</td></tr>\n
+        \  </table>\n  </td>\n </tr>\n</table>\n<br />\n\n\n<!-- box: \"Latest Additions\"
+        -->\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"background-color:
+        #ffffff; width: 100%;\">\n <tr>\n  <td>\n   <table border=\"0\" cellpadding=\"5\"
+        cellspacing=\"1\" style=\"width: 100%;\">\n    <tr><td style=\"background-color:
+        #ffffff; text-align: center;\"><div style=\"color: #404040;\"><b>Latest Additions</b></div></td></tr>\n
+        \   <tr><td style=\"background-color: #ffffff; vertical-align: top;\"><div
+        class=\"item-list\"><ul><li><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1739\"
+        title=\"0 comments\">Marantz SR7007 Surround Receiver</a></li><li><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1738\"
+        title=\"0 comments\">Denon AVR 4520 ... available Nov 2012</a></li><li><a
+        href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1736\" title=\"0
+        comments\">Denon AVR3313</a></li><li><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1735\"
+        title=\"0 comments\">Sharp 80 inch 940 series LED TV</a></li><li><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1270\"
+        title=\"0 comments\">Denon AHD7000 ON SALE AT $1200</a></li><li><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1729\"
+        title=\"0 comments\">Denon Cocoon Portable music systems</a></li><li><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1726\"
+        title=\"0 comments\">NAD C375BEE Integrated Amplifier</a></li><li><a href=\"http://www.carltonaudiovisual.com.au/?q=node/view/1688\"
+        title=\"0 comments\">Legend Joey 6 SE Bookshelf Speakers</a></li></ul></div></td></tr>\n
+        \  </table>\n  </td>\n </tr>\n</table>\n<br />\n\n\n<!-- box: \"Navigation\"
+        -->\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"background-color:
+        #ffffff; width: 100%;\">\n <tr>\n  <td>\n   <table border=\"0\" cellpadding=\"5\"
+        cellspacing=\"1\" style=\"width: 100%;\">\n    <tr><td style=\"background-color:
+        #ffffff; text-align: center;\"><div style=\"color: #404040;\"><b>Navigation</b></div></td></tr>\n
+        \   <tr><td style=\"background-color: #ffffff; vertical-align: top;\"><div
+        class=\"menu\">\n<ul>\n<li class=\"leaf\"><a href=\"http://www.carltonaudiovisual.com.au/?q=tracker\">recent
+        posts</a></li>\n\n</ul>\n</div></td></tr>\n   </table>\n  </td>\n </tr>\n</table>\n<br
+        />\n\n</td>\n\n<!-- Right Menu -->\n</tr>\n<tr>\n\n<!-- Site links and site
+        footer at bottom of page -->\n\t<td colspan=\"3\" class=\"footer\">\nCopyright
+        2005 Carlton Audio Visual<br />\r\n164-172 Lygon Street, Carlton, Victoria
+        3053, Australia\r\n<br>\r\nPhone : (03) 9639 2737 Toll Free : 1800 652 100
+        Fax : (03) 9639 2738\r\n<br>\r\n<a\r\nhref=\"mailto:cavmail@carltonaudiovisual.com.au?subject=\"Website
+        Enquiry\">cavmail@carltonaudiovisual.com.au</a>\r\n<script type=\"text/javascript\">\r\n\r\n
+        \ var _gaq = _gaq || [];\r\n  _gaq.push(['_setAccount', 'UA-23494017-1']);\r\n
+        \ _gaq.push(['_trackPageview']);\r\n\r\n  (function() {\r\n    var ga = document.createElement('script');
+        ga.type = 'text/javascript'; ga.async = true;\r\n    ga.src = ('https:' ==
+        document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\r\n
+        \   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga,
+        s);\r\n  })();\r\n\r\n</script>\n\t</td>\n<!-- Site links and site footer
+        at bottom of page -->\n\n</tr>\n</table>\n</body>\n</html>\n"
+    http_version: '1.1'
+  recorded_at: Thu, 04 Oct 2012 11:44:08 GMT
+recorded_with: VCR 2.2.5

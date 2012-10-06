@@ -1,4 +1,5 @@
 require 'html/sanitizer'
+require 'open-uri'
 
 module Feed
   def consumes(source)
@@ -65,7 +66,7 @@ module Feed
     value = value.gsub(/\s+/, " ").strip
   end
 
-  def feeds
+  def self.all
     Dir.new('app/ingestors').collect { |basename|
       next if not basename =~ /^(.+)\.rb$/
       require basename

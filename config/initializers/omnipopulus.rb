@@ -1,3 +1,4 @@
+=begin
 Omnipopulus.setup do |config|
 
   # ==> Twitter
@@ -23,3 +24,4 @@ Omnipopulus.setup do |config|
   end
 
 end
+=end
