@@ -22,7 +22,7 @@ class AudioSolutionsItem < Nibbler
 end
 
 class AudioSolutions < Nibbler
-  consumes "http://audiosolutions.net.au/sydney-audio-solutions/specials.html"
+  consumes APP_CONFIG['pipes']['audio_solutions'][0]['sources'][0]
   synchronises Item, :unique => :url
 
   elements '//div[@id="AREA__MAIN_CONTENT_COL1"]/div/div/div/table/tbody/tr[position() > 1]' => :items, :with => AudioSolutionsItem

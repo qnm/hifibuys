@@ -1,14 +1,29 @@
 development: &DEVELOPMENT
   pipes:
+    audio_connection:
+      - connector: AudioConnection
+        sources:
+          - "http://audioconnection.com.au/trade-ins-clearance-audio-equipment.asp"
+    audio_solutions:
+      - connector: AudioSolutions
+        sources:
+          - "http://audiosolutions.net.au/sydney-audio-solutions/specials.html"
+    carlton:
+      - connector: Carlton
+        sources:
+          - "http://www.carltonaudiovisual.com.au/?q=node/view/7"
+    pymble:
+      - connector: Pymble
+        sources:
+          - "http://www.pymblehifi.com.au/Specials.htm"
     simply_hifi:
-      - connector: ProviderConnectors::SimplyHifiConnector
+      - connector: SimplyHifi
         sources:
-          - "http://www.simplyhifi.com.au/Trade_ins.htm"
+          - "http://www.simplyhifi.com.au/products-page/specials/"
+          - "http://www.simplyhifi.com.au/products-page/specials/page/2/"
+    tivoli:
+      - connector: Tivoli
+        sources:
+          - "http://tivolihifi.com/catalogue/clearance?page=0"
 test:
-  <<: *DEVELOPMENT
-      - connector: FileConnector
-        sources:
-          - spec/integration/siteref/simplyhifi.html
-
-production: &PRODUCTION
   <<: *DEVELOPMENT

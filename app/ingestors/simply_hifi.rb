@@ -5,11 +5,10 @@ include Feed
 class SimplyHifiItem < Nibbler
   SITE = "http://www.simplyhifi.com.au/"
 
-  element "./td[1]/div/center/table/tr/td/p/font" => :description, :with => lambda { |node| tidy(node.inner_html) }
-  element "./td[1]/div/center/table/tr/td/p/font/b" => :name, :with => lambda { |node| tidy(node.inner_html) }
-  element "./td[1]/div/center/table/tr/td/p/font/b" => :url, :with => lambda { |node| SITE  + "?source=hifibuys.com.au&product=#{tidy(node.inner_html).downcase.gsub(/[^[:alnum:]]/,'-')}".gsub(/-{2,}/,'-') }
-  element "./td[1]/div/center/table/tr/td/p/font" => :original_price, :with => lambda { |node|  node.text.scan(/(\$[0-9,]{1,})/).flatten.first.to_s.gsub(',','') }
-  element "./td[2]/b/font" => :price
+  element "//div[2]/h2/a" => :name, :with => lambda { |node| tidy(node.inner_html) }
+  element "//div[2]/h2/a/@href" => :url, :with => lambda { |node| tidy(node.inner_html) }
+  element "//div[2]/h2/a" => :price, :with => lambda { |node|  node.text.scan(/(\$[0-9,]{1,})/).flatten.first.to_s.gsub(',','') }
+  element "//div[1]/a/img/@src" => :image_url
 
   def to_hash
     { 
@@ -19,9 +18,20 @@ class SimplyHifiItem < Nibbler
   end
 end
 
-class SimplyHifi < Nibbler
-  consumes "http://www.simplyhifi.com.au/Trade_ins.htm"
+class SimplyHifi < Scraper
+  consumes APP_CONFIG['pipes']['simply_hifi'][0]['sources'][0]
   synchronises Item, :unique => :url
 
-  elements '/html/body/div[position() > 5]/center/table/tbody/tr' => :items, :with => SimplyHifiItem
+  elements '//*[@id="grid_view_products_page_container"]/div[5]/div' => :items, :with => SimplyHifiItem
+  element '//a[@title="Next Page"]/@href' => :next_page_url
+  # augment to recursively parse other pages
+  def parse
+    super
+    if next_page_url
+      @doc = get_document(URI(next_page_url))
+      self.parse
+    end
+    self
+  end
+
 end

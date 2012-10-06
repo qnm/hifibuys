@@ -21,7 +21,8 @@ class AudioConnectionItem < Nibbler
 end
 
 class AudioConnection < Nibbler
-  consumes "http://audioconnection.com.au/trade-ins-clearance-audio-equipment.asp"
+  consumes APP_CONFIG['pipes']['audio_connection'][0]['sources'][0]
+
   synchronises Item, :unique => :url
 
   elements '//table[@class="prodlist"]/tr[position() > 1]' => :items, :with => AudioConnectionItem
