@@ -89,31 +89,13 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.0.4)
-    multi_xml (0.2.2)
     multipart-post (1.1.5)
     netrc (0.7.7)
     nibbler (1.3.0)
     nokogiri (1.5.5)
-    oa-core (0.2.6)
-    oa-oauth (0.2.6)
-      faraday (~> 0.6.1)
-      multi_json (~> 1.0.0)
-      multi_xml (~> 0.2.2)
-      oa-core (= 0.2.6)
-      oauth (~> 0.4.0)
-      oauth2 (~> 0.4.1)
-    oauth (0.4.7)
-    oauth2 (0.4.1)
-      faraday (~> 0.6.1)
-      multi_json (>= 0.0.5)
     omniauth (1.1.1)
       hashie (~> 1.2)
       rack
-    omnipopulus (0.2.0)
-      bcrypt-ruby
-      oa-core (~> 0.2.6)
-      oa-oauth (~> 0.2.6)
-      rails (>= 3.0.0)
     orm_adapter (0.0.7)
     pg (0.14.1)
     polyamorous (0.5.0)
@@ -212,7 +194,6 @@ DEPENDENCIES
   machinist (>= 2.0.0.beta2)
   nibbler
   omniauth
-  omnipopulus
   pg
   rails (= 3.2.8)
   ransack
