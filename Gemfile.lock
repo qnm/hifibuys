@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/nulldb/nulldb.git
+  revision: 2d08ada8a09d2c002419d37fbce8179e89e26595
+  specs:
+    activerecord-nulldb-adapter (0.2.1)
+      activerecord (>= 2.0.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -89,13 +96,34 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.0.4)
+    multi_xml (0.2.2)
     multipart-post (1.1.5)
     netrc (0.7.7)
     nibbler (1.3.0)
+    no_peeping_toms (2.1.3)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
     nokogiri (1.5.5)
+    oa-core (0.2.6)
+    oa-oauth (0.2.6)
+      faraday (~> 0.6.1)
+      multi_json (~> 1.0.0)
+      multi_xml (~> 0.2.2)
+      oa-core (= 0.2.6)
+      oauth (~> 0.4.0)
+      oauth2 (~> 0.4.1)
+    oauth (0.4.7)
+    oauth2 (0.4.1)
+      faraday (~> 0.6.1)
+      multi_json (>= 0.0.5)
     omniauth (1.1.1)
       hashie (~> 1.2)
       rack
+    omnipopulus (0.2.0)
+      bcrypt-ruby
+      oa-core (~> 0.2.6)
+      oa-oauth (~> 0.2.6)
+      rails (>= 3.0.0)
     orm_adapter (0.0.7)
     pg (0.14.1)
     polyamorous (0.5.0)
@@ -157,7 +185,6 @@ GEM
       hike (~> 1.2)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sqlite3 (1.3.6)
     taps (0.3.24)
       rack (>= 1.0.1)
       rest-client (>= 1.4.0, < 1.7.0)
@@ -178,6 +205,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-nulldb-adapter!
   acts-as-taggable-on
   babosa
   devise
@@ -187,20 +215,20 @@ DEPENDENCIES
   friendly_id (= 3.3.3.0)
   guard
   guard-rspec
-  haml
   haml-rails
   heroku
   libnotify
-  machinist (>= 2.0.0.beta2)
+  machinist
   nibbler
+  no_peeping_toms
   omniauth
+  omnipopulus
   pg
   rails (= 3.2.8)
   ransack
   rb-inotify
   rspec-rails
   sanitize
-  sqlite3
   taps
   vcr
   will_paginate
