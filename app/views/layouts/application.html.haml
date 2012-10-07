@@ -22,13 +22,8 @@
 
 - unless index?
   #search
-<<<<<<< HEAD
-    = form_for(@search) do |f|                                                                                                                       
-      = f.autocomplete_field :name_contains, autocomplete_item_name_items_path
-=======
     = search_form_for @q do |f|
       = f.text_field :name_cont
->>>>>>> Tidy up more bits n pieces:
       = f.submit 'Search'
 
 #nav
