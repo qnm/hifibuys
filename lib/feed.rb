@@ -68,7 +68,7 @@ module Feed
 
   def self.all
     Dir.new('app/ingestors').collect { |basename|
-      next if not basename =~ /^(.+)\.rb$/
+      next unless basename =~ /^(.+)\.rb$/ && basename != 'scraper.rb'
       require basename
       (basename.split('.').first).camelize.constantize
     }.compact!

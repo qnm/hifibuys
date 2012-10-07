@@ -5,6 +5,7 @@ class ItemsController < ApplicationController
 
   # GET /home
   def home
+    @q = Item.search(params[:q])
     ["manufacturers", "types"].each do |type|
       instance_variable_set("@#{type}", Item.tag_counts_on(type.to_sym))
     end
@@ -42,8 +43,8 @@ class ItemsController < ApplicationController
 
   # GET /items/search/:term
   def search
-    @search = Item.search(params[:search])
-    @items = @search.all.paginate(:page => params[:page], :per_page => 10, :order => 'created_at DESC' )
+    @q = Item.search(params[:q])
+    @items = @q.result.paginate(:page => params[:page], :per_page => 10, :order => 'created_at DESC' )
 
     respond_to do |format|
       format.html # search.html.erb
