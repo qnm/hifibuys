@@ -9,19 +9,7 @@ development:
   host: localhost
 
 test: &TEST
-  #adapter: nulldb
-  #adapter: sqlite3
-  #database: db/test.sqlite3
-  #pool: 5
-  #timeout: 5000
-  adapter: postgresql
-  encoding: utf8
-  reconnect: false
-  database: hifibuys_test
-  pool: 5
-  username: postgres
-  password: postgres 
-  host: localhost
+  adapter: nulldb
 
 production:
   adapter: postgresql
