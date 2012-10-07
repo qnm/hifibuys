@@ -11,4 +11,8 @@ class Item < ActiveRecord::Base
   def entities
      name.to_s.split(" ") || []
   end
+
+  def image_url=(moo)
+    nil
+  end
 end
