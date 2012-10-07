@@ -13,4 +13,12 @@ describe Entity, :type => :model do
       entity.from_text(name, category)
     end
   end
+
+  describe "should split a string into entities" do
+    it "without throwing an exception" do
+      expect { Entity.extract(nil) }.to_not raise_exception
+    end
+  end
+
+
 end

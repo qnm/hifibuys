@@ -52,11 +52,10 @@ describe "Item::Synchronise" do
 
     Item.find(:all).should have(1).items
   end
-=end
   it "should delete an Item when the Item no longer exists in the source"
 
   it "should tag a manufacturer when the manufacturer is recognised" do
-    Entity.make!({:category => "manufacturer", :name => "Arcam"})
+    entity = Entity.make!({:category => "manufacturer", :name => "Arcam"})
 
     a = Item.make!({:name => "Arcam AVR 350"})
     a.manufacturer_list.should == ["Arcam"]
@@ -83,4 +82,5 @@ describe "Item::Synchronise" do
     Item.tagged_with(["Denon", "DVD Player"], :any => true).should == []
   end
  
+=end
 end
