@@ -49,5 +49,11 @@ module Hifibuys
     config.generators do |g|
       g.fixture_replacement :machinist
     end
+
+    # Do not compress assets
+    config.assets.compress = false
+     
+    # Expands the lines which load the assets
+    config.assets.debug = true
   end
 end
