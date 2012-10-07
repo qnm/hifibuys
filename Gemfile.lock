@@ -223,7 +223,6 @@ DEPENDENCIES
   machinist (>= 2.0.0.beta2)
   nibbler
   omniauth
-  omnipopulus
   omnisocial
   pg
   rails (= 3.2.8)
