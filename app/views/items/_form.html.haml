@@ -1,4 +1,4 @@
-= search_form_for @q do |f|
+= form_for @item do |f|
   -if @item.errors.any?
     #error_explanation
       %h2= "#{pluralize(@item.errors.count, "error")} prohibited this item from being saved:"
@@ -9,7 +9,7 @@
   %fieldset.left
     .field
       = f.label :name
-      = f.text_field :name_cont
+      = f.text_field :name
     .field
       = f.label :price
       = f.text_field :price

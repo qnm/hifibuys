@@ -3,16 +3,16 @@
     Follow us on twitter to 
     %a{ :href => 'http://twitter.com/twifibuys'}get the best hifi deals
 
-  = form_tag search_items_path, :method => :get do
-    %p= text_field_tag :q
-    %p= submit_tag 'Search'
+  = search_form_for @q, :method => :get do |f|
+    %p= f.text_field :name_cont
+    %p= f.submit 'Search'
 
   %h2 Search for products
   .tags
     - tag_cloud(@types, %w(css1 css2 css3 css4)) do |tag, css_class|
-      = link_to tag.name.pluralize, search_items_path(:q => tag.name), :class => css_class
+      = link_to tag.name.pluralize, items_path(:q => {:name_cont => tag.name}), :class => css_class
 
   %h2 Search for hifi from
   .tags
     - tag_cloud(@manufacturers, %w(css1 css2 css3 css4)) do |tag, css_class|
-      = link_to tag.name.pluralize, search_items_path(:q => tag.name), :class => css_class
+      = link_to tag.name.pluralize, items_path(:q => {:name_cont => tag.name}), :class => css_class

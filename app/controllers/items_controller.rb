@@ -1,43 +1,43 @@
 class ItemsController < ApplicationController
-  caches_action   :home
   cache_sweeper   :item_sweeper
-
-  # GET /home
-  def home
-    @q = Item.search(params[:q])
-    ["manufacturers", "types"].each do |type|
-      instance_variable_set("@#{type}", Item.tag_counts_on(type.to_sym))
-    end
-
-    response.headers['Cache-Control'] = 'public, max-age=600'
-    respond_to do |format|
-      format.html # home.html.erb
-    end
-  end
-
 
   # GET /items
   # GET /items.xml
   def index
-    @items = Item.find(:all)
-    respond_to do |format|
-      format.xml # GCS feed
-      format.rss # Add this line so we can respond in RSS format.
+    ["manufacturers", "types"].each do |type|
+      instance_variable_set("@#{type}", Item.tag_counts_on(type.to_sym))
     end
+
+    if params[:q].blank?
+      @items = Item.find(:all)
+
+      respond_to do |format|
+        format.xml # GCS feed
+        format.rss # Add this line so we can respond in RSS format.
+        format.html
+      end
+
+    else
+      @items = @q.result.paginate(:page => params[:page], :per_page => 10, :order => 'created_at DESC' )
+
+      respond_to do |format|
+        format.html { render 'search' }
+      end
+
+    end
+
   end
 
   # GET /items
   # GET /items.xml
   def feed
     @items = Item.find(:all).reject { |item| item.name.nil? }
-    response.headers['Cache-Control'] = 'public, max-age=600'
     render 'items/feed', :layout => false, :content_type => 'application/xml'
   end
 
 
   # GET /items/search/:term
   def search
-    @q = Item.search(params[:q])
     @items = @q.result.paginate(:page => params[:page], :per_page => 10, :order => 'created_at DESC' )
 
     respond_to do |format|

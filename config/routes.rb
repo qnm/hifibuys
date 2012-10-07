@@ -4,10 +4,10 @@ Hifibuys::Application.routes.draw do
 
   resources :items do
     collection do
-      get 'search'
+      #get 'search'
       get 'feed'
     end
   end
 
-  root :to => "items#home"
+  root :to => "items#index"
 end
