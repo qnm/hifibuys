@@ -42,6 +42,9 @@ GEM
     babosa (0.3.8)
     bcrypt-ruby (3.0.1)
     builder (3.0.3)
+    cells (3.8.6)
+      actionpack (~> 3.0)
+      railties (~> 3.0)
     devise (1.5.3)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.0.3)
@@ -208,6 +211,7 @@ DEPENDENCIES
   activerecord-nulldb-adapter!
   acts-as-taggable-on
   babosa
+  cells
   devise
   faker
   fakeweb

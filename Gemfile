@@ -14,6 +14,7 @@ gem 'friendly_id', '3.3.3.0'
 gem 'sanitize'
 gem 'babosa'
 gem 'ransack'
+gem 'cells'
 
 group :development, :test do
   gem 'faraday'
