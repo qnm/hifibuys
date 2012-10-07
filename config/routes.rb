@@ -5,9 +5,9 @@ Hifibuys::Application.routes.draw do
   resources :items do
     collection do
       #get 'search'
-      get 'feed'
+      #get 'feed'
     end
-    get :autocomplete_item_name, :on => :collection
+    #get :autocomplete_item_name, :on => :collection
   end
 
   root :to => "items#index"

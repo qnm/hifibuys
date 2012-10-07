@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
   cache_sweeper   :item_sweeper
-  autocomplete    :item, :name, :full => true
+  #autocomplete    :item, :name, :full => true
 
   # GET /items
   # GET /items.xml

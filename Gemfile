@@ -13,14 +13,15 @@ gem 'omnisocial'
 #gem 'rd_searchlogic', :require => 'searchlogic', :git => 'git://github.com/railsdog/searchlogic.git'
 gem 'sanitize'
 #gem "newrelic_rpm"
-gem 'jquery-rails', '>= 1.0.3'
-gem 'rails3-jquery-autocomplete'                                                                                                                                   
+#gem 'jquery-rails', '>= 1.0.3'
+#gem 'rails3-jquery-autocomplete'                                                                                                                                   
 gem 'yaml_db'
 gem 'will_paginate'#, '3.0.pre2'
 gem 'sanitize'
 gem 'babosa'
 gem 'ransack'
 gem 'cells'
+gem "twitter-bootstrap-rails"
 
 group :development, :test do
   gem 'faraday'
