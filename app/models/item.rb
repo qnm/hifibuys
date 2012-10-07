@@ -15,4 +15,12 @@ class Item < ActiveRecord::Base
   def image_url=(moo)
     nil
   end
+
+  def manufacturers
+    Entity.extract_by_category(name, "manufacturer")
+  end
+
+  def types
+    Entity.extract_by_category(name, "type")
+  end
 end
