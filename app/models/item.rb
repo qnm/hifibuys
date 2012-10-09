@@ -1,6 +1,7 @@
 class Item < ActiveRecord::Base
   acts_as_taggable_on :manufacturers, :types
   has_friendly_id :name, :use_slug => true
+  paginates_per 10
 
   validates :name, :presence => true 
   validates :url, :presence => true 

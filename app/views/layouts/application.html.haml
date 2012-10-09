@@ -1,55 +1,69 @@
-!!!
-%html
+!!! 5
+%html(lang="en")
   %head
-    %meta{'http-equiv' => 'content-type', :content => 'text/html;charset=UTF-8'}
-    = csrf_meta_tag
-    = stylesheet_link_tag('reset')
-    = stylesheet_link_tag('default')
-    = stylesheet_link_tag('omnisocial')
-    = stylesheet_link_tag('jquery-ui')
-    = auto_discovery_link_tag(:rss, items_url(:format => 'rss'))
-    = javascript_include_tag :defaults
-    %title= "HifiBuys #{params[:q]}"
+    %meta(charset="utf-8")
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    %title= content_for?(:title) ? yield(:title) : "Hifibuys"
+    = csrf_meta_tags
+    / Le HTML5 shim, for IE6-8 support of HTML elements
+    /[if lt IE 9]
+      = javascript_include_tag "http://html5shim.googlecode.com/svn/trunk/html5.js"
+    = stylesheet_link_tag "application", :media => "all"
+    %link(href="images/favicon.ico" rel="shortcut icon")
+    %link(href="images/apple-touch-icon.png" rel="apple-touch-icon")
+    %link(href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72")
+    %link(href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114")
 
-#header
-  #logo
-    %h1
-      %a{:href => '/'}
-        %span.blue Hifi
-        %span.pink Buys
-      %span
-        %em Discover Compare Share
+  %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container-fluid
+          %a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.brand{:href => '/'}
+            %span.blue Hifi
+            %span.pink Buys
+          .container.nav-collapse
+            %ul.nav
+              -#
+                - if current_user
+                  %li= link_to("Sell Something", sell_path)
+                - else
+                  %li= link_to('Sell Something', login_path)
+              %li= link_to("Contact Us", contact_path)
+              -#
+                - if current_user
+                  %li.last
+                    = "You are logged in as #{current_user.name}"
+                    = link_to('Logout', logout_path)
+                - else
+                  %li.last= link_to('Login or sign-up', login_path)
 
-- unless index?
-  #search
-    = search_form_for @q do |f|
-      = f.text_field :name_cont
-      = f.submit 'Search'
+            = render_widget :search
 
-#nav
-  %ul
-    -#
-      - if current_user
-        %li= link_to("Sell Something", sell_path)
-      - else
-        %li= link_to('Sell Something', login_path)
-    %li= link_to("Contact Us", contact_path)
-    -#
-      - if current_user
-        %li.last
-          = "You are logged in as #{current_user.name}"
-          = link_to('Logout', logout_path)
-      - else
-        %li.last= link_to('Login or sign-up', login_path)
+    .container-fluid
 
-#flash
-  = flash[:notice]
+      .row-fluid
+        .span3
+          .well.sidebar-nav
+            %ul.nav.nav-list
+              %li.nav-header Hi-Fi
+              - tag_cloud(@types,[]) do |tag|
+                %li= link_to tag.name, items_path(:q => {:name_cont => tag.name})
+            %ul.nav.nav-list
+              %li.nav-header Manufacturers
+              - tag_cloud(@manufacturers,[]) do |tag|
+                %li= link_to tag.name, items_path(:q => {:name_cont => tag.name})
 
-#content
-  = yield
-  = render('shared/ga') if Rails.env == 'production'
-#footer
-  %h3
-    Follow us on twitter to
-    %a{ :href => "http://twitter.com/twifibuys"}get the best hifi deals
-    &copy; 2012 HifiBuys Pty Ltd
+        .span9
+          = yield
+    
+      %footer
+        %p &copy; Hifibuys 2012
+    /
+      Javascripts
+      \==================================================
+    / Placed at the end of the document so the pages load faster
+    = javascript_include_tag "application"

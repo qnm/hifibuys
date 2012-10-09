@@ -1,6 +1,11 @@
 class ItemsController < ApplicationController
+  include Apotomo::Rails::ControllerMethods
   cache_sweeper   :item_sweeper
   #autocomplete    :item, :name, :full => true
+
+  has_widgets do |root|
+    root << widget(:search)
+  end
 
   # GET /items
   # GET /items.xml
@@ -19,7 +24,7 @@ class ItemsController < ApplicationController
       end
 
     else
-      @items = @q.result.paginate(:page => params[:page], :per_page => 10, :order => 'created_at DESC' )
+      @items = @q.result.page(params[:page])
 
       respond_to do |format|
         format.html { render 'search' }

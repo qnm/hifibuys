@@ -4,3 +4,6 @@
  *= require_self
  *= require_tree .
  */
+
+.pink { color: #ff4fac }
+.blue { color: #4fa8ff }

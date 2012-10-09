@@ -20,6 +20,3 @@ production:
   username: postgres
   password: postgres 
   host: localhost
-
-cucumber:
-  <<: *TEST
