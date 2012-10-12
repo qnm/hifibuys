@@ -1,0 +1,9 @@
+=== hifibuys Configured Add-ons
+apigee:basic
+heroku-postgresql:dev  HEROKU_POSTGRESQL_YELLOW
+newrelic:standard
+pgbackups:plus
+scheduler:standard
+shared-database:5mb
+zerigo_dns:basic
+

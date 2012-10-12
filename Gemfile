@@ -20,6 +20,7 @@ gem 'jquery-rails', '~> 2.1'
 gem 'simple_form'
 gem 'apotomo'
 gem 'masonry-rails'
+gem 'unicorn'
 
 # Gems used only for assets and not required
 # in production environments by default.
