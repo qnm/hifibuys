@@ -1,8 +1,4 @@
-%h2 We help you find...
 - unless @items
   %h2= "Sorry! We don't have anything matching #{params[:q]}."
 - else
-  .items= render @items 
-
-.hlisting= paginate @items
-
+  %ul.thumbnails#items= render @items 

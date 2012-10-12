@@ -13,15 +13,15 @@ class Item < ActiveRecord::Base
      name.to_s.split(" ") || []
   end
 
-  def image_url=(moo)
-    nil
-  end
-
   def manufacturers
     Entity.extract_by_category(name, "manufacturer")
   end
 
   def types
     Entity.extract_by_category(name, "type")
+  end
+
+  def name=(val)
+    write_attribute(:name, val.to_s.titleize)
   end
 end

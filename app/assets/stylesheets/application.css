@@ -1,9 +1,13 @@
 /*
  *
  *= require bootstrap_and_overrides
+ *= require masonry/basic
+ *= require 'masonry/fluid'
  *= require_self
  *= require_tree .
  */
 
 .pink { color: #ff4fac }
 .blue { color: #4fa8ff }
+.item { width: 240px; text-align: center; }
+.item img { max-width: 150px; max-height: 150px; padding: 4px; }

@@ -19,6 +19,7 @@ gem "twitter-bootstrap-rails"
 gem 'jquery-rails', '~> 2.1'
 gem 'simple_form'
 gem 'apotomo'
+gem 'masonry-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -45,4 +46,5 @@ group :development, :test do
   gem 'activerecord-nulldb-adapter', :git => 'git://github.com/nulldb/nulldb.git'
   gem 'rspec-apotomo'
   gem 'capybara'
+  gem 'guard-livereload'
 end
