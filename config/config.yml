@@ -27,3 +27,6 @@ development: &DEVELOPMENT
           - "http://tivolihifi.com/catalogue/clearance?page=0"
 test:
   <<: *DEVELOPMENT
+
+production:
+  <<: *DEVELOPMENT
