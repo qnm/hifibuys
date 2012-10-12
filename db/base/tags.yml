@@ -1,111 +1,114 @@
 
---- 
-tags: 
-  columns: 
+---
+tags:
+  columns:
   - id
   - name
   records: 
-  - - "1"
+---
+  - - '1'
     - Schroers & Schroers
-  - - "2"
+  - - '2'
     - CD Player
-  - - "3"
+  - - '3'
     - DVD Player
-  - - "4"
+  - - '4'
     - Clearaudio
-  - - "5"
+  - - '5'
     - Musical Fidelity
-  - - "6"
+  - - '6'
     - Cyrus
-  - - "7"
+  - - '7'
     - Micromega
-  - - "8"
+  - - '8'
     - Audio Research
-  - - "9"
+  - - '9'
     - CEC
-  - - "10"
+  - - '10'
     - Audio Note
-  - - "11"
+  - - '11'
     - Meridian
-  - - "12"
+  - - '12'
     - Theta
-  - - "13"
+  - - '13'
     - Definitive Technology
-  - - "14"
+  - - '14'
     - Aegis
-  - - "15"
+  - - '15'
     - ATC
-  - - "16"
+  - - '16'
     - Dali
-  - - "17"
+  - - '17'
     - MBL
-  - - "18"
+  - - '18'
     - Aelite
-  - - "19"
+  - - '19'
     - Aerial Acoustics
-  - - "20"
+  - - '20'
     - Speaker
-  - - "21"
+  - - '21'
     - Triangle
-  - - "22"
+  - - '22'
     - Revel
-  - - "23"
+  - - '23'
     - Klipsch
-  - - "24"
+  - - '24'
     - Avalon
-  - - "25"
+  - - '25'
     - Coincident
-  - - "26"
+  - - '26'
     - Genesis
-  - - "27"
+  - - '27'
     - Amplifier
-  - - "28"
+  - - '28'
     - Martin Logan
-  - - "29"
+  - - '29'
     - Rega
-  - - "30"
+  - - '30'
     - Wilson
-  - - "31"
+  - - '31'
     - Sony
-  - - "32"
+  - - '32'
     - Thiel
-  - - "33"
+  - - '33'
     - REL
-  - - "34"
+  - - '34'
     - Magnum
-  - - "35"
+  - - '35'
     - Myryad
-  - - "36"
+  - - '36'
     - Pathos
-  - - "37"
+  - - '37'
     - Krell
-  - - "38"
+  - - '38'
     - Threshold
-  - - "39"
+  - - '39'
     - Gryphon
-  - - "40"
+  - - '40'
     - Anthem
-  - - "41"
+  - - '41'
     - Hovland
-  - - "42"
+  - - '42'
     - Jadis
-  - - "43"
+  - - '43'
     - Graham Robin
-  - - "44"
+  - - '44'
     - Oracle
-  - - "45"
+  - - '45'
     - Audiolab
-  - - "46"
+  - - '46'
     - Denon
-  - - "47"
+  - - '47'
     - Vincent
-  - - "48"
+  - - '48'
     - Arcam
-  - - "49"
+  - - '49'
     - Linn
-  - - "50"
+  - - '50'
     - Mark Levinson
-  - - "51"
+  - - '51'
     - Yamaha
-  - - "52"
+  - - '52'
     - Classe Audio
+  - - '53'
+    - Eventus

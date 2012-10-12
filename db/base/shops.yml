@@ -1,0 +1,50 @@
+
+---
+shops:
+  columns:
+  - id
+  - name
+  - address
+  - suburb
+  - city
+  - state
+  - country
+  - created_at
+  - updated_at
+  - feed
+  - ingestor
+  records: 
+---
+  - - '7'
+    - Tivoli
+    - 155-157 Camberwell Road
+    - Hawthorn East
+    - Melbourne
+    - VIC
+    - Australia
+    - '2010-09-12 21:40:39'
+    - '2010-09-12 21:40:39'
+    - test/siteref/tivoli.html
+    - TivoliIngestor
+  - - '8'
+    - Carlton Audio Visual
+    - 164-172 Lygon Street
+    - Carlton
+    - Melbourne
+    - Victoria
+    - Australia
+    - '2010-09-12 21:40:39'
+    - '2010-09-12 21:40:39'
+    - test/siteref/carlton.html
+    - CarltonIngestor
+  - - '9'
+    - Audio Connection
+    - 
+    - Leichhardt
+    - Sydney
+    - NSW
+    - Australia
+    - '2010-09-12 21:40:40'
+    - '2010-09-12 21:40:40'
+    - test/siteref/audioconnection.html
+    - AudioConnectionIngestor

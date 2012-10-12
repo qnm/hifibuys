@@ -1,0 +1,1014 @@
+
+---
+sync_items:
+  columns:
+  - id
+  - item
+  - group
+  - class_name
+  - class_id
+  - status
+  - created_at
+  - updated_at
+  records: 
+---
+  - - '530'
+    - http://tivolihifi.com/store/index.php?main_page=product_info&cPath=13&products_id=566
+    - TivoliIngestor
+    - Item
+    - '530'
+    - '1'
+    - '2010-09-20 11:54:41.412285'
+    - '2010-09-20 11:54:41.412285'
+  - - '531'
+    - http://tivolihifi.com/store/index.php?main_page=product_info&cPath=13&products_id=626
+    - TivoliIngestor
+    - Item
+    - '531'
+    - '1'
+    - '2010-09-20 11:54:41.51802'
+    - '2010-09-20 11:54:41.51802'
+  - - '532'
+    - http://tivolihifi.com/store/index.php?main_page=product_info&cPath=13&products_id=148
+    - TivoliIngestor
+    - Item
+    - '532'
+    - '1'
+    - '2010-09-20 11:54:41.561405'
+    - '2010-09-20 11:54:41.561405'
+  - - '533'
+    - http://tivolihifi.com/store/index.php?main_page=product_info&cPath=13&products_id=648
+    - TivoliIngestor
+    - Item
+    - '533'
+    - '1'
+    - '2010-09-20 11:54:41.700357'
+    - '2010-09-20 11:54:41.700357'
+  - - '534'
+    - http://tivolihifi.com/store/index.php?main_page=product_info&cPath=13&products_id=563
+    - TivoliIngestor
+    - Item
+    - '534'
+    - '1'
+    - '2010-09-20 11:54:41.766138'
+    - '2010-09-20 11:54:41.766138'
+  - - '535'
+    - http://tivolihifi.com/store/index.php?main_page=product_info&cPath=13&products_id=617
+    - TivoliIngestor
+    - Item
+    - '535'
+    - '1'
+    - '2010-09-20 11:54:41.78895'
+    - '2010-09-20 11:54:41.78895'
+  - - '536'
+    - http://tivolihifi.com/store/index.php?main_page=product_info&cPath=13&products_id=504
+    - TivoliIngestor
+    - Item
+    - '536'
+    - '1'
+    - '2010-09-20 11:54:41.828324'
+    - '2010-09-20 11:54:41.828324'
+  - - '537'
+    - http://tivolihifi.com/store/index.php?main_page=product_info&cPath=13&products_id=564
+    - TivoliIngestor
+    - Item
+    - '537'
+    - '1'
+    - '2010-09-20 11:54:41.916134'
+    - '2010-09-20 11:54:41.916134'
+  - - '538'
+    - http://tivolihifi.com/store/index.php?main_page=product_info&cPath=13&products_id=647
+    - TivoliIngestor
+    - Item
+    - '538'
+    - '1'
+    - '2010-09-20 11:54:41.956233'
+    - '2010-09-20 11:54:41.956233'
+  - - '539'
+    - http://tivolihifi.com/store/index.php?main_page=product_info&cPath=13&products_id=565
+    - TivoliIngestor
+    - Item
+    - '539'
+    - '1'
+    - '2010-09-20 11:54:42.026157'
+    - '2010-09-20 11:54:42.026157'
+  - - '540'
+    - http://www.carltonaudiovisual.com.au/?q=node/view/1128
+    - CarltonIngestor
+    - Item
+    - '540'
+    - '1'
+    - '2010-09-20 11:54:42.067332'
+    - '2010-09-20 11:54:42.067332'
+  - - '541'
+    - http://www.carltonaudiovisual.com.au/?q=node/view/1071
+    - CarltonIngestor
+    - Item
+    - '541'
+    - '1'
+    - '2010-09-20 11:54:42.109449'
+    - '2010-09-20 11:54:42.109449'
+  - - '542'
+    - http://www.carltonaudiovisual.com.au/?q=node/view/1137
+    - CarltonIngestor
+    - Item
+    - '542'
+    - '1'
+    - '2010-09-20 11:54:42.157839'
+    - '2010-09-20 11:54:42.157839'
+  - - '543'
+    - http://www.carltonaudiovisual.com.au/?q=node/view/341
+    - CarltonIngestor
+    - Item
+    - '543'
+    - '1'
+    - '2010-09-20 11:54:42.189376'
+    - '2010-09-20 11:54:42.189376'
+  - - '544'
+    - http://www.audioconnection.com.au/products/lambda-tv-mini-stand.asp
+    - AudioConnectionIngestor
+    - Item
+    - '544'
+    - '1'
+    - '2010-09-20 11:54:42.616367'
+    - '2010-09-20 11:54:42.616367'
+  - - '545'
+    - http://www.audioconnection.com.au/products/schreors-schroers-lambda-tv3-stand.asp
+    - AudioConnectionIngestor
+    - Item
+    - '545'
+    - '1'
+    - '2010-09-20 11:54:42.651433'
+    - '2010-09-20 11:54:42.651433'
+  - - '546'
+    - http://www.audioconnection.com.au/products/schroers-schroers-alphastatic.asp
+    - AudioConnectionIngestor
+    - Item
+    - '546'
+    - '1'
+    - '2010-09-20 11:54:42.677507'
+    - '2010-09-20 11:54:42.677507'
+  - - '547'
+    - http://www.audioconnection.com.au/products/schroers-schroers-deltastatic.asp
+    - AudioConnectionIngestor
+    - Item
+    - '547'
+    - '1'
+    - '2010-09-20 11:54:42.708751'
+    - '2010-09-20 11:54:42.708751'
+  - - '548'
+    - http://www.audioconnection.com.au/products/schroers-schroers-cd-44.asp
+    - AudioConnectionIngestor
+    - Item
+    - '548'
+    - '1'
+    - '2010-09-20 11:54:42.808388'
+    - '2010-09-20 11:54:42.808388'
+  - - '549'
+    - http://www.audioconnection.com.au/products/schroers-schroers-cd10-dvd-7.asp
+    - AudioConnectionIngestor
+    - Item
+    - '549'
+    - '1'
+    - '2010-09-20 11:54:42.854414'
+    - '2010-09-20 11:54:42.854414'
+  - - '550'
+    - http://www.audioconnection.com.au/products/classe-audio-ssp30.asp
+    - AudioConnectionIngestor
+    - Item
+    - '550'
+    - '1'
+    - '2010-09-20 11:54:42.982511'
+    - '2010-09-20 11:54:42.982511'
+  - - '551'
+    - http://www.audioconnection.com.au/products/theta-casablanca-music-cinema-controller.asp
+    - AudioConnectionIngestor
+    - Item
+    - '551'
+    - '1'
+    - '2010-09-20 11:54:43.026406'
+    - '2010-09-20 11:54:43.026406'
+  - - '552'
+    - http://www.audioconnection.com.au/products/classe-audio-cdp.3-cd-player.asp
+    - AudioConnectionIngestor
+    - Item
+    - '552'
+    - '1'
+    - '2010-09-20 11:54:43.28501'
+    - '2010-09-20 11:54:43.28501'
+  - - '553'
+    - http://www.audioconnection.com.au/products/cyrus-cd8-cd-player.asp
+    - AudioConnectionIngestor
+    - Item
+    - '553'
+    - '1'
+    - '2010-09-20 11:54:43.34355'
+    - '2010-09-20 11:54:43.34355'
+  - - '554'
+    - http://www.audioconnection.com.au/products/micromega-cd10-cd-player.asp
+    - AudioConnectionIngestor
+    - Item
+    - '554'
+    - '1'
+    - '2010-09-20 11:54:43.382865'
+    - '2010-09-20 11:54:43.382865'
+  - - '555'
+    - http://www.audioconnection.com.au/products/micromega-cd20-cd-player.asp
+    - AudioConnectionIngestor
+    - Item
+    - '555'
+    - '1'
+    - '2010-09-20 11:54:43.42301'
+    - '2010-09-20 11:54:43.42301'
+  - - '556'
+    - http://www.audioconnection.com.au/products/micromega-cd30-cd-player.asp
+    - AudioConnectionIngestor
+    - Item
+    - '556'
+    - '1'
+    - '2010-09-20 11:54:43.535778'
+    - '2010-09-20 11:54:43.535778'
+  - - '557'
+    - http://www.audioconnection.com.au/products/classe-audio-cd-dvd1.asp
+    - AudioConnectionIngestor
+    - Item
+    - '557'
+    - '1'
+    - '2010-09-20 11:54:43.561051'
+    - '2010-09-20 11:54:43.561051'
+  - - '558'
+    - http://www.audioconnection.com.au/products/audio-research-cd2.asp
+    - AudioConnectionIngestor
+    - Item
+    - '558'
+    - '1'
+    - '2010-09-20 11:54:43.593793'
+    - '2010-09-20 11:54:43.593793'
+  - - '559'
+    - http://www.audioconnection.com.au/products/tl0x.asp
+    - AudioConnectionIngestor
+    - Item
+    - '559'
+    - '1'
+    - '2010-09-20 11:54:43.735153'
+    - '2010-09-20 11:54:43.735153'
+  - - '560'
+    - http://www.audioconnection.com.au/products/musical-fidelity-kw-sacd-cd-player-(limited-edition).asp
+    - AudioConnectionIngestor
+    - Item
+    - '560'
+    - '1'
+    - '2010-09-20 11:54:43.955477'
+    - '2010-09-20 11:54:43.955477'
+  - - '561'
+    - http://www.audioconnection.com.au/products/audio-note-dac-2-signature.asp
+    - AudioConnectionIngestor
+    - Item
+    - '561'
+    - '1'
+    - '2010-09-20 11:54:43.985112'
+    - '2010-09-20 11:54:43.985112'
+  - - '562'
+    - http://www.audioconnection.com.au/products/audio-note-dac-4.1-balanced.asp
+    - AudioConnectionIngestor
+    - Item
+    - '562'
+    - '1'
+    - '2010-09-20 11:54:44.035144'
+    - '2010-09-20 11:54:44.035144'
+  - - '563'
+    - http://www.audioconnection.com.au/products/meridian-800-cd-dvd-player.asp
+    - AudioConnectionIngestor
+    - Item
+    - '563'
+    - '1'
+    - '2010-09-20 11:54:44.202066'
+    - '2010-09-20 11:54:44.202066'
+  - - '564'
+    - http://www.audioconnection.com.au/products/meridian-g98-dvd-cd-transport-(black).asp
+    - AudioConnectionIngestor
+    - Item
+    - '564'
+    - '1'
+    - '2010-09-20 11:54:44.231144'
+    - '2010-09-20 11:54:44.231144'
+  - - '565'
+    - http://www.audioconnection.com.au/products/theta-david.asp
+    - AudioConnectionIngestor
+    - Item
+    - '565'
+    - '1'
+    - '2010-09-20 11:54:44.25219'
+    - '2010-09-20 11:54:44.25219'
+  - - '566'
+    - http://www.audioconnection.com.au/products/definitive-technology-pro-monitor-200.asp
+    - AudioConnectionIngestor
+    - Item
+    - '566'
+    - '1'
+    - '2010-09-20 11:54:44.299582'
+    - '2010-09-20 11:54:44.299582'
+  - - '567'
+    - http://www.audioconnection.com.au/products/definitive-technology-pro-monitor-80.asp
+    - AudioConnectionIngestor
+    - Item
+    - '567'
+    - '1'
+    - '2010-09-20 11:54:44.327388'
+    - '2010-09-20 11:54:44.327388'
+  - - '568'
+    - http://www.audioconnection.com.au/products/ae-a1-classic-(stands-included).asp
+    - AudioConnectionIngestor
+    - Item
+    - '568'
+    - '1'
+    - '2010-09-20 11:54:44.368833'
+    - '2010-09-20 11:54:44.368833'
+  - - '569'
+    - http://www.audioconnection.com.au/products/ae-aegis-compact.asp
+    - AudioConnectionIngestor
+    - Item
+    - '569'
+    - '1'
+    - '2010-09-20 11:54:44.41436'
+    - '2010-09-20 11:54:44.41436'
+  - - '570'
+    - http://www.audioconnection.com.au/products/ae-3-speakers-w-matching-stands.asp
+    - AudioConnectionIngestor
+    - Item
+    - '570'
+    - '1'
+    - '2010-09-20 11:54:44.52472'
+    - '2010-09-20 11:54:44.52472'
+  - - '571'
+    - http://www.audioconnection.com.au/products/atc-scm10.2-active-speakers.asp
+    - AudioConnectionIngestor
+    - Item
+    - '571'
+    - '1'
+    - '2010-09-20 11:54:44.717388'
+    - '2010-09-20 11:54:44.717388'
+  - - '572'
+    - http://www.audioconnection.com.au/products/atc-scm19.asp
+    - AudioConnectionIngestor
+    - Item
+    - '572'
+    - '1'
+    - '2010-09-20 11:54:44.745581'
+    - '2010-09-20 11:54:44.745581'
+  - - '573'
+    - http://www.audioconnection.com.au/products/dali-royal-menuet.asp
+    - AudioConnectionIngestor
+    - Item
+    - '573'
+    - '1'
+    - '2010-09-20 11:54:44.769462'
+    - '2010-09-20 11:54:44.769462'
+  - - '574'
+    - http://www.audioconnection.com.au/products/eventus-audio-mentis.asp
+    - AudioConnectionIngestor
+    - Item
+    - '574'
+    - '1'
+    - '2010-09-20 11:54:44.794278'
+    - '2010-09-20 11:54:44.794278'
+  - - '575'
+    - http://www.audioconnection.com.au/products/mbl-121-compact.asp
+    - AudioConnectionIngestor
+    - Item
+    - '575'
+    - '1'
+    - '2010-09-20 11:54:44.930397'
+    - '2010-09-20 11:54:44.930397'
+  - - '576'
+    - http://www.audioconnection.com.au/products/definitive-technology-pro-monitor-100.asp
+    - AudioConnectionIngestor
+    - Item
+    - '576'
+    - '1'
+    - '2010-09-20 11:54:44.959626'
+    - '2010-09-20 11:54:44.959626'
+  - - '577'
+    - http://www.audioconnection.com.au/products/aelite-centre.asp
+    - AudioConnectionIngestor
+    - Item
+    - '577'
+    - '1'
+    - '2010-09-20 11:54:44.985103'
+    - '2010-09-20 11:54:44.985103'
+  - - '578'
+    - http://www.audioconnection.com.au/products/aerial-cc3-centre-speaker.asp
+    - AudioConnectionIngestor
+    - Item
+    - '578'
+    - '1'
+    - '2010-09-20 11:54:45.247802'
+    - '2010-09-20 11:54:45.247802'
+  - - '579'
+    - http://www.audioconnection.com.au/products/atc-c1-centre-speaker.asp
+    - AudioConnectionIngestor
+    - Item
+    - '579'
+    - '1'
+    - '2010-09-20 11:54:45.338442'
+    - '2010-09-20 11:54:45.338442'
+  - - '580'
+    - http://www.audioconnection.com.au/products/atc-c3-centre-speaker.asp
+    - AudioConnectionIngestor
+    - Item
+    - '580'
+    - '1'
+    - '2010-09-20 11:54:45.373498'
+    - '2010-09-20 11:54:45.373498'
+  - - '581'
+    - http://www.audioconnection.com.au/products/atc-c4ca-active-centre.asp
+    - AudioConnectionIngestor
+    - Item
+    - '581'
+    - '1'
+    - '2010-09-20 11:54:45.41891'
+    - '2010-09-20 11:54:45.41891'
+  - - '582'
+    - http://www.audioconnection.com.au/products/dali-helicon-c200-centre-speaker.asp
+    - AudioConnectionIngestor
+    - Item
+    - '582'
+    - '1'
+    - '2010-09-20 11:54:45.551464'
+    - '2010-09-20 11:54:45.551464'
+  - - '583'
+    - http://www.audioconnection.com.au/products/definitive-technology-pro-center-100.asp
+    - AudioConnectionIngestor
+    - Item
+    - '583'
+    - '1'
+    - '2010-09-20 11:54:45.587916'
+    - '2010-09-20 11:54:45.587916'
+  - - '584'
+    - http://www.audioconnection.com.au/products/sophis.asp
+    - AudioConnectionIngestor
+    - Item
+    - '584'
+    - '1'
+    - '2010-09-20 11:54:45.618567'
+    - '2010-09-20 11:54:45.618567'
+  - - '585'
+    - http://www.audioconnection.com.au/products/leo-minor.asp
+    - AudioConnectionIngestor
+    - Item
+    - '585'
+    - '1'
+    - '2010-09-20 11:54:45.680794'
+    - '2010-09-20 11:54:45.680794'
+  - - '586'
+    - http://www.audioconnection.com.au/products/meridian-dsp-5000c.asp
+    - AudioConnectionIngestor
+    - Item
+    - '586'
+    - '1'
+    - '2010-09-20 11:54:46.131425'
+    - '2010-09-20 11:54:46.131425'
+  - - '587'
+    - http://www.audioconnection.com.au/products/revel-performa-c30.asp
+    - AudioConnectionIngestor
+    - Item
+    - '587'
+    - '1'
+    - '2010-09-20 11:54:46.175491'
+    - '2010-09-20 11:54:46.175491'
+  - - '588'
+    - http://www.audioconnection.com.au/products/b-w-htm1d.asp
+    - AudioConnectionIngestor
+    - Item
+    - '588'
+    - '1'
+    - '2010-09-20 11:54:46.188246'
+    - '2010-09-20 11:54:46.188246'
+  - - '589'
+    - http://www.audioconnection.com.au/products/aegis-evo-centre.asp
+    - AudioConnectionIngestor
+    - Item
+    - '589'
+    - '1'
+    - '2010-09-20 11:54:46.223088'
+    - '2010-09-20 11:54:46.223088'
+  - - '590'
+    - http://www.audioconnection.com.au/products/klipsch-belle-loudspeaker.asp
+    - AudioConnectionIngestor
+    - Item
+    - '590'
+    - '1'
+    - '2010-09-20 11:54:46.250443'
+    - '2010-09-20 11:54:46.250443'
+  - - '591'
+    - http://www.audioconnection.com.au/products/aerial-model-7-floor-speakers-(pair).asp
+    - AudioConnectionIngestor
+    - Item
+    - '591'
+    - '1'
+    - '2010-09-20 11:54:46.289223'
+    - '2010-09-20 11:54:46.289223'
+  - - '592'
+    - http://www.audioconnection.com.au/products/avalon.asp
+    - AudioConnectionIngestor
+    - Item
+    - '592'
+    - '1'
+    - '2010-09-20 11:54:46.325818'
+    - '2010-09-20 11:54:46.325818'
+  - - '593'
+    - http://www.audioconnection.com.au/products/coincident-total-victory-iii-(cherry).asp
+    - AudioConnectionIngestor
+    - Item
+    - '593'
+    - '1'
+    - '2010-09-20 11:54:46.352447'
+    - '2010-09-20 11:54:46.352447'
+  - - '594'
+    - http://www.audioconnection.com.au/products/dali-helicon-800-floorstanding-speakers.asp
+    - AudioConnectionIngestor
+    - Item
+    - '594'
+    - '1'
+    - '2010-09-20 11:54:46.400338'
+    - '2010-09-20 11:54:46.400338'
+  - - '595'
+    - http://www.audioconnection.com.au/products/phobos.asp
+    - AudioConnectionIngestor
+    - Item
+    - '595'
+    - '1'
+    - '2010-09-20 11:54:46.431471'
+    - '2010-09-20 11:54:46.431471'
+  - - '596'
+    - http://www.audioconnection.com.au/products/focus-audio-fs700.asp
+    - AudioConnectionIngestor
+    - Item
+    - '596'
+    - '1'
+    - '2010-09-20 11:54:46.559523'
+    - '2010-09-20 11:54:46.559523'
+  - - '597'
+    - http://www.audioconnection.com.au/products/genesis-350-floor-speakers.asp
+    - AudioConnectionIngestor
+    - Item
+    - '597'
+    - '1'
+    - '2010-09-20 11:54:46.595456'
+    - '2010-09-20 11:54:46.595456'
+  - - '598'
+    - http://www.audioconnection.com.au/products/genesis-g501-acive-floor-standing-speakers.asp
+    - AudioConnectionIngestor
+    - Item
+    - '598'
+    - '1'
+    - '2010-09-20 11:54:46.655533'
+    - '2010-09-20 11:54:46.655533'
+  - - '599'
+    - http://www.audioconnection.com.au/products/martin-logan-aerius-i.asp
+    - AudioConnectionIngestor
+    - Item
+    - '599'
+    - '1'
+    - '2010-09-20 11:54:46.722739'
+    - '2010-09-20 11:54:46.722739'
+  - - '600'
+    - http://www.audioconnection.com.au/products/martin-logan-ascent-i.asp
+    - AudioConnectionIngestor
+    - Item
+    - '600'
+    - '1'
+    - '2010-09-20 11:54:46.773202'
+    - '2010-09-20 11:54:46.773202'
+  - - '601'
+    - http://www.audioconnection.com.au/products/martin-logan-clarity.asp
+    - AudioConnectionIngestor
+    - Item
+    - '601'
+    - '1'
+    - '2010-09-20 11:54:46.802334'
+    - '2010-09-20 11:54:46.802334'
+  - - '602'
+    - http://www.audioconnection.com.au/products/martin-logan-sl3.asp
+    - AudioConnectionIngestor
+    - Item
+    - '602'
+    - '1'
+    - '2010-09-20 11:54:46.828175'
+    - '2010-09-20 11:54:46.828175'
+  - - '603'
+    - http://www.audioconnection.com.au/products/mbl-111e.asp
+    - AudioConnectionIngestor
+    - Item
+    - '603'
+    - '1'
+    - '2010-09-20 11:54:46.849053'
+    - '2010-09-20 11:54:46.849053'
+  - - '604'
+    - http://www.audioconnection.com.au/products/meridian-8000-black-(single).asp
+    - AudioConnectionIngestor
+    - Item
+    - '604'
+    - '1'
+    - '2010-09-20 11:54:46.876529'
+    - '2010-09-20 11:54:46.876529'
+  - - '605'
+    - http://www.audioconnection.com.au/products/meridian-8000-yellow-(pair).asp
+    - AudioConnectionIngestor
+    - Item
+    - '605'
+    - '1'
+    - '2010-09-20 11:54:46.907146'
+    - '2010-09-20 11:54:46.907146'
+  - - '606'
+    - http://www.audioconnection.com.au/products/rega-5-speakers.asp
+    - AudioConnectionIngestor
+    - Item
+    - '606'
+    - '1'
+    - '2010-09-20 11:54:46.938747'
+    - '2010-09-20 11:54:46.938747'
+  - - '607'
+    - http://www.audioconnection.com.au/products/rega-7-speakers.asp
+    - AudioConnectionIngestor
+    - Item
+    - '607'
+    - '1'
+    - '2010-09-20 11:54:46.963407'
+    - '2010-09-20 11:54:46.963407'
+  - - '608'
+    - http://www.audioconnection.com.au/products/revel-performa-f30.asp
+    - AudioConnectionIngestor
+    - Item
+    - '608'
+    - '1'
+    - '2010-09-20 11:54:47.134505'
+    - '2010-09-20 11:54:47.134505'
+  - - '609'
+    - http://www.audioconnection.com.au/products/triangle-australe.asp
+    - AudioConnectionIngestor
+    - Item
+    - '609'
+    - '1'
+    - '2010-09-20 11:54:47.158787'
+    - '2010-09-20 11:54:47.158787'
+  - - '610'
+    - http://www.audioconnection.com.au/products/triangle-lyrr-222.asp
+    - AudioConnectionIngestor
+    - Item
+    - '610'
+    - '1'
+    - '2010-09-20 11:54:47.217525'
+    - '2010-09-20 11:54:47.217525'
+  - - '611'
+    - http://www.audioconnection.com.au/products/triangle-naia-loudspeakers.asp
+    - AudioConnectionIngestor
+    - Item
+    - '611'
+    - '1'
+    - '2010-09-20 11:54:47.267858'
+    - '2010-09-20 11:54:47.267858'
+  - - '612'
+    - http://www.audioconnection.com.au/products/alexandria-x-2.asp
+    - AudioConnectionIngestor
+    - Item
+    - '612'
+    - '1'
+    - '2010-09-20 11:54:47.297784'
+    - '2010-09-20 11:54:47.297784'
+  - - '613'
+    - http://www.audioconnection.com.au/products/meridian-dsp5200.asp
+    - AudioConnectionIngestor
+    - Item
+    - '613'
+    - '1'
+    - '2010-09-20 11:54:47.32613'
+    - '2010-09-20 11:54:47.32613'
+  - - '614'
+    - http://www.audioconnection.com.au/products/wilson-watt-puppy-6.asp
+    - AudioConnectionIngestor
+    - Item
+    - '614'
+    - '1'
+    - '2010-09-20 11:54:47.359609'
+    - '2010-09-20 11:54:47.359609'
+  - - '615'
+    - http://www.audioconnection.com.au/products/dali-helicon-w200-on-wall-speaker.asp
+    - AudioConnectionIngestor
+    - Item
+    - '615'
+    - '1'
+    - '2010-09-20 11:54:47.431959'
+    - '2010-09-20 11:54:47.431959'
+  - - '616'
+    - http://www.audioconnection.com.au/products/thiel-sw1-smart-sub.asp
+    - AudioConnectionIngestor
+    - Item
+    - '616'
+    - '1'
+    - '2010-09-20 11:54:47.459574'
+    - '2010-09-20 11:54:47.459574'
+  - - '617'
+    - http://www.audioconnection.com.au/products/aelite-sub.asp
+    - AudioConnectionIngestor
+    - Item
+    - '617'
+    - '1'
+    - '2010-09-20 11:54:47.484237'
+    - '2010-09-20 11:54:47.484237'
+  - - '618'
+    - http://www.audioconnection.com.au/products/dali-helicon-s600-active-subwoofer.asp
+    - AudioConnectionIngestor
+    - Item
+    - '618'
+    - '1'
+    - '2010-09-20 11:54:47.524074'
+    - '2010-09-20 11:54:47.524074'
+  - - '619'
+    - http://www.audioconnection.com.au/products/genesis-subwoofer.asp
+    - AudioConnectionIngestor
+    - Item
+    - '619'
+    - '1'
+    - '2010-09-20 11:54:47.597967'
+    - '2010-09-20 11:54:47.597967'
+  - - '620'
+    - http://www.audioconnection.com.au/products/rel-stadium-active-subwoofer.asp
+    - AudioConnectionIngestor
+    - Item
+    - '620'
+    - '1'
+    - '2010-09-20 11:54:47.722423'
+    - '2010-09-20 11:54:47.722423'
+  - - '621'
+    - http://www.audioconnection.com.au/products/rel-strata-5.asp
+    - AudioConnectionIngestor
+    - Item
+    - '621'
+    - '1'
+    - '2010-09-20 11:54:47.848697'
+    - '2010-09-20 11:54:47.848697'
+  - - '622'
+    - http://www.audioconnection.com.au/products/revel-b15.asp
+    - AudioConnectionIngestor
+    - Item
+    - '622'
+    - '1'
+    - '2010-09-20 11:54:47.870665'
+    - '2010-09-20 11:54:47.870665'
+  - - '623'
+    - http://www.audioconnection.com.au/products/md208.asp
+    - AudioConnectionIngestor
+    - Item
+    - '623'
+    - '1'
+    - '2010-09-20 11:54:47.895038'
+    - '2010-09-20 11:54:47.895038'
+  - - '624'
+    - http://www.audioconnection.com.au/products/jadis-da-50-signature.asp
+    - AudioConnectionIngestor
+    - Item
+    - '624'
+    - '1'
+    - '2010-09-20 11:54:47.934584'
+    - '2010-09-20 11:54:47.934584'
+  - - '625'
+    - http://www.audioconnection.com.au/products/micromega-ia-100-integrated-amplifier.asp
+    - AudioConnectionIngestor
+    - Item
+    - '625'
+    - '1'
+    - '2010-09-20 11:54:47.97718'
+    - '2010-09-20 11:54:47.97718'
+  - - '626'
+    - http://www.audioconnection.com.au/products/micromega-ia-60-integrated-amplifier.asp
+    - AudioConnectionIngestor
+    - Item
+    - '626'
+    - '1'
+    - '2010-09-20 11:54:48.065209'
+    - '2010-09-20 11:54:48.065209'
+  - - '627'
+    - http://www.audioconnection.com.au/products/myryad-mxi2150-integrated-amplifier.asp
+    - AudioConnectionIngestor
+    - Item
+    - '627'
+    - '1'
+    - '2010-09-20 11:54:48.104562'
+    - '2010-09-20 11:54:48.104562'
+  - - '628'
+    - http://www.audioconnection.com.au/products/pathos-classic-one-mkii.asp
+    - AudioConnectionIngestor
+    - Item
+    - '628'
+    - '1'
+    - '2010-09-20 11:54:48.131476'
+    - '2010-09-20 11:54:48.131476'
+  - - '629'
+    - http://www.audioconnection.com.au/products/classic-one-mkiii.asp
+    - AudioConnectionIngestor
+    - Item
+    - '629'
+    - '1'
+    - '2010-09-20 11:54:48.158528'
+    - '2010-09-20 11:54:48.158528'
+  - - '630'
+    - http://www.audioconnection.com.au/products/pathos-classic-one-mki.asp
+    - AudioConnectionIngestor
+    - Item
+    - '630'
+    - '1'
+    - '2010-09-20 11:54:48.184565'
+    - '2010-09-20 11:54:48.184565'
+  - - '631'
+    - http://www.audioconnection.com.au/products/classe-omega-monoblock-power-amps-(single).asp
+    - AudioConnectionIngestor
+    - Item
+    - '631'
+    - '1'
+    - '2010-09-20 11:54:48.214315'
+    - '2010-09-20 11:54:48.214315'
+  - - '632'
+    - http://www.audioconnection.com.au/products/krell-ksa100s-power-amplifier.asp
+    - AudioConnectionIngestor
+    - Item
+    - '632'
+    - '1'
+    - '2010-09-20 11:54:48.449464'
+    - '2010-09-20 11:54:48.449464'
+  - - '633'
+    - http://www.audioconnection.com.au/products/mbl9008a.asp
+    - AudioConnectionIngestor
+    - Item
+    - '633'
+    - '1'
+    - '2010-09-20 11:54:48.497374'
+    - '2010-09-20 11:54:48.497374'
+  - - '634'
+    - http://www.audioconnection.com.au/products/mbl8006a.asp
+    - AudioConnectionIngestor
+    - Item
+    - '634'
+    - '1'
+    - '2010-09-20 11:54:48.521038'
+    - '2010-09-20 11:54:48.521038'
+  - - '635'
+    - http://www.audioconnection.com.au/products/musical-fidelity-a308-pre-amp-power-amp.asp
+    - AudioConnectionIngestor
+    - Item
+    - '635'
+    - '1'
+    - '2010-09-20 11:54:48.565596'
+    - '2010-09-20 11:54:48.565596'
+  - - '636'
+    - http://www.audioconnection.com.au/products/myryad-mxa2080-stereo-power-amplifier.asp
+    - AudioConnectionIngestor
+    - Item
+    - '636'
+    - '1'
+    - '2010-09-20 11:54:48.609304'
+    - '2010-09-20 11:54:48.609304'
+  - - '637'
+    - http://www.audioconnection.com.au/products/myryad-mxa2150-power-amplifier.asp
+    - AudioConnectionIngestor
+    - Item
+    - '637'
+    - '1'
+    - '2010-09-20 11:54:48.664186'
+    - '2010-09-20 11:54:48.664186'
+  - - '638'
+    - http://www.audioconnection.com.au/products/threshold-model-sa-1-power-amplifier.asp
+    - AudioConnectionIngestor
+    - Item
+    - '638'
+    - '1'
+    - '2010-09-20 11:54:48.718645'
+    - '2010-09-20 11:54:48.718645'
+  - - '639'
+    - http://www.audioconnection.com.au/products/audio-research-vs55-valve-power-amplifier.asp
+    - AudioConnectionIngestor
+    - Item
+    - '639'
+    - '1'
+    - '2010-09-20 11:54:48.765395'
+    - '2010-09-20 11:54:48.765395'
+  - - '640'
+    - http://www.audioconnection.com.au/products/mcintosh-mc-501-monoblock-power-amplifiers.asp
+    - AudioConnectionIngestor
+    - Item
+    - '640'
+    - '1'
+    - '2010-09-20 11:54:48.780857'
+    - '2010-09-20 11:54:48.780857'
+  - - '641'
+    - http://www.audioconnection.com.au/products/gryphon-tabu-3-100.asp
+    - AudioConnectionIngestor
+    - Item
+    - '641'
+    - '1'
+    - '2010-09-20 11:54:48.818402'
+    - '2010-09-20 11:54:48.818402'
+  - - '642'
+    - http://www.audioconnection.com.au/products/anthem-avm50v.asp
+    - AudioConnectionIngestor
+    - Item
+    - '642'
+    - '1'
+    - '2010-09-20 11:54:48.95877'
+    - '2010-09-20 11:54:48.95877'
+  - - '643'
+    - http://www.audioconnection.com.au/products/audio-note-m1-line.asp
+    - AudioConnectionIngestor
+    - Item
+    - '643'
+    - '1'
+    - '2010-09-20 11:54:48.989478'
+    - '2010-09-20 11:54:48.989478'
+  - - '644'
+    - http://www.audioconnection.com.au/products/audio-note-m2-line-tube-linel-level-preamp.asp
+    - AudioConnectionIngestor
+    - Item
+    - '644'
+    - '1'
+    - '2010-09-20 11:54:49.346449'
+    - '2010-09-20 11:54:49.346449'
+  - - '645'
+    - http://www.audioconnection.com.au/products/hovland-hp200-tube-pre-amp.asp
+    - AudioConnectionIngestor
+    - Item
+    - '645'
+    - '1'
+    - '2010-09-20 11:54:49.400513'
+    - '2010-09-20 11:54:49.400513'
+  - - '646'
+    - http://www.audioconnection.com.au/products/jadis-jp80mc.asp
+    - AudioConnectionIngestor
+    - Item
+    - '646'
+    - '1'
+    - '2010-09-20 11:54:49.432324'
+    - '2010-09-20 11:54:49.432324'
+  - - '647'
+    - http://www.audioconnection.com.au/products/no-326s-pre-amplifier.asp
+    - AudioConnectionIngestor
+    - Item
+    - '647'
+    - '1'
+    - '2010-09-20 11:54:49.490936'
+    - '2010-09-20 11:54:49.490936'
+  - - '648'
+    - http://www.audioconnection.com.au/products/myryad-mxp2000-stereo-preamplifier.asp
+    - AudioConnectionIngestor
+    - Item
+    - '648'
+    - '1'
+    - '2010-09-20 11:54:49.520584'
+    - '2010-09-20 11:54:49.520584'
+  - - '649'
+    - http://www.audioconnection.com.au/products/audio-research-ls-16.asp
+    - AudioConnectionIngestor
+    - Item
+    - '649'
+    - '1'
+    - '2010-09-20 11:54:49.565582'
+    - '2010-09-20 11:54:49.565582'
+  - - '650'
+    - http://www.audioconnection.com.au/products/jadis-defy-7-valve-power-amplifier.asp
+    - AudioConnectionIngestor
+    - Item
+    - '650'
+    - '1'
+    - '2010-09-20 11:54:49.627415'
+    - '2010-09-20 11:54:49.627415'
+  - - '651'
+    - http://www.audioconnection.com.au/products/mcintosh-mc2102-power-amplifier.asp
+    - AudioConnectionIngestor
+    - Item
+    - '651'
+    - '1'
+    - '2010-09-20 11:54:49.653743'
+    - '2010-09-20 11:54:49.653743'
+  - - '652'
+    - http://www.audioconnection.com.au/products/graham-robin-tonearm.asp
+    - AudioConnectionIngestor
+    - Item
+    - '652'
+    - '1'
+    - '2010-09-20 11:54:49.829797'
+    - '2010-09-20 11:54:49.829797'
+  - - '653'
+    - http://www.audioconnection.com.au/products/statement.asp
+    - AudioConnectionIngestor
+    - Item
+    - '653'
+    - '1'
+    - '2010-09-20 11:54:49.871378'
+    - '2010-09-20 11:54:49.871378'
+  - - '654'
+    - http://www.audioconnection.com.au/products/oracle-delphi-mk-iv-with-fr64-arm.asp
+    - AudioConnectionIngestor
+    - Item
+    - '654'
+    - '1'
+    - '2010-09-20 11:54:50.020219'
+    - '2010-09-20 11:54:50.020219'
