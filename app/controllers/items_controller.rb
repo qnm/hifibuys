@@ -6,10 +6,6 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.xml
   def index
-    ["manufacturers", "types"].each do |type|
-      instance_variable_set("@#{type}", Item.tag_counts_on(type.to_sym))
-    end
-
     if params[:q].blank?
       @items = Item.find(:all)
 

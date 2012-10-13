@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
 
   has_widgets do |root|
     root << widget(:search)
+    root << widget(:tag_list)
   end
 
   def contact_us

@@ -50,12 +50,11 @@
           .well.sidebar-nav
             %ul.nav.nav-list
               %li.nav-header Hi-Fi
-              - tag_cloud(@types,[]) do |tag|
-                %li= link_to tag.name, items_path(:q => {:name_cont => tag.name})
+              = render_widget(:tag_list, :display, :types)
+
             %ul.nav.nav-list
               %li.nav-header Manufacturers
-              - tag_cloud(@manufacturers,[]) do |tag|
-                %li= link_to tag.name, items_path(:q => {:name_cont => tag.name})
+              = render_widget(:tag_list, :display, :manufacturers)
 
         .span9
           = yield
