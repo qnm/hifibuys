@@ -3,10 +3,6 @@ class ItemsController < ApplicationController
   cache_sweeper   :item_sweeper
   #autocomplete    :item, :name, :full => true
 
-  has_widgets do |root|
-    root << widget(:search)
-  end
-
   # GET /items
   # GET /items.xml
   def index
