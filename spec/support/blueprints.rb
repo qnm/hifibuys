@@ -17,3 +17,7 @@ Entity.blueprint do
   category { "Category #{sn}" }
   name { "Name #{sn}" }
 end
+
+ActsAsTaggableOn::Tag.blueprint do
+  name { "Name #{sn}" }
+end

@@ -1,0 +1,2 @@
+- tag_cloud(@tags,[]) do |tag|
+  %li= link_to tag.name, items_path(:q => {:name_cont => tag.name})
