@@ -8,9 +8,11 @@ class Scraper < ::Nibbler
 
   # open web pages with UTF-8 encoding
   def get_document(url)
-    URI === url ? Nokogiri::HTML::Document.parse(open(url), url.to_s, 'UTF-8') : url
-  rescue OpenURI::HTTPError
-    $stderr.puts "ERROR opening #{url}"
-    Nokogiri('')
+    begin
+      content = open(url)
+    rescue OpenURI::HTTPError => e
+      content = e.io
+    end
+    URI === url ? Nokogiri::HTML::Document.parse(content, url.to_s, 'UTF-8') : url
   end
 end
