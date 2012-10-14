@@ -5,10 +5,10 @@ include Feed
 class SimplyHifiItem < Nibbler
   SITE = "http://www.simplyhifi.com.au/"
 
-  element "//div[1]/div/h2/a" => :name, :with => lambda { |node| tidy(node.inner_html) }
-  element "//div[1]/div/h2/a/@href" => :url, :with => lambda { |node| tidy(node.inner_html) }
-  element "//div[1]/div/h2/a" => :price, :with => lambda { |node|  node.text.scan(/(\$[0-9,]{1,})/).flatten.first.to_s.gsub(',','') }
-  element "//div[0]/div/a/img/@src" => :image_url
+  element ".//div[@class='grid_product_info']/h2/a" => :name, :with => lambda { |node| tidy(node.inner_html) }
+  element ".//div[@class='grid_product_info']/h2/a/@href" => :url, :with => lambda { |node| tidy(node.inner_html) }
+  element ".//div[@class='grid_product_info']/h2/a" => :price, :with => lambda { |node|  node.text.scan(/(\$[0-9,]{1,})/).flatten.first.to_s.gsub(',','') }
+  element ".//div[@class='item_image']/a/img/@src" => :image_url
 
   def to_hash
     { 
