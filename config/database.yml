@@ -1,22 +1,20 @@
-development:
+base: &BASE
   adapter: postgresql
-  encoding: utf8
-  reconnect: false
-  database: hifibuys_development
-  pool: 5
-  username: postgres
-  password: postgres 
+  encoding: unicode
   host: localhost
+  username: postgres
+
+development:
+  database: hifibuys_development
+  <<: *BASE
 
 test: &TEST
   adapter: nulldb
 
 production:
-  adapter: postgresql
-  encoding: utf8
-  reconnect: false
-  database: hifibuys_production
-  pool: 5
-  username: postgres
-  password: postgres 
-  host: localhost
+  <<: *BASE
+  database: <%= ENV['RDS_DB_NAME'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>
