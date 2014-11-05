@@ -1,6 +1,6 @@
 Hifibuys::Application.routes.draw do
-  match 'items/sell' => 'items#new', :as => :sell
-  match 'contact-us' => 'application#contact_us', :as => :contact
+  get 'items/sell' => 'items#new', :as => :sell
+  get 'contact-us' => 'application#contact_us', :as => :contact
 
   resources :items do
     collection do

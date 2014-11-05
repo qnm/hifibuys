@@ -7,7 +7,7 @@ class ItemsController < ApplicationController
   # GET /items.xml
   def index
     if params[:q].blank?
-      @items = Item.find(:all)
+      @items = Item.all
 
       respond_to do |format|
         format.xml # GCS feed
@@ -49,7 +49,7 @@ class ItemsController < ApplicationController
   # TODO  we might want to simple throw a 302 header at this point
   # TODO  and not show the item info until we have something better to show
   def show
-    @item = Item.find(params[:id])
+    @item = Item.friendly.find(params[:id])
 
     respond_to do |format|
       format.html { 

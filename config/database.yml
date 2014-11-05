@@ -2,7 +2,6 @@ base: &BASE
   adapter: postgresql
   encoding: unicode
   host: localhost
-  username: postgres
 
 development:
   database: hifibuys_development
