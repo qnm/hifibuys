@@ -1,4 +1,4 @@
-class IngestorAccount < Omnipopulus::LoginAccount
+class IngestorAccount < ActiveRecord::Base #Omnipopulus::LoginAccount
   def assign_account_info(user)
     self.login        = user[:login]
     self.picture_url  = user[:picture_url]
