@@ -5,7 +5,8 @@ describe "AudioConnection" do
   class AudioConnection
   end
 
-  it "should return an item for some example html" do
+  pending "should return an item for some example html" do
+
     VCR.use_cassette('audio_connection') do
       parser = AudioConnection.parse open(AudioConnection._source)
       item = parser.items.first.to_hash
