@@ -5,7 +5,7 @@ gem 'rails', '4.1.7'
 gem 'rails-observers'
 gem 'protected_attributes'
 gem "omniauth"
-gem 'omnipopulus'
+#gem 'omnipopulus'
 gem 'devise'
 gem "haml-rails"
 gem "pg"
@@ -29,6 +29,7 @@ gem 'turbo-sprockets-rails3'
 gem 'foreman'
 gem 'puma', '=2.8.1'
 gem 'rack', '=1.5.2'
+gem 'rollbar', '~> 1.2.6'
 
 # Gems used only for assets and not required
 # in production environments by default.

@@ -39,8 +39,6 @@ GEM
     arel (5.0.1.20140414130214)
     babosa (0.3.11)
     bcrypt (3.1.9)
-    bcrypt-ruby (3.1.5)
-      bcrypt (>= 3.1.3)
     builder (3.2.2)
     capybara (2.4.4)
       mime-types (>= 1.16)
@@ -144,8 +142,7 @@ GEM
     mime-types (2.4.3)
     mini_portile (0.6.0)
     minitest (5.4.2)
-    multi_json (1.0.0)
-    multi_xml (0.2.2)
+    multi_json (1.10.1)
     multipart-post (1.1.5)
     netrc (0.7.9)
     newrelic_rpm (3.9.6.257)
@@ -154,26 +151,9 @@ GEM
       mini_portile (= 0.6.0)
     nokogumbo (1.1.12)
       nokogiri
-    oa-core (0.2.6)
-    oa-oauth (0.2.6)
-      faraday (~> 0.6.1)
-      multi_json (~> 1.0.0)
-      multi_xml (~> 0.2.2)
-      oa-core (= 0.2.6)
-      oauth (~> 0.4.0)
-      oauth2 (~> 0.4.1)
-    oauth (0.4.7)
-    oauth2 (0.4.1)
-      faraday (~> 0.6.1)
-      multi_json (>= 0.0.5)
     omniauth (1.2.2)
       hashie (>= 1.2, < 4)
       rack (~> 1.0)
-    omnipopulus (0.2.0)
-      bcrypt-ruby
-      oa-core (~> 0.2.6)
-      oa-oauth (~> 0.2.6)
-      rails (>= 3.0.0)
     onfire (0.2.0)
     orm_adapter (0.5.0)
     pg (0.17.1)
@@ -221,6 +201,8 @@ GEM
       railties (>= 3.2, < 4.2)
     rest-client (1.6.7)
       mime-types (>= 1.16)
+    rollbar (1.2.7)
+      multi_json (~> 1.3)
     rspec (2.99.0)
       rspec-core (~> 2.99.0)
       rspec-expectations (~> 2.99.0)
@@ -334,7 +316,6 @@ DEPENDENCIES
   newrelic_rpm
   nibbler
   omniauth
-  omnipopulus
   pg
   protected_attributes
   puma (= 2.8.1)
@@ -343,6 +324,7 @@ DEPENDENCIES
   rails-observers
   ransack
   rb-fsevent (= 0.9.3)
+  rollbar (~> 1.2.6)
   rspec-apotomo
   rspec-rails
   sanitize
