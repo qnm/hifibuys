@@ -1,1 +1,0 @@
-ActiveRecord::Observer.disable_observers
