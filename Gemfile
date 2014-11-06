@@ -27,7 +27,7 @@ gem 'yaml_db'
 gem 'newrelic_rpm'
 gem 'turbo-sprockets-rails3'
 gem 'foreman'
-gem 'puma'
+gem 'puma', '=2.8.1'
 gem 'rack', '=1.5.2'
 
 # Gems used only for assets and not required
