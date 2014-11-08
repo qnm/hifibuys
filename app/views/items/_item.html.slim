@@ -1,0 +1,7 @@
+li.thumbnail
+  .item
+    =image_tag(item.image_url) if item.image_url
+    .caption
+      h5= link_to item.name, item
+      p= "from #{item.seller.try(:name)}, #{item.seller.try(:city)}"
+      span.label.label-info.price= item.price

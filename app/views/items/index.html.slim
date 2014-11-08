@@ -1,0 +1,7 @@
+#items_home
+  h2 Check out some of the great on-sale items we've found!
+  h5
+    | Follow us on twitter to
+    a  href='http://twitter.com/twifibuys' get the best hifi deals
+  ul.thumbnails#items
+    = render Item.where.not(image_url: nil).limit(10)
