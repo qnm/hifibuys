@@ -1,4 +1,5 @@
 Hifibuys::Application.routes.draw do
+  devise_for :users
   get 'items/sell' => 'items#new', :as => :sell
   get 'contact-us' => 'application#contact_us', :as => :contact
 

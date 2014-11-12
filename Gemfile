@@ -7,7 +7,6 @@ gem 'protected_attributes'
 gem "omniauth"
 #gem 'omnipopulus'
 gem 'devise'
-gem "haml-rails"
 gem "pg"
 gem 'nibbler'
 gem "acts-as-taggable-on"
@@ -18,7 +17,11 @@ gem 'sanitize'
 gem 'babosa'
 gem 'ransack'
 gem 'cells'
-gem "twitter-bootstrap-rails"
+gem "bootstrap-sass"
+gem 'turbolinks'
+gem 'slim'
+gem 'haml2slim'
+
 gem 'jquery-rails', '~> 2.1'
 gem 'simple_form'
 gem 'apotomo'
@@ -30,6 +33,7 @@ gem 'foreman'
 gem 'puma', '=2.8.1'
 gem 'rack', '=1.5.2'
 gem 'rollbar', '~> 1.2.6'
+gem 'le'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -41,6 +45,7 @@ group :assets do
 end
 
 group :development, :test do
+  gem 'rails_layout'
   gem 'faraday'
   gem 'heroku'
   gem 'taps'
